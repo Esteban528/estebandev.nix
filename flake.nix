@@ -40,6 +40,29 @@
           }
         ];
       };
+      sapato = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        modules = [
+          home-manager.nixosModules.home-manager
+          ./hosts/sapato/configuration.nix
+          # inputs.stylix.nixosModules.stylix
+          {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.backupFileExtension = "hm-backup";
+            home-manager.users.estebandev = {
+              imports = [
+                ./home/estebandev-lite/home.nix
+                stylix.homeManagerModules.stylix
+              ];
+            };
+
+            # Optionally, use home-manager.extraSpecialArgs to pass
+            # arguments to home.nix
+            home-manager.extraSpecialArgs = {inherit inputs;};
+          }
+        ];
+      };
     };
   };
 }
