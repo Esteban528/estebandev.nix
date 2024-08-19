@@ -43,6 +43,7 @@
     zed-editor
     sqlitebrowser
     onedrive
+    syncthing
 
     jq
     just

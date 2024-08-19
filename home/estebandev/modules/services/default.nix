@@ -2,5 +2,6 @@
   imports = [
     ./dunst
     ./hypridle
+    ./syncthing
   ];
 }
