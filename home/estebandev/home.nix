@@ -46,6 +46,12 @@
 
     jq
     just
+
+   #Office
+    libreoffice-qt
+    hunspell
+    hunspellDicts.es_CO
+    hunspellDicts.es_ES
   ];
   home.stateVersion = "23.11";
 }
