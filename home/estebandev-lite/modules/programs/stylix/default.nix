@@ -15,9 +15,9 @@
     autoEnable = true;
 
     polarity = "dark";
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/black-metal-bathory.yaml";
 
-    image = ./assets/secluded-grove-pixel.png;
+    image = ./assets/wallpaper.jpg;
 
     cursor.package = pkgs.bibata-cursors;
     cursor.name = "Bibata-Modern-Ice";

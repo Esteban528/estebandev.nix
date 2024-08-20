@@ -1,4 +1,6 @@
 default:
     echo 'Hello, world!'
-build:
+pelusa:
   sudo nixos-rebuild switch --flake .#pelusa
+sapato:
+  sudo nixos-rebuild switch --flake .#sapato
