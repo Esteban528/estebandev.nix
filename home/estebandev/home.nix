@@ -46,6 +46,7 @@
 
     jq
     just
+    teams-for-linux
 
    #Office
     libreoffice-qt
