@@ -202,6 +202,7 @@
 
     libnotify
 
+    mpv
 
     (pkgs.callPackage ../../pkgs/notion-app.nix {})
   ];
