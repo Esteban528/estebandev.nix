@@ -14,10 +14,9 @@
     enable = true;
     autoEnable = true;
 
-    polarity = "dark";
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/black-metal-bathory.yaml";
-
-    image = ./assets/wallpaper.jpg;
+    polarity = "light";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/classic-light.yaml";
+    image = ./assets/wallp.jpeg;
 
     cursor.package = pkgs.bibata-cursors;
     cursor.name = "Bibata-Modern-Ice";
