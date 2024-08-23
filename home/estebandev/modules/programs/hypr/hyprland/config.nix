@@ -59,8 +59,8 @@
   }
 
   general {
-      gaps_in = 6
-      gaps_out = 12
+      gaps_in = 3
+      gaps_out = 6
       border_size = 2
       col.active_border = rgb(${color1})
       col.inactive_border = rgb(${color2})
@@ -73,7 +73,7 @@
   }
 
   decoration {
-      rounding = 2
+      rounding = 1
 
       blur {
           enabled = false

@@ -13,11 +13,11 @@
   $color8: #${colors.base0C};
   $color9: #${colors.base07};
   $color10: #${colors.base02};
-  $radius: 8px;
+  $radius: 2px;
 
   * {
     all: unset;
-    font-family: Roboto RobotoMono Nerd Font;
+    font-family: monospace;
   }
 
   .bar {

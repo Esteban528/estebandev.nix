@@ -6,7 +6,7 @@
 }: {
   programs.kitty = {
     enable = true;
-    font.name = lib.mkForce "JetBrains Mono Nerd Font";
+    font.name = lib.mkForce "FiraCode Nerd Font";
     settings = {
       confirm_os_window_close = 0;
       enable_audio_bell = true;

@@ -23,6 +23,15 @@
     cursor.name = "Bibata-Modern-Ice";
     cursor.size = 20;
 
+  fonts = {
+      serif = config.stylix.fonts.monospace;
+      sansSerif = config.stylix.fonts.monospace;
+      emoji = config.stylix.fonts.monospace;
+      monospace = {
+        package = pkgs.fira-code;
+        name = "Fira code";
+      };
+    };
   };
   # stylix.targets.hyprpaper.enable = lib.mkForce false;
 
