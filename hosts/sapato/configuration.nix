@@ -211,6 +211,9 @@
     hunspell
     hunspellDicts.es_CO
     hunspellDicts.es_ES
+
+
+    (pkgs.callPackage ../../pkgs/tdf/tdf.nix {})
   ];
 
   programs.nix-ld.enable = true;

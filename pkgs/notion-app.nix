@@ -4,11 +4,12 @@
   fetchurl,
 }: let
   pname = "notion-app";
-  version = "3.0.0-1";
+  version = "3.12.2-1";
 
   src = fetchurl {
-    url = "https://github.com/aokellermann/notion-repackaged/releases/download/v${version}/Notion-${version}.AppImage";
-    sha256 = "4ca2dbc3e90e8166037f420d54a7cfe8373e27707fdee999e6458044b66786d0";
+    # url = "https://github.com/aokellermann/notion-repackaged/releases/download/v${version}/Notion-${version}.AppImage";
+    url = "https://github.com/sdkane/notion-repackaged/releases/download/v3.12.2-1/Notion-3.12.2-1.AppImage";
+    sha256 = "1bqv23djlqjd07jg62fqfqw165n3g74r3a4af92nqcm4qdq6mkj0";
   };
 
   appimageContents = appimageTools.extract {inherit pname version src;};

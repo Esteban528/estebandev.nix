@@ -206,7 +206,6 @@
     mpv
     nix-prefetch-git
 
-    (pkgs.callPackage ../../pkgs/notion-app.nix {})
     (pkgs.callPackage ../../pkgs/tdf/tdf.nix {})
   ];
 
