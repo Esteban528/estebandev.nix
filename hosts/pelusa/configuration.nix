@@ -187,6 +187,7 @@
     linuxKernel.packages.linux_6_6.vmware
     run
     wineWowPackages.stable
+    winetricks
     bottles-unwrapped
     lutris
     protonup-qt
