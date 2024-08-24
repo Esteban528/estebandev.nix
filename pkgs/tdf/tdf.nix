@@ -6,6 +6,9 @@ rustPlatform.buildRustPackage rec {
 
   cargoLock = {
     lockFile = ./Cargo.lock;
+    outputHashes = {
+      "ratatui-0.28.0" = lib.fakeSha256;
+    };
   };
   src = fetchFromGitHub {
     owner = "itsjunetime";
