@@ -4,6 +4,9 @@ rustPlatform.buildRustPackage rec {
   pname = "tdf";
   version = "4296c92d7d91b210149ecfb8dd72e487fb747eff";
 
+  cargoLock = {
+    lockFile = ./Cargo.lock;
+  };
   src = fetchFromGitHub {
     owner = "itsjunetime";
     repo = pname;
