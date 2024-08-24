@@ -203,8 +203,10 @@
     libnotify
 
     mpv
+    nix-prefetch-git
 
     (pkgs.callPackage ../../pkgs/notion-app.nix {})
+    (pkgs.callPackage ../../pkgs/tdf.nix {})
   ];
 
   programs.nix-ld.enable = true;
