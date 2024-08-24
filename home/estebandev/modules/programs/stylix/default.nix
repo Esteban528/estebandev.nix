@@ -17,7 +17,7 @@
     polarity = "dark";
     base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml";
 
-    image = ./assets/secluded-grove-pixel.png;
+    image = ./assets/waifu-on-balcony.png;
 
     cursor.package = pkgs.bibata-cursors;
     cursor.name = "Bibata-Modern-Ice";
