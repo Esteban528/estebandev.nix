@@ -21,7 +21,7 @@
     wezterm
     dig
     spotube
-    gimp
+    gimp-with-plugins
     inkscape
     mpc-cli
     obs-studio
