@@ -207,8 +207,8 @@
     mpv
     nix-prefetch-git
 
-    gnome.nautilus
-    gnome.nautilus-python
+    nautilus
+    nautilus-python
     (pkgs.callPackage ../../pkgs/tdf/tdf.nix {})
   ];
 
