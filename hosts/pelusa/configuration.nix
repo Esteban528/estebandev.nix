@@ -251,6 +251,8 @@
     (nerdfonts.override {fonts = ["FiraCode" "DroidSansMono" "Hack" "JetBrainsMono" "RobotoMono"];})
   ];
 
+  services.udisk2.enable = true;
+
   #VMware
   virtualisation.vmware.host.enable = true;
   security.polkit.enable = true;
