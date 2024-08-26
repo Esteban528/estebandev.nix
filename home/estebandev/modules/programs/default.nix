@@ -6,7 +6,6 @@
     ./eww
     ./fish
     ./wofi
-    ./nautilus
   ];
 
   programs.btop.enable = true;
