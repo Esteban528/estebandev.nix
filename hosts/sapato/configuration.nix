@@ -206,12 +206,11 @@
     fzf
     grc
 
-   #Office
+    #Office
     libreoffice-qt
     hunspell
     hunspellDicts.es_CO
     hunspellDicts.es_ES
-
 
     (pkgs.callPackage ../../pkgs/tdf/tdf.nix {})
   ];
@@ -249,7 +248,6 @@
   virtualisation.docker.enable = true;
 
   services.gvfs.enable = true;
-
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

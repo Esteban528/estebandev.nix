@@ -7,16 +7,15 @@
   dir = "wofi";
   colors = config.lib.stylix.colors;
 in {
-
   home.packages = with pkgs; [
-   wofi 
+    wofi
   ];
 
   programs.hyprlock.enable = true;
   home.file = {
     ".config/${dir}/style.css".text = import ./style.css.nix {
-        inherit colors;
-      };
+      inherit colors;
+    };
 
     ".config/${dir}/config".text = ''
       allow_images=true

@@ -1,5 +1,4 @@
 {pkgs, ...}: {
-
   home.packages = with pkgs; [
     fish
     fzf
@@ -21,7 +20,7 @@
 
       set -U fish_greeting
     '';
-   plugins = [
+    plugins = [
     ];
   };
 }

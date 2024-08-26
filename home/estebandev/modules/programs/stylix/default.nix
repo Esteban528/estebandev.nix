@@ -4,7 +4,6 @@
   config,
   ...
 }: {
-
   home.packages = with pkgs; [
     colloid-icon-theme
     adwaita-icon-theme
@@ -23,7 +22,7 @@
     cursor.name = "Bibata-Modern-Ice";
     cursor.size = 20;
 
-  fonts = {
+    fonts = {
       serif = config.stylix.fonts.monospace;
       sansSerif = config.stylix.fonts.monospace;
       emoji = config.stylix.fonts.monospace;

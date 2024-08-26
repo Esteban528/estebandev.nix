@@ -1,10 +1,6 @@
-{
-pkgs,
-  ...
-}: let
+{pkgs, ...}: let
   dir = "hypr";
 in {
-
   home.packages = with pkgs; [
     hypridle
   ];
@@ -13,4 +9,3 @@ in {
     ".config/${dir}/hypridle.conf".source = ./hypridle.conf;
   };
 }
-

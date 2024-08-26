@@ -4,7 +4,6 @@
   config,
   ...
 }: {
-
   home.packages = with pkgs; [
     colloid-icon-theme
     adwaita-icon-theme
@@ -21,7 +20,6 @@
     cursor.package = pkgs.bibata-cursors;
     cursor.name = "Bibata-Modern-Ice";
     cursor.size = 20;
-
   };
   # stylix.targets.hyprpaper.enable = lib.mkForce false;
 

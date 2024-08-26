@@ -76,7 +76,7 @@
   }
 
   animations {
-      enabled = false 
+      enabled = false
       first_launch_animation = false
 
       # bezier = myBezier, 0.05, 0.9, 0.1, 1.05

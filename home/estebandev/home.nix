@@ -47,7 +47,7 @@
     jq
     just
 
-   #Office
+    #Office
     libreoffice-qt
     hunspell
     hunspellDicts.es_CO

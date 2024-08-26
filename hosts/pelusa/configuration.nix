@@ -101,6 +101,7 @@
 
   # Environment variables
   environment.sessionVariables = rec {
+    NAUTILUS_4_EXTENSION_DIR = "${pkgs.gnome.nautilus-python}/lib/nautilus/extensions-4";
     XDG_CACHE_HOME = "$HOME/.cache";
     XDG_CONFIG_HOME = "$HOME/.config";
     XDG_DATA_HOME = "$HOME/.local/share";
@@ -206,8 +207,20 @@
     mpv
     nix-prefetch-git
 
+    gnome.nautilus
+    gnome.nautilus-python
     (pkgs.callPackage ../../pkgs/tdf/tdf.nix {})
   ];
+
+  environment = {
+    pathsToLink = [
+      "/share/nautilus-python/extensions"
+    ];
+  };
+  programs.nautilus-open-any-terminal = {
+    enable = true;
+    terminal = "kitty";
+  };
 
   programs.nix-ld.enable = true;
   programs.nix-ld.package = pkgs.nix-ld-rs;

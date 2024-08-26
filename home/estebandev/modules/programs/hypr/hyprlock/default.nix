@@ -1,10 +1,6 @@
-{
-  pkgs,
-  ...
-}: let
+{pkgs, ...}: let
   dir = "hypr";
 in {
-
   home.packages = with pkgs; [
     hyprlock
   ];
