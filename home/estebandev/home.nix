@@ -13,7 +13,6 @@
     vlc
     tree
     vesktop
-    nautilus
     nitch
     playerctl
     btop
@@ -39,11 +38,11 @@
     vscode
     postman
     dbeaver-bin
-    nautilus-open-any-terminal
     zed-editor
     sqlitebrowser
     onedrive
     obsidian
+    pipx
 
     jq
     just
