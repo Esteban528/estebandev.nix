@@ -209,6 +209,8 @@
 
     nautilus
     nautilus-python
+    ripgrep
+
     (pkgs.callPackage ../../pkgs/tdf/tdf.nix {})
   ];
 
@@ -251,7 +253,7 @@
     (nerdfonts.override {fonts = ["FiraCode" "DroidSansMono" "Hack" "JetBrainsMono" "RobotoMono"];})
   ];
 
-  services.udisk2.enable = true;
+  services.udisks2.enable = true;
 
   #VMware
   virtualisation.vmware.host.enable = true;
