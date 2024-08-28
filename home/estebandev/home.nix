@@ -42,7 +42,7 @@
     sqlitebrowser
     onedrive
     obsidian
-    pipx
+    anki-bin
 
     jq
     just
