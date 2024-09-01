@@ -25,7 +25,8 @@ in {
       }
 
     '';
-    settings = [{
+    settings = [
+      {
       "layer" = "top";
       modules-left = [
         "custom/arch"
@@ -53,6 +54,7 @@ in {
           "active" = "";
           "default" = "";
         };
+      };
         "clock" = {
           "format" = "<span color='#${colors.base0D}'> </span>{:%H:%M}";
         };
