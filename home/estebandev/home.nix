@@ -33,7 +33,7 @@
     image-roll
     kitty
     gedit
-    torrential
+    torrent7z
     maven
     vscode
     postman
