@@ -13,9 +13,9 @@
     enable = true;
     autoEnable = true;
 
-    polarity = "light";
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-light-hard.yaml";
-    image = ./assets/beige.png;
+    polarity = "dark";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml";
+    image = ./assets/gruvbox-dark-blue.png;
 
     cursor.package = pkgs.bibata-cursors;
     cursor.name = "Bibata-Modern-Ice";

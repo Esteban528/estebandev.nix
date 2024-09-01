@@ -17,7 +17,7 @@ in {
     };
     style = ''
       * {
-        font-family: "JetBrainsMono Nerd Font";
+        font-family: "Fira Code Nerd Font";
         font-size: 10pt;
         font-weight: bold;
         transition-property: background-color;
@@ -25,35 +25,33 @@ in {
       }
 
     '';
-    settings = [
-      {
-        "layer" = "top";
-        modules-left = [
-          "custom/arch"
-          "hyprland/workspaces"
-        ];
-        modules-center = [
-          "clock"
-        ];
-        modules-right = [
-          "backlight"
-          "pulseaudio"
-          "bluetooth"
-          "network"
-          "battery"
-        ];
-        "custom/arch" = {
-          "format" = "󱄅 ";
-          "tooltip" = false;
-        };
-        "hyprland/workspaces" = {
-          "format" = "{name}";
-          "tooltip" = false;
-          "all-outputs" = true;
-          "format-icons" = {
-            "active" = "";
-            "default" = "";
-          };
+    settings = [{
+      "layer" = "top";
+      modules-left = [
+        "custom/arch"
+        "hyprland/workspaces"
+      ];
+      modules-center = [
+        "clock"
+      ];
+      modules-right = [
+        "backlight"
+        "pulseaudio"
+        "bluetooth"
+        "network"
+        "battery"
+      ];
+      "custom/arch" = {
+        "format" = " 󱄅 ";
+        "tooltip" = false;
+      };
+      "hyprland/workspaces" = {
+        "format" = "<span color='#${colors.base0E}'>{name} </span>";
+        "tooltip" = false;
+        "all-outputs" = true;
+        "format-icons" = {
+          "active" = "";
+          "default" = "";
         };
         "clock" = {
           "format" = "<span color='#${colors.base0D}'> </span>{:%H:%M}";
