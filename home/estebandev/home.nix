@@ -33,7 +33,7 @@
     image-roll
     kitty
     gedit
- ktorrent
+    ktorrent
     maven
     vscode
     postman
@@ -46,6 +46,7 @@
 
     jq
     just
+    azure-functions-core-tools
 
     #Office
     libreoffice-qt
