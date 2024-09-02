@@ -2,7 +2,7 @@
   $background: #${colors.base01};
   $foreground: #${colors.base00};
   $gray: #${colors.base02};
-  $text: #cdd6f4;
+  $text: #${colors.base07};
   $color1: #${colors.base0D};
   $color2: #${colors.base09};
   $color3: #${colors.base08};
