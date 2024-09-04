@@ -40,11 +40,11 @@
           }
         ];
       };
-      sapato = nixpkgs.lib.nixosSystem {
+      laptop = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
           home-manager.nixosModules.home-manager
-          ./hosts/sapato/configuration.nix
+          ./hosts/laptop/configuration.nix
           # inputs.stylix.nixosModules.stylix
           {
             home-manager.useGlobalPkgs = true;
