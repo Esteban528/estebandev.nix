@@ -3,4 +3,4 @@ default:
 pelusa:
   sudo nixos-rebuild switch --flake .#pelusa
 laptop:
-  sudo nixos-rebuild switch --flake .#sapato
+  sudo nixos-rebuild switch --flake .#laptop
