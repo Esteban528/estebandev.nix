@@ -16,7 +16,7 @@
       cursor_underline_thickness = 7;
       mouse_hide_wait = "3.0";
       window_padding_width = 6;
-      background_opacity = lib.mkForce "0.9899";
+      background_opacity = lib.mkForce "0.9799";
       # background_color = lib.mkForce "#${config.lib.stylix.colors.base0D}";
     };
 
