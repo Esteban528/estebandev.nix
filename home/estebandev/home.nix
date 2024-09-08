@@ -43,6 +43,7 @@
     onedrive
     obsidian
     anki-bin
+    prismlauncher
 
     jq
     just
