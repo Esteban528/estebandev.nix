@@ -29,7 +29,7 @@
       emoji = config.stylix.fonts.monospace;
       monospace = {
         package = pkgs.jetbrains-mono;
-        name = "JetBrains Mono";
+        name = "Jetbrains Mono";
       };
     };
   };
