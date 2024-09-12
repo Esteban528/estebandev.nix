@@ -28,8 +28,8 @@
       sansSerif = config.stylix.fonts.monospace;
       emoji = config.stylix.fonts.monospace;
       monospace = {
-        package = pkgs.fira-code;
-        name = "Fira code";
+        package = pkgs.jetbrains-mono;
+        name = "JetBrains Mono";
       };
     };
   };
