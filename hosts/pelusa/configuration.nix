@@ -60,6 +60,7 @@
     windowManager.i3.enable = true;
 
     desktopManager.gnome.enable = true;
+    displayManager.gdm.enable = true;
 
     # Configure keymap in X11
     xkb.layout = "latam";
@@ -73,17 +74,39 @@
     xwayland.enable = true;
   };
 
-  xdg.portal = {
-    enable = true;
-    xdgOpenUsePortal = true;
-    extraPortals = [pkgs.xdg-desktop-portal-gtk];
-    config.common.default = ["gtk"];
-  };
+  desktopManager.gnome.enable = true;
+  # xdg.portal = {
+  #   enable = true;
+  #   xdgOpenUsePortal = true;
+  #   extraPortals = [pkgs.xdg-desktop-portal-gtk];
+  #   config.common.default = ["gtk"];
+  # };
+
+  environment.gnome.excludePackages =
+    (with pkgs; [
+      gnome-photos
+      gnome-tour
+    ])
+    ++ (with pkgs.gnome; [
+      cheese # webcam tool
+      gnome-music
+      gnome-terminal
+      gedit # text editor
+      epiphany # web browser
+      geary # email reader
+      evince # document viewer
+      gnome-characters
+      totem # video player
+      tali # poker game
+      iagno # go game
+      hitori # sudoku game
+      atomix # puzzle game
+    ]);
 
   # services.displayManager.sddm.package = pkgs.kdePackages.sddm;
-  services.displayManager.sddm.enable = true;
+  # services.displayManager.sddm.enable = true;
   # services.displayManager.sddm.catppuccin.assertQt6Sddm = true;
-  services.displayManager.sddm.wayland.enable = true;
+  # services.displayManager.sddm.wayland.enable = true;
   # services.displayManager.sddm.catppuccin.enable = true;
 
   # Enable CUPS to print documents.
@@ -139,7 +162,7 @@
     # Other environment variables
     _JAVA_AWT_WM_NONREPARENTING = "1";
     # WLR_NO_HARDWARE_CURSORS = "1";
-    OZONE_PLATFORM = "wayland";
+    # OZONE_PLATFORM = "wayland";
     EDITOR = "nvim";
     ANKI_WAYLAND = "1";
     # DISABLE_QT5_COMPAT = "0";
@@ -211,6 +234,9 @@
 
     mpv
     nix-prefetch-git
+
+    hyprland
+    xdg-desktop-portal-hyprland
 
     nautilus
     nautilus-python

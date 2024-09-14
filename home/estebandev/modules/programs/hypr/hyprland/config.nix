@@ -55,7 +55,7 @@
       kb_options =
       kb_rules =
 
-      follow_mouse = 2
+      follow_mouse = 1
   }
 
   general {
@@ -84,7 +84,7 @@
       }
 
       shadow_range = 17
-      shadow_render_power = 3
+      shadow_render_power = 5
       col.shadow = rgba(00000099)
       inactive_opacity = 0.98
   }
