@@ -22,25 +22,25 @@
 (defwidget startMenu []
   (box :orientation "h" :halign "start" :space-evenly "false"
     (eventbox
-        ; :cursor "pointer"
-        :class "buttonStyle"
-        :onhover "eww update startMenuStatus=true"
-        :onhoverlost "eww update startMenuStatus=false"
+      ; :cursor "pointer"
+      :class "buttonStyle"
+      :onhover "eww update startMenuStatus=true"
+      :onhoverlost "eww update startMenuStatus=false"
       (box
         :class "startMenu"
         :orientation "h"
         :space-evenly false
-        (image 
+        (image
           :class "image"
           :path "./assets/nixos-icon.png"
           :image-width 20
           :image-height 20
         )
         (revealer
-            :transition "slideright" 
-            :reveal startMenuStatus
-            :duration "550ms"
-          (button 
+          :transition "slideright"
+          :reveal startMenuStatus
+          :duration "550ms"
+          (button
             :onclick "bash ./scripts/widget.sh"
             "Menu"
           )
@@ -48,50 +48,50 @@
       )
     )
   )
- )
+)
 
 (deflisten workspaces :initial "[]" "bash ~/.config/eww/scripts/get-workspaces")
 (deflisten current_workspace :initial "1" "bash ~/.config/eww/scripts/get-active-workspace")
 (defwidget workspaces []
-  (eventbox :onscroll "bash ~/.config/eww/scripts/change-active-workspace {} ${current_workspace}" 
+  (eventbox :onscroll "bash ~/.config/eww/scripts/change-active-workspace {} ${current_workspace}"
     (box :space-evenly true :class "workspaces-widget"
       (label :text "${workspaces}${current_workspace}" :visible false)
       (for workspace in workspaces
-        (eventbox :onclick "hyprctl dispatch workspace ${workspace.id}" 
-          (box 
+        (eventbox :onclick "hyprctl dispatch workspace ${workspace.id}"
+          (box
             :class "workspace-entry"
-            (label 
+            (label
               :class "${workspace.id == current_workspace ? "current" : ""} ${workspace.windows > 0 ? "occupied" : "empty"}"
-              :text "${workspace.id == current_workspace ? "󱓻" : ""}")
-            )
+            :text "${workspace.id == current_workspace ? "󱓻" : ""}")
           )
         )
       )
     )
   )
+)
 
 (defpoll currentMusic :interval "10s" "echo $(playerctl metadata title) | cut -c 1-50")
 (defvar currentMusicStatus "false")
 (defwidget music []
   (eventbox
-      ; :cursor "pointer"
-      :onhover "eww update currentMusicStatus=true"
-      :onhoverlost "eww update currentMusicStatus=false"
+    ; :cursor "pointer"
+    :onhover "eww update currentMusicStatus=true"
+    :onhoverlost "eww update currentMusicStatus=false"
     (box
       :class "music buttonStyle"
       :orientation "h"
       :space-evenly false
-      (label 
+      (label
         :class "musicLabel"
-        :text "${currentMusic != "" ? "󰝚" : "󰝛"}" )
-
+      :text "${currentMusic != "" ? "󰝚" : "󰝛"}" )
+      
       (revealer
-          :transition "slideright" 
-          :reveal currentMusicStatus
-          :duration "1550ms"
-
-        (button 
-            "${currentMusic != "" ? currentMusic : "Not playing"}"
+        :transition "slideright"
+        :reveal currentMusicStatus
+        :duration "1550ms"
+        
+        (button
+          "${currentMusic != "" ? currentMusic : "Not playing"}"
         )
       )
     )
@@ -100,7 +100,7 @@
 
 ;Center
 (defwidget center []
-  (box :orientation "h" :halign "center" 
+  (box :orientation "h" :halign "center"
     (clock)
   )
 )
@@ -117,7 +117,7 @@
       :class "clockb"
       :onclick "scripts/calendar.sh show"
     "  ${date}")
-
+    
     (button
       :class "clockb"
       :onclick "scripts/calendar.sh show"
@@ -126,10 +126,11 @@
 
 ;RigthSide
 (defwidget rigth []
-  (box 
+  (box
     ; :class "buttonStyle"
+    :class "rightside"
     :orientation "h"
-    :halign "end" 
+    :halign "end"
     :space-evenly false
     :spacing 10
     ;(label :text "Success = Commitment - Distractions")
@@ -149,9 +150,9 @@
     :halign "center"
     :spacing 4
     
-   (label :text "󰢮 ${EWW_TEMPS.AMDGPU_EDGE}°" :class "orange")
-   (label :text " ${round(EWW_TEMPS.K10TEMP_TCTL, 0)}°" :class "yellow")
-   (circularProgress :value {EWW_CPU.avg} :label "󰓅 " :onclick "")
+    (label :text "󰢮 ${EWW_TEMPS.AMDGPU_EDGE}°" :class "text")
+    (label :text " ${round(EWW_TEMPS.K10TEMP_TCTL, 0)}°" :class "text")
+    (circularProgress :value {EWW_CPU.avg} :label "󰓅 " :onclick "")
   )
 )
 
@@ -170,20 +171,20 @@
     ; :cursor "pointer"
     :onhover "eww update volumeSlideStatus=true"
     :onhoverlost "eww update volumeSlideStatus=false"
-    (box :class "audio" 
+    (box :class "audio"
       :orientation "h"
       :space-evenly false
       :halign "end"
       :spacing 10
       (label
-        :text "${volume < 1 ? "  Muted" : "  ${volume}"}")
+      :text "${volume < 1 ? "  Muted" : "  ${volume}"}")
       (revealer
-          :transition "slideleft" 
-          :reveal volumeSlideStatus
-          :duration "550ms"
+        :transition "slideleft"
+        :reveal volumeSlideStatus
+        :duration "550ms"
         (metric :label ""
           :value volume
-          :onchange "~/.config/scripts/volumecontrol set {}")
+        :onchange "~/.config/scripts/volumecontrol set {}")
       )
     )
   )
@@ -191,29 +192,29 @@
 
 (defwidget metric [label value onchange]
   (box :orientation "h"
-       :class "metric"
-       :space-evenly false
-       :spacing 5
+    :class "metric"
+    :space-evenly false
+    :spacing 5
     (label :class "label"  :text label)
     (scale :min 0
-           :max 101
-           :active {onchange != ""}
-           :value value
-           :onchange onchange
+      :max 101
+      :active {onchange != ""}
+      :value value
+      :onchange onchange
     )
   )
 )
 
 (defwidget circularProgress [value label onclick]
-  (box :class "circular no-style" :vexpand "false" :hexpand "false" :space-evenly true 
-    (circular-progress 
-      :value value 
+  (box :class "circular no-style" :vexpand "false" :hexpand "false" :space-evenly true
+    (circular-progress
+      :value value
       :start-at 75
       :thickness 4
       :class "barCircular"
     )
-
-    (button 
+    
+    (button
       :class "iconCircular no-style"
       :onclick {onclick != ""}
       label
@@ -233,6 +234,6 @@
   :exclusive true
   :focusable false
   (bar)
-  )
+)
 
 (include "./widgets/eww.yuck")

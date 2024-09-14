@@ -2,7 +2,6 @@
   $background: #${colors.base01};
   $foreground: #${colors.base00};
   $gray: #${colors.base02};
-  $text: #${colors.base07};
   $color1: #${colors.base0D};
   $color2: #${colors.base09};
   $color3: #${colors.base08};
@@ -14,6 +13,7 @@
   $color9: #${colors.base07};
   $color10: #${colors.base02};
   $radius: 2px;
+  $text: $color9;
 
   * {
     all: unset;
@@ -54,7 +54,7 @@
   }
 
   .circular-progress {
-    color: $color1;
+    color: $color9;
     background-color: $background;
     border-radius: $radius;
   }
@@ -72,7 +72,7 @@
 
   .scratchpad,
   .scratchpad-empty {
-    color: $color1;
+    color: $color9;
     padding-right: 10px;
   }
 
@@ -107,11 +107,11 @@
     }
   }
 
-  .audio {
-    color: $background;
+  .audio, .rightside {
+    color: $color9;
     padding: 0 10px;
     border-radius: $radius;
-    background-color: $color1;
+    background-color: $background;
   }
 
   .metric {
@@ -143,13 +143,13 @@
   }
 
   .barCircular {
-    color: $color1;
+    color: $color9;
     background-color: $foreground;
     border-radius: $radius;
   }
 
   .iconCircular {
-    color: $color8;
+    color: $color9;
     font-size: 10;
     margin: 0px 40px 0 -20px;
   }
@@ -159,11 +159,15 @@
   }
 
   .red {
-    color: $color1;
+    color: $color9;
   }
 
   .orange {
     color: $color3;
+  }
+
+  .text{
+    color: $color9;
   }
 
   // Workspaces
@@ -185,13 +189,14 @@
     }
 
     .occupied {
-      color: $color1;
+      color: $color9;
     }
 
     .current {
       color: $color3;
     }
   }
+
 
   // WIDGET
   .canva {
@@ -265,7 +270,7 @@
   }
 
   .titleTodos {
-    color: $color1;
+    color: $color9;
     font-weight: 700;
   }
 
@@ -300,7 +305,7 @@
     color: $color3;
 
     &.apps {
-      color: $color1;
+      color: $color9;
     }
 
     &.gmail {
