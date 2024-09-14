@@ -27,34 +27,34 @@ in {
     '';
     settings = [
       {
-      "layer" = "top";
-      modules-left = [
-        "custom/arch"
-        "hyprland/workspaces"
-      ];
-      modules-center = [
-        "clock"
-      ];
-      modules-right = [
-        "backlight"
-        "pulseaudio"
-        "bluetooth"
-        "network"
-        "battery"
-      ];
-      "custom/arch" = {
-        "format" = " 󱄅 ";
-        "tooltip" = false;
-      };
-      "hyprland/workspaces" = {
-        "format" = "<span color='#${colors.base0E}'>{name} </span>";
-        "tooltip" = false;
-        "all-outputs" = true;
-        "format-icons" = {
-          "active" = "";
-          "default" = "";
+        "layer" = "top";
+        modules-left = [
+          "custom/arch"
+          "hyprland/workspaces"
+        ];
+        modules-center = [
+          "clock"
+        ];
+        modules-right = [
+          "backlight"
+          "pulseaudio"
+          "bluetooth"
+          "network"
+          "battery"
+        ];
+        "custom/arch" = {
+          "format" = " 󱄅 ";
+          "tooltip" = false;
         };
-      };
+        "hyprland/workspaces" = {
+          "format" = "<span color='#${colors.base0E}'>{name} </span>";
+          "tooltip" = false;
+          "all-outputs" = true;
+          "format-icons" = {
+            "active" = "";
+            "default" = "";
+          };
+        };
         "clock" = {
           "format" = "<span color='#${colors.base0D}'> </span>{:%H:%M}";
         };

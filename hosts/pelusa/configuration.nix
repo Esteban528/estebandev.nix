@@ -52,14 +52,19 @@
     useXkbConfig = true; # use xkb.options in tty.
   };
 
-  # Enable the X11 windowing system.
-  services.xserver.enable = true;
-  services.xserver.videoDrivers = ["amdgpu"];
   services.libinput.enable = true;
-  services.xserver.windowManager.i3.enable = true;
+  # Enable the X11 windowing system.
+  services.xserver = {
+    enable = true;
+    videoDrivers = ["amdgpu"];
+    windowManager.i3.enable = true;
 
-  # Configure keymap in X11
-  services.xserver.xkb.layout = "latam";
+    desktopManager.gnome.enable = true;
+
+    # Configure keymap in X11
+    xkb.layout = "latam";
+  };
+
   # services.xserver.xkb.options = "eurosign:e,caps:escape";
 
   #Wayland Support
@@ -70,7 +75,9 @@
 
   xdg.portal = {
     enable = true;
-    wlr.enable = true;
+    xdgOpenUsePortal = true;
+    extraPortals = [pkgs.xdg-desktop-portal-gtk];
+    config.common.default = ["gtk"];
   };
 
   # services.displayManager.sddm.package = pkgs.kdePackages.sddm;
@@ -101,43 +108,41 @@
 
   # Environment variables
   environment.sessionVariables = rec {
-    NAUTILUS_4_EXTENSION_DIR = "${pkgs.nautilus-python}/lib/nautilus/extensions-4";
     XDG_CACHE_HOME = "$HOME/.cache";
     XDG_CONFIG_HOME = "$HOME/.config";
     XDG_DATA_HOME = "$HOME/.local/share";
     XDG_STATE_HOME = "$HOME/.local/state";
 
     # Not officially in the specification
-    XDG_BIN_HOME = "$HOME/.local/bin";
-    PATH = [
-      "${XDG_BIN_HOME}"
-    ];
+    # XDG_BIN_HOME = "$HOME/.local/bin";
+    # PATH = [
+    #   "${XDG_BIN_HOME}"
+    # ];
 
     # XDG environment variables
-    XDG_CURRENT_DESKTOP = "Hyprland";
-    XDG_SESSION_TYPE = "wayland";
-    XDG_SESSION_DESKTOP = "Hyprland";
+    # XDG_CURRENT_DESKTOP = "Hyprland";
+    # XDG_SESSION_TYPE = "wayland";
+    # XDG_SESSION_DESKTOP = "Hyprland";
 
     # GDK environment variables
-    GDK_BACKEND = "wayland,x11";
+    GDK_BACKEND = "wayland";
 
     # QT environment variables
-    QT_QPA_PLATFORM = "wayland";
-    QT_QPA_PLATFORMTHEME = "qt5ct";
-    QT_STYLE_OVERRIDE = "kvantum";
-    QT_WAYLAND_DISABLE_WINDOWDECORATION = "1";
-    QT_AUTO_SCREEN_SCALE_FACTOR = "1";
+    # QT_QPA_PLATFORM = "wayland";
+    # QT_QPA_PLATFORMTHEME = "qt5ct";
+    # QT_WAYLAND_DISABLE_WINDOWDECORATION = "1";
+    # QT_AUTO_SCREEN_SCALE_FACTOR = "1";
 
     # SDL environment variable
-    SDL_VIDEODRIVER = "wayland";
+    # SDL_VIDEODRIVER = "wayland";
 
     # Other environment variables
     _JAVA_AWT_WM_NONREPARENTING = "1";
-    WLR_NO_HARDWARE_CURSORS = "1";
-    MOZ_DISABLE_RDD_SANDBOX = "1";
-    MOZ_ENABLE_WAYLAND = "1";
+    # WLR_NO_HARDWARE_CURSORS = "1";
     OZONE_PLATFORM = "wayland";
-
+    EDITOR = "nvim";
+    ANKI_WAYLAND = "1";
+    # DISABLE_QT5_COMPAT = "0";
     #GTK
     # GTK_THEME = "Catppuccin-Dark-Macchiato-BL-MB:dark";
   };
