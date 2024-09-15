@@ -74,12 +74,12 @@
     xwayland.enable = true;
   };
 
-  # xdg.portal = {
-  #   enable = true;
+  xdg.portal = {
+     enable = true;
   #   xdgOpenUsePortal = true;
   #   extraPortals = [pkgs.xdg-desktop-portal-gtk];
   #   config.common.default = ["gtk"];
-  # };
+  };
 
 
 
@@ -270,7 +270,6 @@
   services.udisks2.enable = true;
 
   #VMware
-  services.vmwareWorkstation.enable = true;
   virtualisation.vmware.host.enable = true;
   security.polkit.enable = true;
   security.polkit.extraConfig = ''
