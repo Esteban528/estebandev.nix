@@ -61,7 +61,7 @@
           (box
             :class "workspace-entry"
             (label
-              :class "${workspace.id == current_workspace ? "text" : ""} ${workspace.windows > 0 ? "occupied" : "empty"}"
+              :class "${workspace.id == current_workspace ? "current" : ""} ${workspace.windows > 0 ? "occupied" : "empty"}"
             :text "${workspace.id == current_workspace ? "󱓻" : ""}")
           )
         )
