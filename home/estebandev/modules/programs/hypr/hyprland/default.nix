@@ -11,7 +11,7 @@
 in {
   home.packages = with pkgs; [
     wl-clipboard
-    # xdg-desktop-portal
+    xdg-desktop-portal
     # xdg-desktop-portal-gtk
 
     hyprpaper

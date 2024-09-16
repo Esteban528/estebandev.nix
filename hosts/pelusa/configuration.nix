@@ -128,24 +128,24 @@
     # XDG_SESSION_DESKTOP = "Hyprland";
 
     # GDK environment variables
-    GDK_BACKEND = "wayland";
+    # GDK_BACKEND = "wayland";
 
     #QT environment variables
-    QT_QPA_PLATFORM = "wayland";
-    QT_QPA_PLATFORMTHEME = "qt5ct";
-    QT_WAYLAND_DISABLE_WINDOWDECORATION = "1";
-    QT_AUTO_SCREEN_SCALE_FACTOR = "1";
+    # QT_QPA_PLATFORM = "wayland";
+    # QT_QPA_PLATFORMTHEME = "qt5ct";
+    # QT_WAYLAND_DISABLE_WINDOWDECORATION = "1";
+    # QT_AUTO_SCREEN_SCALE_FACTOR = "1";
 
     #SDL environment variable
-    SDL_VIDEODRIVER = "wayland";
+    # SDL_VIDEODRIVER = "wayland";
 
     # Other environment variables
     _JAVA_AWT_WM_NONREPARENTING = "1";
     WLR_NO_HARDWARE_CURSORS = "1";
-    OZONE_PLATFORM = "wayland";
+    # OZONE_PLATFORM = "wayland";
     EDITOR = "nvim";
     ANKI_WAYLAND = "1";
-    # DISABLE_QT5_COMPAT = "0";
+    DISABLE_QT5_COMPAT = "1";
     #GTK
     # GTK_THEME = "Catppuccin-Dark-Macchiato-BL-MB:dark";
   };
@@ -218,7 +218,7 @@
     nix-prefetch-git
 
     hyprland
-    xdg-desktop-portal-hyprland
+    # xdg-desktop-portal-hyprland
 
     nautilus
     nautilus-python

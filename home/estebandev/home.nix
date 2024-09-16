@@ -44,7 +44,6 @@
     obsidian
     anki-bin
     prismlauncher
-
     jq
     just
     azure-functions-core-tools
