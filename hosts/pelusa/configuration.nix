@@ -59,7 +59,7 @@
     videoDrivers = ["amdgpu"];
     windowManager.i3.enable = true;
 
-    desktopManager.gnome.enable = true;
+    #desktopManager.gnome.enable = true;
     displayManager.gdm.enable = true;
 
     # Configure keymap in X11
