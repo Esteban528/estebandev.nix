@@ -6,6 +6,7 @@
     ./eww
     ./fish
     ./wofi
+    ./wezterm
   ];
 
   programs.btop.enable = true;

@@ -47,6 +47,7 @@
     jq
     just
     azure-functions-core-tools
+    (azure-cli.withExtensions [ azure-cli.extensions.aks-preview ])
 
     #Office
     libreoffice-qt
