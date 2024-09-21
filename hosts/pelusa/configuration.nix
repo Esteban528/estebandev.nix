@@ -79,8 +79,6 @@
     wlr.enable = true;
   };
 
-
-
   # services.displayManager.sddm.package = pkgs.kdePackages.sddm;
   # services.displayManager.sddm.enable = true;
   # services.displayManager.sddm.catppuccin.assertQt6Sddm = true;
@@ -209,8 +207,8 @@
     alsa-tools
 
     libnotify
-  libaio
-  pcsclite
+    libaio
+    pcsclite
 
     mpv
     nix-prefetch-git

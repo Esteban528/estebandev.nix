@@ -132,8 +132,8 @@
   #
 
   # Default applications
-  $terminal = kitty
-  $TermFileManager = $terminal joshuto
+  $terminal = wezterm
+  $TermFileManager = $terminal start joshuto
   $fileManager = nautilus
   $menu = wofi --show drun
   $webBrowser = brave # $webBrowser = microsoft-edge-stable

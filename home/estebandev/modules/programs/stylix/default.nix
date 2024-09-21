@@ -19,7 +19,6 @@
     # base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-material-dark-hard.yaml";
 
     image = ./assets/gruvboxwlp.png;
-    
 
     cursor.package = pkgs.bibata-cursors;
     cursor.name = "Bibata-Modern-Ice";
@@ -39,7 +38,7 @@
 
   # stylix.targets.gtk.enable = true;
   # stylix.targets.hyprpaper.enable = true;
-  # stylix.targets.dunst.enable = true;
+  stylix.targets.wezterm.enable = false;
 
   # home.sessionVariables.EMPHASIS_COLOR = config.lib.stylix.colors.base0E;
 }
