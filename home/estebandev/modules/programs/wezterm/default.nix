@@ -118,7 +118,7 @@ return {
   -- Keybinds
   disable_default_key_bindings = true,
   keys = {
-    { key = "Enter", mods = "CTRL|ALT", action = wezterm.action { SplitHorizontal = { domain = "CurrentPaneDomain" } } },
+    { key = "Enter", mods = "CTRL|SHIFT", action = wezterm.action { SplitHorizontal = { domain = "CurrentPaneDomain" } } },
     { key = "Enter", mods = "CTRL", action = wezterm.action { SplitVertical = { domain = "CurrentPaneDomain" } } },
     { key = "q", mods = "CTRL|SHIFT", action = wezterm.action { CloseCurrentPane = { confirm = false } } },
     { key = "h", mods = "CTRL|SHIFT", action = wezterm.action { ActivatePaneDirection = "Left" } },
