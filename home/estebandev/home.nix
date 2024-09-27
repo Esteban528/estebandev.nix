@@ -46,6 +46,8 @@
     prismlauncher
     jq
     just
+    fastfetch
+
     azure-functions-core-tools
     (azure-cli.withExtensions [azure-cli.extensions.aks-preview])
 
