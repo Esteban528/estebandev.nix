@@ -150,8 +150,8 @@
     :halign "center"
     :spacing 4
     
-    (label :text "󰢮 ${EWW_TEMPS.AMDGPU_EDGE}°" :class "text")
-    (label :text " ${round(EWW_TEMPS.K10TEMP_TCTL, 0)}°" :class "text")
+    (label :text "󰢮 ${EWW_TEMPS.AMDGPU_EDGE}°" :class "red")
+    (label :text " ${round(EWW_TEMPS.K10TEMP_TCTL, 0)}°" :class "yellow")
     (circularProgress :value {EWW_CPU.avg} :label "󰓅 " :onclick "")
   )
 )
@@ -165,7 +165,8 @@
   ))
 
 (defvar volumeSlideStatus "false")
-(defvar volume "0")
+(defpoll network :interval "60s"
+"amixer get Master | grep '%' | head -n 1 | cut -d '[' -f 2 | cut -d '%' -f 1")
 (defwidget volume []
   (eventbox
     ; :cursor "pointer"

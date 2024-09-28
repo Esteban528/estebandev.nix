@@ -8,7 +8,7 @@
   $color4: #${colors.base0B};
   $color5: #${colors.base01};
   $color6: #${colors.base0E};
-  $color7: #${colors.base05};
+  $color7: #${colors.base0D};
   $color8: #${colors.base0C};
   $color9: #${colors.base07};
   $color10: #${colors.base02};
@@ -60,19 +60,7 @@
   }
 
   .net {
-    color: $color8;
-    padding-right: 10px;
-  }
-
-  .paru,
-  .paru-empty {
-    color: $color8;
-    padding-right: 10px;
-  }
-
-  .scratchpad,
-  .scratchpad-empty {
-    color: $color9;
+    color: $color7;
     padding-right: 10px;
   }
 
@@ -86,12 +74,8 @@
     padding: 0 8px;
   }
 
-  .onedriveButton {
-    color: $color5;
-  }
-
   .systray {
-    color: $color2;
+    color: $color7;
     border-radius: $radius;
 
     * {
@@ -107,12 +91,20 @@
     }
   }
 
-  .audio, .rightside {
+  .audio, {
     color: $color9;
     padding: 0 10px;
     border-radius: $radius;
     background-color: $background;
   }
+
+  .rightside {
+    color: $color7;
+    padding: 0 10px;
+    border-radius: $radius;
+    background-color: $background;
+  }
+
 
   .metric {
     // padding-left: 18px;
@@ -159,11 +151,15 @@
   }
 
   .red {
-    color: $color9;
+    color: $color3;
   }
 
   .orange {
     color: $color3;
+  }
+
+  .green {
+    color: $color7;
   }
 
   .text{
