@@ -99,7 +99,7 @@
       # animation = windowsOut, 1, 12, default, popin
       # animation = border, 1, 10, default,
       # animation = borderangle, 1, 12, default
-      # animation = fade, 1, 6, default
+      animation = fade, 1, 6, default
       # animation = workspaces, 1, 8, default, slidefade
   }
 
@@ -133,7 +133,7 @@
 
   # Default applications
   $terminal = wezterm
-  $TermFileManager = $terminal start joshuto
+  $TermFileManager = $terminal start yazi
   $fileManager = nautilus
   $menu = wofi --show drun
   $webBrowser = brave # $webBrowser = microsoft-edge-stable

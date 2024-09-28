@@ -131,7 +131,7 @@ return {
     { key = "j", mods = "CTRL|SHIFT|ALT", action = wezterm.action { AdjustPaneSize = { "Down", 1 } } },
     
     -- Browser-like bindings for tabbing
-    { key = "t", mods = "CTRL", action = wezterm.action { SpawnTab = "CurrentPaneDomain" } },
+    { key = "t", mods = "CTRL|SHIFT", action = wezterm.action { SpawnTab = "CurrentPaneDomain" } },
     { key = "w", mods = "CTRL|SHIFT", action = wezterm.action { CloseCurrentTab = { confirm = false } } },
     { key = "Tab", mods = "CTRL", action = wezterm.action { ActivateTabRelative = 1 } },
     { key = "Tab", mods = "CTRL|SHIFT", action = wezterm.action { ActivateTabRelative = -1 } },

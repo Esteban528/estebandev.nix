@@ -27,7 +27,8 @@
     lazygit
     zapzap
     telegram-desktop
-    joshuto
+    # joshuto
+    yazi
     evince
     filezilla
     image-roll
