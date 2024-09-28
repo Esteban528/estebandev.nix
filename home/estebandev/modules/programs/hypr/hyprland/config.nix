@@ -22,7 +22,7 @@
   exec-once = notion-app
   # exec-once = eww open bar0
   exec-once = /home/estebandev/.config/eww/scripts/start.sh
-  exec-once = eww update tasks="$(/home/estebandev/Dev/bin/Calendar/todo.sh)"
+  # exec-once = /home/estebandev/Dev/bin/Calendar/todo.sh
 
   # exec-once = gsettings set org.gnome.desktop.interface icon-theme "WhiteSur-dark"
   # exec-once = gsettings set org.gnome.desktop.interface gtk-theme "Gruvbox-Dark-hdpi-BL-MB"

@@ -78,7 +78,7 @@
   )
 )
 
-(defpoll tasks :interval "10s"  "bash ~/.config/eww/scripts/todo.sh")
+(defpoll tasks :interval "10s"  "./scripts/todo.sh")
 (defwidget todoWidget []
   (box :orientation "v"
     :class "todosContainer"
@@ -135,7 +135,7 @@
   :geometry (geometry :x "0%"
     :y "0%"
     :width "20%"
-    :height "30%"
+    ;:height "30%"
   :anchor "left top")
   :stacking "fg"
   :exclusive false
