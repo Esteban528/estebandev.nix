@@ -92,10 +92,10 @@
   }
 
   .audio, {
-    color: $color9;
+    color: $color2;
     padding: 0 10px;
     border-radius: $radius;
-    background-color: $background;
+    background-color: $foreground;
   }
 
   .rightside {
@@ -186,10 +186,17 @@
 
     .occupied {
       color: $color9;
+
+      font-weight: 700;
     }
 
     .current {
-      color: $color3;
+      color: $background;
+      background-color: $color7;
+      // padding: 1px;
+      border-radius: $radius;
+
+      font-weight: 700;
     }
   }
 
@@ -247,7 +254,7 @@
 
   .section {
     border-radius: $radius + 8;
-    margin: 0 30px;
+    // margin: 0 30px;
     margin-left: 5px;
     // padding: 15px 0;
   }
@@ -288,15 +295,13 @@
 
   .launcherSection {
     // padding: 40px;
-    padding-right: 22px;
+    //padding-right: 22px;
   }
 
   .launcher {
     // background-color: $gray;
     border-radius: $radius + 8;
-    padding: 15px;
-    margin: 15px;
-    font-size: 70px;
+    font-size: 40px;
 
     color: $color3;
 

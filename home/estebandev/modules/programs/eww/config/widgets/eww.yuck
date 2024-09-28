@@ -23,7 +23,7 @@
 
 
 (defwidget container []
-  (box :orientation "h"
+  (box :orientation "v"
     :space-evenly true
     :spacing 15
     (top)
@@ -68,7 +68,7 @@
 )
 
 (defwidget widgetCenter []
-  (box :orientation "h"
+  (box :orientation "v"
     :class "section buttonStyleWidget"
     :space-evenly false
     :valign "start"
@@ -78,7 +78,7 @@
   )
 )
 
-(defpoll tasks :interval "10s"  "bash /home/estebandev/Dev/bin/Calendar/todo.sh")
+(defpoll tasks :interval "10s"  "bash ~/.config/eww/scripts/todo.sh")
 (defwidget todoWidget []
   (box :orientation "v"
     :class "todosContainer"
@@ -89,9 +89,9 @@
 )
 
 (defwidget bottom []
-  (box :orientation "h"
-       :space-evenly true
-       :spacing 15
+  (box :orientation "v"
+       :space-evenly false
+       ;:spacing 15
        :hexpand false
        :halign "start"
     (launchers)
@@ -134,8 +134,8 @@
   :monitor 0
   :geometry (geometry :x "0%"
     :y "0%"
-    :width "40%"
-    :height "70%"
+    :width "20%"
+    :height "30%"
   :anchor "left top")
   :stacking "fg"
   :exclusive false

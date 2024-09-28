@@ -10,11 +10,7 @@ eww daemon
 # monitors=$(hyprctl monitors -j | jq '.[] | .id' | wc -l)
 
 eww open bar
-
-sleep 5
-bash $HOME/.config/scripts/volumecontrol
-sleep 5
-
+/home/estebandev/Dev/bin/Calendar/todo.sh
 # eww open bar0
 # if [ $monitors -gt 1 ]; then
 # 	for ((i = 1 ; i <= $monitors ; i++)); do

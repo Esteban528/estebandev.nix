@@ -62,7 +62,8 @@
             :class "workspace-entry"
             (label
               :class "${workspace.id == current_workspace ? "current" : ""} ${workspace.windows > 0 ? "occupied" : "empty"}"
-            :text "${workspace.id == current_workspace ? "󱓻" : ""}")
+            :text "${workspace.id}")
+            ;:text "${workspace.id == current_workspace ? "󱓻" : ""}")
           )
         )
       )
@@ -165,7 +166,7 @@
   ))
 
 (defvar volumeSlideStatus "false")
-(defpoll network :interval "60s"
+(defpoll volume :interval "60s"
 "amixer get Master | grep '%' | head -n 1 | cut -d '[' -f 2 | cut -d '%' -f 1")
 (defwidget volume []
   (eventbox
