@@ -193,7 +193,6 @@
     run
     wineWowPackages.stable
     winetricks
-    bottles-unwrapped
     lutris
     protonup-qt
     libGL
