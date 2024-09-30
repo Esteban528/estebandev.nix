@@ -48,6 +48,7 @@
     jq
     just
     fastfetch
+    shipwright
 
     azure-functions-core-tools
     (azure-cli.withExtensions [azure-cli.extensions.aks-preview])
