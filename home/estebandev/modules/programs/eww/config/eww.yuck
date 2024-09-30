@@ -167,7 +167,7 @@
 
 (defvar volumeSlideStatus "false")
 (defpoll volume :interval "60s"
-"volumecontrol")
+"bash amixer get Master | grep '%' | head -n 1 | cut -d '[' -f 2 | cut -d '%' -f 1")
 (defwidget volume []
   (eventbox
     ; :cursor "pointer"

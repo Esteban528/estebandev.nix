@@ -15,7 +15,7 @@
   # exec-once = waybar
   # exec-once = eww daemon
   # exec-once = hyprpaper
-  # exec-once = swww-daemon
+  exec-once = swww-daemon
   exec-once = hypridle
   # exec-once = discord --start-minimized
   # exec-once = vesktop --start-minimized

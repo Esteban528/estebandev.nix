@@ -14,13 +14,17 @@ in {
     xdg-desktop-portal
     # xdg-desktop-portal-gtk
 
-    hyprpaper
+    # hyprpaper
     hyprpicker
     hyprcursor
     slurp
     grim
     swww
   ];
+
+  services.hyprpaper.enable = lib.mkForce false;
+
+  # programs.swww.enable = true;
 
   wayland.windowManager.hyprland = {
     enable = true;
