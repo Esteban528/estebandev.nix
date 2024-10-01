@@ -231,7 +231,7 @@
     :y "0%"
     :width "20px"
     :height "100%"
-  :anchor "top left")
+  :anchor "top center")
   :stacking "fg"
   :exclusive true
   :focusable false
