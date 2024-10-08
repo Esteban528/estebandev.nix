@@ -170,7 +170,6 @@
     killall
     starship
     wl-clipboard
-    flameshot
     unzip
     dunst
     lsd

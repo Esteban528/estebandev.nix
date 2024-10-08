@@ -3,6 +3,7 @@
 # https://search.nixos.org/options and in the NixOS manual (`nixos-help`).
 {
   config,
+  inputs,
   lib,
   pkgs,
   ...
@@ -162,7 +163,11 @@
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
-  environment.systemPackages = with pkgs; [
+
+
+environment.systemPackages = with pkgs; [
+    inputs.umu.packages.${pkgs.system}.umu
+
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     zip
     unzip
@@ -220,10 +225,10 @@
     ripgrep
 
     gst_all_1.gstreamer
-gst_all_1.gst-plugins-base
-gst_all_1.gst-plugins-good
+    gst_all_1.gst-plugins-base
+    gst_all_1.gst-plugins-good
     gst_all_1.gst-plugins-bad
-gst_all_1.gst-plugins-ugly
+    gst_all_1.gst-plugins-ugly
     #    gst-libav
 
     (pkgs.callPackage ../../pkgs/tdf/tdf.nix {})

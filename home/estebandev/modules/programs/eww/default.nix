@@ -40,8 +40,6 @@ in {
     ".config/${dir}/scripts/widget.sh".source = "${scriptsDir}/widget.sh";
     ".config/${dir}/scripts/todo.sh".source = "${scriptsDir}/todo.sh";
 
-
-
     ".config/${dir}/eww.yuck".text = builtins.readFile ./config/eww.yuck;
     ".config/${dir}/widgets/eww.yuck".text = builtins.readFile ./config/widgets/eww.yuck;
 

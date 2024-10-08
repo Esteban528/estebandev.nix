@@ -7,18 +7,26 @@
 
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
+
+    umu = {
+      url = "git+https://github.com/Open-Wine-Components/umu-launcher/?dir=packaging\/nix&submodules=1";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = inputs @ {
+  outputs = {
     nixpkgs,
     home-manager,
     stylix,
     ...
-  }: {
+  }@ inputs : {
     formatter.x86_64-linux = nixpkgs.legacyPackages.x86_64-linux.alejandra;
     nixosConfigurations = {
       pelusa = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
+        specialArgs = {
+            inherit inputs;
+          };
         modules = [
           home-manager.nixosModules.home-manager
           ./hosts/pelusa/configuration.nix

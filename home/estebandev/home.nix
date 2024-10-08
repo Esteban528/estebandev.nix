@@ -49,6 +49,8 @@
     just
     fastfetch
     shipwright
+    bottles-unwrapped
+    protonplus
 
     azure-functions-core-tools
     (azure-cli.withExtensions [azure-cli.extensions.aks-preview])
