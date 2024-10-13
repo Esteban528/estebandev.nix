@@ -10,6 +10,7 @@
   home.packages = with pkgs; [
     neofetch
     brave
+    firefox
     vlc
     tree
     vesktop
