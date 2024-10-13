@@ -41,6 +41,7 @@
     sqlitebrowser
     onedrive
     obsidian
+    anki-bin
 
     jq
     just
