@@ -1,6 +1,6 @@
 {colors, ...}: ''
-  $background: #${colors.base01};
-  $foreground: #${colors.base00};
+  $background: #${colors.base00};
+  $foreground: #${colors.base01};
   $gray: #${colors.base02};
   $color1: #${colors.base0D};
   $color2: #${colors.base09};
@@ -41,8 +41,6 @@
 
   .clockb {
     padding: 0 14px;
-    background: $foreground;
-    border-radius: $radius;
   }
 
   .music {
@@ -69,9 +67,14 @@
   }
 
   .buttonStyle {
-    background: $foreground;
+    background: $background;
     border-radius: $radius;
     padding: 0 8px;
+
+    border: 1px solid $foreground;
+    &:hover {
+      border: 1px solid $color4;
+    }
   }
 
   .systray {
@@ -94,15 +97,11 @@
   .audio, {
     color: $color2;
     padding: 0 10px;
-    border-radius: $radius;
-    background-color: $foreground;
   }
 
   .rightside {
     color: $color7;
     padding: 0 10px;
-    border-radius: $radius;
-    background-color: $background;
   }
 
 
@@ -170,8 +169,6 @@
 
   .workspaces-widget {
     padding: 2px 10px;
-    background: $foreground;
-    border-radius: $radius;
   }
 
   .workspace-entry {
@@ -204,12 +201,14 @@
   // WIDGET
   .canva {
     margin-top: 9px;
+    margin-right: 9px;
     background-color: $background;
-    box-shadow: 1px 2px 10px $background;
     padding: 4px;
-    border-bottom: 2px solid $color1;
-    border-right: 2px solid $color1;
+    border: 2px solid $foreground;
     border-radius: $radius;
+    &:hover {
+      border: 2px solid $foreground;
+      }
   }
 
   .profileIcon {

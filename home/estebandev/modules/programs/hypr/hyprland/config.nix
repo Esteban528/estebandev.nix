@@ -59,8 +59,8 @@
   }
 
   general {
-      gaps_in = 3
-      gaps_out = 6
+      gaps_in = 6
+      gaps_out = 9
       border_size = 2
       col.active_border = rgb(${color1})
       col.inactive_border = rgb(${color2})
@@ -136,7 +136,7 @@
   $TermFileManager = $terminal start yazi
   $fileManager = nautilus
   $menu = wofi --show drun
-  $webBrowser = brave # $webBrowser = microsoft-edge-stable
+  $webBrowser = firefox # $webBrowser = microsoft-edge-stable
   $lockScreen = hyprlock
   $mainMod = SUPER
   $editor = code

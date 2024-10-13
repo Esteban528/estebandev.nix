@@ -2,12 +2,10 @@
   (box :orientation "v"
        :class "canva"
        :space-evenly true
-       :spacing 15
        ; :hexpand false
        :halign "start"
     (container)
     (bottom)
-
   )
 )
 
@@ -15,7 +13,6 @@
   (box :orientation "h"
     :class "section"
     :space-evenly true
-    :spacing 15
     (profile)
     (musicWidget)
   )
@@ -25,9 +22,8 @@
 (defwidget container []
   (box :orientation "v"
     :space-evenly true
-    :spacing 15
     (top)
-    (widgetCenter)
+    ;(widgetCenter)
   )
 )
 
@@ -90,7 +86,7 @@
 
 (defwidget bottom []
   (box :orientation "v"
-       :space-evenly false
+       :space-evenly true
        ;:spacing 15
        :hexpand false
        :halign "start"
@@ -135,7 +131,7 @@
   :geometry (geometry :x "0%"
     :y "0%"
     :width "20%"
-    ;:height "30%"
+    :height "0%"
   :anchor "left top")
   :stacking "fg"
   :exclusive false

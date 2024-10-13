@@ -54,7 +54,7 @@
 (deflisten current_workspace :initial "1" "bash ~/.config/eww/scripts/get-active-workspace")
 (defwidget workspaces []
   (eventbox :onscroll "bash ~/.config/eww/scripts/change-active-workspace {} ${current_workspace}"
-    (box :space-evenly true :class "workspaces-widget"
+    (box :space-evenly true :class "workspaces-widget buttonStyle"
       (label :text "${workspaces}${current_workspace}" :visible false)
       (for workspace in workspaces
         (eventbox :onclick "hyprctl dispatch workspace ${workspace.id}"
@@ -109,7 +109,7 @@
 (defpoll date :interval "3600s" "scripts/date-time.sh date")
 (defpoll time :interval "5s" "date +%H:%M")
 (defwidget clock []
-  (box :class "clock"
+  (box :class "clock buttonStyle"
     :orientation "h"
     :space-evenly false
     :halign "start"
@@ -158,7 +158,7 @@
 )
 
 (defwidget stray []
-  (systray :class "systray"
+  (systray :class "systray buttonStyle"
     :space-evenly false
     :halign "end"
     :spacing 5
@@ -173,7 +173,7 @@
     ; :cursor "pointer"
     :onhover "eww update volumeSlideStatus=true"
     :onhoverlost "eww update volumeSlideStatus=false"
-    (box :class "audio"
+    (box :class "audio buttonStyle"
       :orientation "h"
       :space-evenly false
       :halign "end"
