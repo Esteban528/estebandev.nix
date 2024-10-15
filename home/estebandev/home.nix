@@ -63,6 +63,7 @@
     hunspellDicts.es_ES
     
     gcalcli
+    conky
   ];
   home.stateVersion = "23.11";
 }
