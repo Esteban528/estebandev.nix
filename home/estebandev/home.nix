@@ -61,6 +61,8 @@
     hunspell
     hunspellDicts.es_CO
     hunspellDicts.es_ES
+    
+    gcalcli
   ];
   home.stateVersion = "23.11";
 }
