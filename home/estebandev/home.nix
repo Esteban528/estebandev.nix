@@ -63,7 +63,7 @@
     hunspellDicts.es_ES
     
     gcalcli
-    conky
+    mission-center
   ];
   home.stateVersion = "23.11";
 }
