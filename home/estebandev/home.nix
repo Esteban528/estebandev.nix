@@ -28,8 +28,8 @@
     lazygit
     zapzap
     telegram-desktop
-    # joshuto
-    yazi
+    joshuto
+    # yazi
     evince
     filezilla
     image-roll
@@ -64,6 +64,7 @@
     
     gcalcli
     mission-center
+    rustc
   ];
   home.stateVersion = "23.11";
 }

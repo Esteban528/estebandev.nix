@@ -59,9 +59,9 @@
   }
 
   general {
-      gaps_in = 6
-      gaps_out = 9
-      border_size = 2
+      gaps_in = 2
+      gaps_out = 4
+      border_size = 1
       col.active_border = rgb(${color1})
       col.inactive_border = rgb(${color2})
 
@@ -73,7 +73,7 @@
   }
 
   decoration {
-      rounding = 1
+      rounding = 0
 
       blur {
           enabled = false
@@ -83,7 +83,7 @@
           vibrancy = 0.1696
       }
 
-      shadow_range = 17
+      shadow_range = 5
       shadow_render_power = 5
       col.shadow = rgba(00000099)
       inactive_opacity = 0.98
@@ -133,7 +133,7 @@
 
   # Default applications
   $terminal = wezterm
-  $TermFileManager = $terminal start yazi
+  $TermFileManager = $terminal start joshuto 
   $fileManager = nautilus
   $menu = wofi --show drun
   $webBrowser = firefox # $webBrowser = microsoft-edge-stable

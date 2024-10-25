@@ -24,7 +24,7 @@
     background-color: $background;
     box-shadow: 1px 2px 10px $background;
     padding: 4px;
-    border-bottom: 2px solid $color1;
+    border-bottom: 1px solid $color1;
     //border-radius: $radius;
   }
 
