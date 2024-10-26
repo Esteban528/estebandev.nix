@@ -53,8 +53,8 @@
     bottles-unwrapped
     protonplus
 
-    azure-functions-core-tools
-    (azure-cli.withExtensions [azure-cli.extensions.aks-preview])
+    # azure-functions-core-tools
+    # (azure-cli.withExtensions [azure-cli.extensions.aks-preview])
 
     #Office
     libreoffice-qt

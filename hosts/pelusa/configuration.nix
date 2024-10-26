@@ -6,6 +6,7 @@
   inputs,
   lib,
   pkgs,
+  pkgs-staging-next,
   ...
 }: {
   imports = [
@@ -234,6 +235,18 @@ environment.systemPackages = with pkgs; [
     (pkgs.callPackage ../../pkgs/tdf/tdf.nix {})
   ];
 
+  system.replaceRuntimeDependencies = [
+    # {
+    #   original = with pkgs; [
+    #     (azure-cli.withExtensions [ azure-cli.extensions.aks-preview ])
+    #   ];
+    #
+    #   replacement = with pkgs-staging-next; [
+    #     (azure-cli.withExtensions [ azure-cli.extensions.aks-preview ])
+    #   ];
+    # }
+  ];
+
   environment = {
     pathsToLink = [
       "/share/nautilus-python/extensions"
@@ -262,7 +275,7 @@ environment.systemPackages = with pkgs; [
   fonts.packages = with pkgs; [
     inter
     noto-fonts
-    noto-fonts-cjk
+    noto-fonts-cjk-sans
     noto-fonts-emoji
     liberation_ttf
     fira-code-symbols
