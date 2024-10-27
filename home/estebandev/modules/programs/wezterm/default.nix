@@ -104,14 +104,14 @@ in {
         bold_brightens_ansi_colors = true,
 
         -- Window padding
-        window_padding = { left = 2, right = 2, top = 1, bottom = 1 },
+        window_padding = { left = 8, right = 8, top = 1, bottom = 0 },
 
         -- Inactive pane brightness and saturation
         inactive_pane_hsb = { saturation = 1.0, brightness = 1.0 },
 
         -- Tab bar options
         enable_tab_bar = true,
-        tab_bar_at_bottom = true,
+        tab_bar_at_bottom = false,
         hide_tab_bar_if_only_one_tab = true,
         show_tab_index_in_tab_bar = false,
 
