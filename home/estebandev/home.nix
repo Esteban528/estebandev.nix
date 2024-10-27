@@ -65,6 +65,7 @@
     gcalcli
     mission-center
     rustc
+    nailgun
   ];
   home.stateVersion = "23.11";
 }
