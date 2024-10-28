@@ -45,6 +45,7 @@
 
     jq
     just
+    rustc
   ];
   programs.bat.enable = true;
   home.stateVersion = "23.11";
