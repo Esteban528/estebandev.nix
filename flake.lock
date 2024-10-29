@@ -195,11 +195,11 @@
     },
     "nixpkgs-staging-next": {
       "locked": {
-        "lastModified": 1730026222,
-        "narHash": "sha256-kiPB3J/X3kCKgVIjr6tYtbyW2EHQitsiU26pLaKQVyE=",
+        "lastModified": 1730203742,
+        "narHash": "sha256-71TMYkhqQ9QpcfEe86Sw1iT8YsabbY8r/4CgdmCdbNA=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "cae0fd41a2cefb657e5f7e9246a27c4d5f926c12",
+        "rev": "66b454af8644280582f6395f8da29dc0658cee96",
         "type": "github"
       },
       "original": {
@@ -336,11 +336,11 @@
       },
       "locked": {
         "dir": "packaging/nix",
-        "lastModified": 1729978972,
-        "narHash": "sha256-Zox0iAi4CRPn4rxrhOetFFZ2jcSipe8tGD8nMTgcjhE=",
+        "lastModified": 1730165291,
+        "narHash": "sha256-XPsXlLuvvaRs7y6tiJR+GQmqHVuLazqN0PCUPdF8xwE=",
         "ref": "refs/heads/main",
-        "rev": "72499f349ca81cb2838eced9d7c465b2cf71c4a2",
-        "revCount": 825,
+        "rev": "2d91dc5e98a147784eeb72f451b8cd28042ee241",
+        "revCount": 827,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/Open-Wine-Components/umu-launcher/?dir=packaging/nix"
