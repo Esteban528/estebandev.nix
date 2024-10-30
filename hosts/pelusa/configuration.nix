@@ -231,20 +231,16 @@
     gst_all_1.gst-plugins-ugly
     #    gst-libav
 
+    # azure-cli
     (pkgs.callPackage ../../pkgs/tdf/tdf.nix {})
   ];
 
-  system.replaceRuntimeDependencies = [
-    # {
-    #   original = with pkgs; [
-    #     (azure-cli.withExtensions [ azure-cli.extensions.aks-preview ])
-    #   ];
-    #
-    #   replacement = with pkgs-staging-next; [
-    #     (azure-cli.withExtensions [ azure-cli.extensions.aks-preview ])
-    #   ];
-    # }
-  ];
+  # system.replaceDependencies.replacements = [
+  #   {
+  #     original = pkgs.azure-cli;
+  #     replacement =  pkgs-staging-next.azure-cli;
+  #   }
+  # ];
 
   environment = {
     pathsToLink = [
