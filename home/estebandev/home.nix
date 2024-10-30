@@ -66,6 +66,8 @@
     mission-center
     rustc
     nailgun
+    spotify
+    spicetify-cli
   ];
   home.stateVersion = "23.11";
 }
