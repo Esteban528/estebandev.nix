@@ -61,7 +61,7 @@
     hunspell
     hunspellDicts.es_CO
     hunspellDicts.es_ES
-    
+
     gcalcli
     mission-center
     rustc

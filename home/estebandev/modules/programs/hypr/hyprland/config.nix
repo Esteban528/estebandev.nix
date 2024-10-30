@@ -133,7 +133,7 @@
 
   # Default applications
   $terminal = wezterm
-  $TermFileManager = $terminal start joshuto 
+  $TermFileManager = $terminal start joshuto
   $fileManager = nautilus
   $menu = wofi --show drun
   $webBrowser = firefox # $webBrowser = microsoft-edge-stable

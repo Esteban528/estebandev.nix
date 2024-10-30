@@ -21,18 +21,19 @@
     home-manager,
     stylix,
     ...
-  }@ inputs : {
+  } @ inputs: {
     formatter.x86_64-linux = nixpkgs.legacyPackages.x86_64-linux.alejandra;
     system = "x86_64-linux";
-      pkgs-staging-next = import nixpkgs-staging-next {
-    };
+    pkgs-staging-next =
+      import nixpkgs-staging-next {
+      };
     nixosConfigurations = {
       pelusa = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         specialArgs = {
-            inherit nixpkgs-staging-next;
-            inherit inputs;
-          };
+          inherit nixpkgs-staging-next;
+          inherit inputs;
+        };
         modules = [
           home-manager.nixosModules.home-manager
           ./hosts/pelusa/configuration.nix
