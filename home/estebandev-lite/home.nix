@@ -13,31 +13,22 @@
     tree
     vesktop
     nautilus
-    nitch
     playerctl
     btop
     htop
     dig
-    spotube
     gimp
-    inkscape
     lazygit
     zapzap
     telegram-desktop
     joshuto
     evince
-    filezilla
-    image-roll
     kitty
     gedit
-    ktorrent
     maven
-    vscode
     postman
     dbeaver-bin
     nautilus-open-any-terminal
-    zed-editor
-    sqlitebrowser
     onedrive
     obsidian
     anki-bin
