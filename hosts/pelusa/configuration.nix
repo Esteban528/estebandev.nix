@@ -7,6 +7,7 @@
   lib,
   pkgs,
   pkgs-staging-next,
+  pkgs-stable,
   ...
 }: {
   imports = [

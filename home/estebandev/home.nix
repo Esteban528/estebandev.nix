@@ -2,8 +2,14 @@
   pkgs,
   lib,
   config,
+  pkgs-stable,
   ...
-}: {
+}: 
+let 
+  stablePackages =  with pkgs-stable;[
+    azure-cli
+  ];
+in{
   imports = [./modules];
   home.username = "estebandev";
   home.homeDirectory = "/home/estebandev";
@@ -17,6 +23,8 @@
     nitch
     playerctl
     btop
+    nautilus
+    nautilus-python
     htop
     wezterm
     dig
@@ -69,6 +77,6 @@
     spotify
     spicetify-cli
     ps_mem
-  ];
+  ] ++ stablePackages;
   home.stateVersion = "23.11";
 }
