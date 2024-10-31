@@ -68,6 +68,7 @@
     nailgun
     spotify
     spicetify-cli
+    ps_mem
   ];
   home.stateVersion = "23.11";
 }

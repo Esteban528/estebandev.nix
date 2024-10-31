@@ -59,9 +59,9 @@
   }
 
   general {
-      gaps_in = 2
-      gaps_out = 4
-      border_size = 1
+      gaps_in = 0
+      gaps_out = 0
+      border_size = 2
       col.active_border = rgb(${color1})
       col.inactive_border = rgb(${color2})
 
@@ -83,10 +83,9 @@
           vibrancy = 0.1696
       }
 
-      shadow_range = 5
-      shadow_render_power = 5
+      shadow_range = 0
+      shadow_render_power = 0
       col.shadow = rgba(00000099)
-      inactive_opacity = 0.98
   }
 
   animations {
