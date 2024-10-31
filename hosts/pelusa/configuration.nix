@@ -9,7 +9,13 @@
   pkgs-staging-next,
   pkgs-stable,
   ...
-}: {
+}:let 
+  unstablePkgs =  with pkgs;[
+    inputs.umu.packages.${pkgs.system}.umu
+    neovim
+    steam
+  ];
+in{
   imports = [
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
@@ -166,9 +172,7 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
 
-  environment.systemPackages = with pkgs; [
-    inputs.umu.packages.${pkgs.system}.umu
-
+  environment.systemPackages = with pkgs-stable; [
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     zip
     unzip
@@ -177,11 +181,9 @@
     gcc
     cargo
     wget
-    neovim
     git
     wayland
     killall
-    starship
     wl-clipboard
     unzip
     lsd
@@ -189,7 +191,6 @@
     socat
     python3
     docker_27
-    steam
     fnm
     jdk17
     # wineWowPackages.minimal
@@ -220,9 +221,6 @@
 
     hyprland
     # xdg-desktop-portal-hyprland
-
-    nautilus
-    nautilus-python
     ripgrep
 
     gst_all_1.gstreamer
@@ -234,7 +232,7 @@
 
     # azure-cli
     (pkgs.callPackage ../../pkgs/tdf/tdf.nix {})
-  ];
+  ] ++ unstablePkgs;
 
   # system.replaceDependencies.replacements = [
   #   {

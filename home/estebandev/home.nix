@@ -8,12 +8,20 @@
 let 
   stablePackages =  with pkgs-stable;[
     azure-cli
+
+    (pkgs-stable.python311.withPackages (pypi:
+          with pypi; [
+            #add your python libraries here
+    ]))
   ];
 in{
   imports = [./modules];
   home.username = "estebandev";
   home.homeDirectory = "/home/estebandev";
+
+
   home.packages = with pkgs; [
+    starship
     neofetch
     brave
     firefox
