@@ -55,7 +55,7 @@ in {
       local font_name = "Jetbrains Mono NerdFont"
 
       return {
-        default_prog = { "fish" },
+        default_prog = { "bash" },
 
         -- OpenGL for GPU acceleration, WebGPU for better performance (debe estar en minúscula)
         front_end = "WebGpu",
@@ -72,7 +72,7 @@ in {
         -- Cursor style
         default_cursor_style = "BlinkingUnderline",
 
-        window_background_opacity = 0.9,
+        --window_background_opacity = 0.95,
 
         -- Font configuration
         font = font_with_fallback(font_name),
