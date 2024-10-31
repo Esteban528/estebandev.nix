@@ -9,7 +9,6 @@
   home.homeDirectory = "/home/estebandev";
   home.packages = with pkgs; [
     neofetch
-    brave
     vlc
     tree
     vesktop
@@ -46,6 +45,7 @@
     jq
     just
     rustc
+    firefox
   ];
   programs.bat.enable = true;
   home.stateVersion = "23.11";

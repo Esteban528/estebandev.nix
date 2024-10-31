@@ -118,7 +118,7 @@
   $TermFileManager = $terminal joshuto
   $fileManager = nautilus
   $menu = wofi --show drun
-  $webBrowser = brave # $webBrowser = microsoft-edge-stable
+  $webBrowser = file # $webBrowser = microsoft-edge-stable
   $lockScreen = hyprlock
   $mainMod = SUPER
   $editor = code

@@ -211,7 +211,9 @@
     hunspellDicts.es_CO
     hunspellDicts.es_ES
 
-    (pkgs.callPackage ../../pkgs/tdf/tdf.nix {})
+    # (pkgs.callPackage ../../pkgs/tdf/tdf.nix {})
+    
+    ripgrep
   ];
 
   programs.nix-ld.enable = true;
@@ -232,7 +234,7 @@
   fonts.packages = with pkgs; [
     inter
     noto-fonts
-    noto-fonts-cjk
+    noto-fonts-cjk-sans
     noto-fonts-emoji
     liberation_ttf
     fira-code-symbols

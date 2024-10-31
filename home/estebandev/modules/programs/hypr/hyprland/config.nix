@@ -136,7 +136,7 @@
   $TermFileManager = $terminal start joshuto
   $fileManager = nautilus
   $menu = wofi --show drun
-  $webBrowser = firefox # $webBrowser = microsoft-edge-stable
+  $webBrowser = firefox 
   $lockScreen = hyprlock
   $mainMod = SUPER
   $editor = code
