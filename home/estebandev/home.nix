@@ -8,17 +8,11 @@
 let 
   stablePackages =  with pkgs-stable;[
     azure-cli
-
-    (pkgs-stable.python311.withPackages (pypi:
-          with pypi; [
-            #add your python libraries here
-    ]))
   ];
 in{
   imports = [./modules];
   home.username = "estebandev";
   home.homeDirectory = "/home/estebandev";
-
 
   home.packages = with pkgs; [
     starship
@@ -36,7 +30,7 @@ in{
     htop
     wezterm
     dig
-    spotube
+    # spotube
     gimp-with-plugins
     inkscape
     mpc-cli
@@ -81,9 +75,8 @@ in{
     gcalcli
     mission-center
     rustc
-    nailgun
+    # nailgun
     spotify
-    spicetify-cli
     ps_mem
   ] ++ stablePackages;
   home.stateVersion = "23.11";
