@@ -7,7 +7,6 @@
     ./fish
     ./wofi
     ./wezterm
-    ./bash
     # ./nh
   ];
 

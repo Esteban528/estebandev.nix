@@ -16,10 +16,12 @@
     steam
   ];
 in{
+
   imports = [
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
     ./hardware.nix
+    ./shell
   ];
 
   # Use the systemd-boot EFI boot loader.
