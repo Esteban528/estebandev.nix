@@ -8,6 +8,7 @@
 let 
   stablePackages =  with pkgs-stable;[
     azure-cli
+    prismlauncher
   ];
 in{
   imports = [./modules];
@@ -55,7 +56,6 @@ in{
     onedrive
     obsidian
     anki-bin
-    prismlauncher
     jq
     just
     fastfetch
@@ -78,6 +78,7 @@ in{
     # nailgun
     spotify
     ps_mem
+    md_cat
   ] ++ stablePackages;
   home.stateVersion = "23.11";
 }
