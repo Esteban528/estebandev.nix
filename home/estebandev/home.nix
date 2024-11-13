@@ -78,7 +78,8 @@ in{
     # nailgun
     spotify
     ps_mem
-    md_cat
+    mdcat
+    hyprshot
   ] ++ stablePackages;
   home.stateVersion = "23.11";
 }
