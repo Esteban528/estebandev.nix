@@ -8,7 +8,10 @@
 let 
   stablePackages =  with pkgs-stable;[
     azure-cli
+    azure-functions-core-tools
     prismlauncher
+    sshfs
+    maven
   ];
 in{
   imports = [./modules];
@@ -47,7 +50,6 @@ in{
     kitty
     gedit
     ktorrent
-    maven
     vscode
     postman
     dbeaver-bin
