@@ -3,6 +3,7 @@
   pkgs,
   lib,
   config,
+  pkgs-stable,
   ...
 }: let
   enable_animations = "yes";
@@ -27,6 +28,8 @@ in {
   wayland.windowManager.hyprland = {
     enable = true;
     systemd.enable = true;
+    xwayland.enable = true;
+
     extraConfig = import ./config.nix {
       inherit enable_animations color1 color2;
     };

@@ -83,9 +83,9 @@
           vibrancy = 0.1696
       }
 
-      shadow_range = 0
-      shadow_render_power = 0
-      col.shadow = rgba(00000099)
+      # shadow_range = 0
+      # shadow_render_power = 0
+      # col.shadow = rgba(00000099)
   }
 
   animations {

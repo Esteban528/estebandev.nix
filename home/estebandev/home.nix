@@ -12,6 +12,11 @@ let
     prismlauncher
     sshfs
     maven
+    rustc
+    ps_mem
+    mdcat
+    dbeaver-bin
+    obs-studio
   ];
 in{
   imports = [./modules];
@@ -29,16 +34,11 @@ in{
     nitch
     playerctl
     btop
-    nautilus
-    nautilus-python
     htop
     wezterm
     dig
     # spotube
-    gimp-with-plugins
-    inkscape
     mpc-cli
-    obs-studio
     lazygit
     zapzap
     telegram-desktop
@@ -52,17 +52,12 @@ in{
     ktorrent
     vscode
     postman
-    dbeaver-bin
-    zed-editor
-    sqlitebrowser
     onedrive
     obsidian
     anki-bin
     jq
     just
     fastfetch
-    shipwright
-    bottles-unwrapped
     protonplus
 
     # azure-functions-core-tools
@@ -74,13 +69,8 @@ in{
     hunspellDicts.es_CO
     hunspellDicts.es_ES
 
-    gcalcli
-    mission-center
-    rustc
     # nailgun
     spotify
-    ps_mem
-    mdcat
     hyprshot
   ] ++ stablePackages;
   home.stateVersion = "23.11";

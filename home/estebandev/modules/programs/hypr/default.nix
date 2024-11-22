@@ -1,3 +1,3 @@
 {pkgs, ...}: {
-  imports = [./hyprland ./hyprlock];
+  imports = [./hyprland ];
 }
