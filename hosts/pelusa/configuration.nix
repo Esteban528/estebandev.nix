@@ -243,6 +243,8 @@ in{
 
     # azure-cli
     (pkgs.callPackage ../../pkgs/tdf/tdf.nix {})
+    libGL
+    libGLU
   ] ++ unstablePkgs;
 
   # system.replaceDependencies.replacements = [
