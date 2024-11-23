@@ -24,6 +24,7 @@ in{
   home.homeDirectory = "/home/estebandev";
 
   home.packages = with pkgs; [
+    nautilus
     starship
     neofetch
     brave

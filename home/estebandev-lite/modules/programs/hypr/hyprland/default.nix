@@ -1,4 +1,3 @@
-# took reference from rxyhn's dotfiles.
 {
   pkgs,
   lib,
@@ -32,6 +31,14 @@ in {
 
     extraConfig = import ./config.nix {
       inherit enable_animations color1 color2;
+    };
+  };
+
+  gtk = {
+    enable = true;
+    iconTheme = {
+      package = pkgs.colloid-icon-theme;
+      name = "Colloid";
     };
   };
 }

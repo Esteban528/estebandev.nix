@@ -94,11 +94,6 @@ in{
     xwayland.enable = true;
   };
 
-  xdg.portal = {
-    enable = true;
-    wlr.enable = true;
-  };
-
   # services.displayManager.sddm.package = pkgs.kdePackages.sddm;
   # services.displayManager.sddm.enable = true;
   # services.displayManager.sddm.catppuccin.assertQt6Sddm = true;
