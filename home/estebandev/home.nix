@@ -43,8 +43,8 @@ in{
     lazygit
     zapzap
     telegram-desktop
-    joshuto
-    # yazi
+    # joshuto
+    yazi
     evince
     filezilla
     image-roll

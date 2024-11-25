@@ -132,7 +132,7 @@
 
   # Default applications
   $terminal = wezterm
-  $TermFileManager = $terminal start joshuto
+  $TermFileManager = $terminal start yazi
   $fileManager = nautilus
   $menu = wofi --show drun
   $webBrowser = brave
