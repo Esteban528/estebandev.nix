@@ -17,6 +17,7 @@ let
     mdcat
     dbeaver-bin
     obs-studio
+    jdk11
   ];
 in{
   imports = [./modules];
