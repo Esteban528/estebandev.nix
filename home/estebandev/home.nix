@@ -16,7 +16,6 @@ let
     ps_mem
     mdcat
     dbeaver-bin
-    obs-studio
     jdk11
   ];
 in{
@@ -25,6 +24,7 @@ in{
   home.homeDirectory = "/home/estebandev";
 
   home.packages = with pkgs; [
+    obs-studio
     nautilus
     starship
     neofetch
