@@ -73,6 +73,11 @@
       };
       laptop = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
+        specialArgs = {
+          inherit nixpkgs-staging-next;
+          inherit inputs;
+          inherit pkgs-stable;
+        };
         modules = [
           home-manager.nixosModules.home-manager
           ./hosts/laptop/configuration.nix
@@ -90,7 +95,10 @@
 
             # Optionally, use home-manager.extraSpecialArgs to pass
             # arguments to home.nix
-            home-manager.extraSpecialArgs = {inherit inputs;};
+            home-manager.extraSpecialArgs = {
+                inherit inputs;
+                inherit pkgs-stable;
+              };
           }
         ];
       };

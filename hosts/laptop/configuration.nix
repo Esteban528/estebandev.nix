@@ -5,6 +5,7 @@
   config,
   lib,
   pkgs,
+  pkgs-stable,
   ...
 }: {
   imports = [
@@ -153,6 +154,8 @@
     ];
   };
 
+  virtualisation.waydroid.enable = true;
+
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
@@ -172,15 +175,12 @@
     wl-clipboard
     unzip
     dunst
-    lsd
-    bat
     socat
     python3
     docker_27
     fnm
     jdk17
     run
-    libGL
     file
 
     #Audio
@@ -214,6 +214,8 @@
     # (pkgs.callPackage ../../pkgs/tdf/tdf.nix {})
     
     ripgrep
+    upower
+    acpi
   ];
 
   programs.nix-ld.enable = true;

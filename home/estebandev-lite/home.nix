@@ -2,8 +2,14 @@
   pkgs,
   lib,
   config,
+  pkgs-stable,
   ...
-}: {
+}: 
+let 
+  stablePackages =  with pkgs-stable;[
+  ];
+in{
+
   imports = [./modules];
   home.username = "estebandev";
   home.homeDirectory = "/home/estebandev";
@@ -21,7 +27,7 @@
     lazygit
     zapzap
     telegram-desktop
-    joshuto
+    yazi 
     evince
     kitty
     gedit
@@ -39,7 +45,7 @@
     firefox
     spotify
 
-  ];
+  ] ++ stablePackages;
   programs.bat.enable = true;
   home.stateVersion = "23.11";
 }

@@ -5,7 +5,7 @@
     ./hypr
     ./fish
     ./wofi
-    ./waybar
+    # ./waybar
   ];
 
   programs.btop.enable = true;

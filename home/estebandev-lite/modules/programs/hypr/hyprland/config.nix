@@ -11,8 +11,8 @@
 
   exec-once = dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP # for XDPH
   exec-once = systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP # for XDPH
-  exec-once = etc/xdg/autostart/polkit-gnome-authentication-agent-1.desktop
-  exec-once = waybar
+ # exec-once = etc/xdg/autostart/polkit-gnome-authentication-agent-1.desktop
+ # exec-once = waybar
   exec-once = hypridle
 
   # exec-once = gsettings set org.gnome.desktop.interface icon-theme "WhiteSur-dark"
@@ -42,12 +42,13 @@
       kb_rules =
 
       follow_mouse = 1
+      sensitivity = 0.6 
   }
 
   general {
-      gaps_in = 6
-      gaps_out = 12
-      border_size = 2
+      gaps_in = 1
+      gaps_out = 1
+      border_size = 1
       col.active_border = rgb(${color1})
       col.inactive_border = rgb(${color2})
 
@@ -59,7 +60,7 @@
   }
 
   decoration {
-      rounding = 2
+      rounding = 1
 
       blur {
           enabled = false
@@ -115,10 +116,10 @@
 
   # Default applications
   $terminal = kitty
-  $TermFileManager = $terminal joshuto
+  $TermFileManager = $terminal yazi
   $fileManager = nautilus
   $menu = wofi --show drun
-  $webBrowser = file # $webBrowser = microsoft-edge-stable
+  $webBrowser = firefox # $webBrowser = microsoft-edge-stable
   $lockScreen = hyprlock
   $mainMod = SUPER
   $editor = code
