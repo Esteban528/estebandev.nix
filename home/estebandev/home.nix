@@ -25,6 +25,7 @@ in{
   home.homeDirectory = "/home/estebandev";
 
   home.packages = with pkgs; [
+    thunderbird
     obs-studio
     nautilus
     starship
