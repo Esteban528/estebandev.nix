@@ -236,7 +236,7 @@ in{
     gst_all_1.gst-plugins-ugly
     #    gst-libav
 
-    # azure-cli
+    openssl
     (pkgs.callPackage ../../pkgs/tdf/tdf.nix {})
     libGL
     libGLU

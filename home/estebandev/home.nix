@@ -17,6 +17,7 @@ let
     mdcat
     dbeaver-bin
     jdk11
+    libsecret
   ];
 in{
   imports = [./modules];
