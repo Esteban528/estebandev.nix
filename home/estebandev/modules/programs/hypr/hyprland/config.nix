@@ -26,6 +26,7 @@
 
   # exec-once = gsettings set org.gnome.desktop.interface icon-theme "WhiteSur-dark"
   # exec-once = gsettings set org.gnome.desktop.interface gtk-theme "Gruvbox-Dark-hdpi-BL-MB"
+  exec-once = thunderbird
 
   # __   __        ___    __
   #/  ` /  \ |\ | |__  | / _`
@@ -37,16 +38,15 @@
   monitor=DP-1,1280x720@60,1920x100,1
   # monitor=DP-1,1280x720@60,1920x0,1,transform,1
 
-  workspace=1,monitor:HDMI-A-2
-  workspace=2,monitor:HDMI-A-2
-  workspace=3,monitor:HDMI-A-2
-  workspace=4,monitor:HDMI-A-2
-  workspace=5,monitor:HDMI-A-2
-  workspace=6,monitor:HDMI-A-2
-  workspace=7,monitor:HDMI-A-2
-  workspace=8,monitor:DP-1
-  workspace=9,monitor:DP-1, gapsin:0, gapsout:0, border:false, decorate:true
-  workspace=10,monitor:DP-1,rounding:false, decorate:false, gapsin:0, gapsout:0, border:false, decorate:false
+  workspace=1,
+  workspace=2,
+  workspace=3,
+  workspace=4,
+  workspace=5,
+  workspace=6,
+  workspace=7,
+  workspace=8,
+  workspace=9,
 
   input {
       kb_layout = latam
@@ -125,6 +125,8 @@
   windowrule=float,^(org.gnome.Nautilus)$
   windowrulev2 = size 40% 50%,class:(org.gnome.Nautilus),
   windowrulev2 = move 50% 30%,class:(org.gnome.Nautilus),
+  windowrulev2 = move workspace 8,class:(thunderbird) 
+
   #      ___      __          __   __
   #|__/ |__  \ / |__) | |\ | |  \ /__`
   #|  \ |___  |  |__) | | \| |__/ .__/
