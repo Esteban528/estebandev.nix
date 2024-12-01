@@ -37,8 +37,8 @@ in {
   gtk = {
     enable = true;
     iconTheme = {
-      package = pkgs.colloid-icon-theme;
-      name = "Colloid";
+      package = pkgs.mate-icon-theme-faenza;
+      name = "Faenza";
     };
   };
 }

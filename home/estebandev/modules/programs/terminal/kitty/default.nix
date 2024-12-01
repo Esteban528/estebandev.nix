@@ -5,7 +5,7 @@
   ...
 }: {
   programs.kitty = {
-    enable = true;
+    enable = false;
     # font.name = lib.mkForce "FiraCode Nerd Font";
     settings = {
       confirm_os_window_close = 0;

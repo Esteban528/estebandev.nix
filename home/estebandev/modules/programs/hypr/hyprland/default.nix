@@ -29,8 +29,18 @@ in {
   wayland.windowManager.hyprland = {
     enable = true;
     systemd.enable = true;
+    xwayland.enable = true;
     extraConfig = import ./config.nix {
       inherit enable_animations color1 color2;
+    };
+  };
+
+
+  gtk = {
+    enable = true;
+    iconTheme = {
+      package = pkgs.mate.mate-icon-theme-faenza;
+      name = "faenza";
     };
   };
 }

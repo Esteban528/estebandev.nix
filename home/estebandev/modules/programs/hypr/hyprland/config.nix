@@ -33,20 +33,17 @@
   #\__, \__/ | \| |    | \__>
   #
 
-  # monitor=eDP-1,1920x1080,0x0,1
   monitor=HDMI-A-2,1920x1080@75,0x0,1
-  monitor=DP-1,1280x720@60,1920x100,1
-  # monitor=DP-1,1280x720@60,1920x0,1,transform,1
 
-  workspace=1,
-  workspace=2,
-  workspace=3,
-  workspace=4,
-  workspace=5,
-  workspace=6,
-  workspace=7,
-  workspace=8,
-  workspace=9,
+  # workspace=1,
+  # workspace=2,
+  # workspace=3,
+  # workspace=4,
+  # workspace=5,
+  # workspace=6,
+  # workspace=7,
+  # workspace=8,
+  # workspace=9,
 
   input {
       kb_layout = latam

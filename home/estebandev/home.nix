@@ -25,6 +25,8 @@ in{
   home.homeDirectory = "/home/estebandev";
 
   home.packages = with pkgs; [
+    alacritty
+    tmux
     thunderbird
     obs-studio
     nautilus
@@ -51,7 +53,6 @@ in{
     evince
     filezilla
     image-roll
-    kitty
     gedit
     ktorrent
     vscode

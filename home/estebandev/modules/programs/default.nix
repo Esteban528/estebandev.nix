@@ -1,16 +1,14 @@
 {pkgs, ...}: {
   imports = [
     ./stylix
-    ./kitty
     ./hypr
     ./eww
     ./fish
     ./wofi
-    ./wezterm
+    ./terminal
     # ./nh
   ];
 
   programs.btop.enable = true;
   programs.htop.enable = true;
-  programs.joshuto.enable = true;
 }
