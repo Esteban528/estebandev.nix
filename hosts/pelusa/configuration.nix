@@ -9,14 +9,13 @@
   pkgs-staging-next,
   pkgs-stable,
   ...
-}:let 
-  unstablePkgs =  with pkgs;[
+}: let
+  unstablePkgs = with pkgs; [
     inputs.umu.packages.${pkgs.system}.umu
     neovim
     steam
   ];
-in{
-
+in {
   imports = [
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
@@ -178,69 +177,71 @@ in{
   # List packages installed in system profile. To search, run:
   # $ nix search wget
 
-  environment.systemPackages = with pkgs-stable; [
-    vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-    zip
-    unzip
-    unar
-    bash
-    gcc
-    cargo
-    wget
-    git
-    wayland
-    killall
-    wl-clipboard
-    unzip
-    lsd
-    bat
-    socat
-    python3
-    docker_27
-    fnm
-    jdk17
-    # wineWowPackages.minimal
-    #wineWowPackages.full
-    vmware-workstation
-    linuxKernel.packages.linux_6_6.vmware
-    run
-    wineWowPackages.stable
-    winetricks
-    lutris
-    protonup-qt
-    libGL
-    file
-    mtpfs
-    simple-mtpfs
+  environment.systemPackages = with pkgs-stable;
+    [
+      vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+      zip
+      unzip
+      unar
+      bash
+      gcc
+      cargo
+      wget
+      git
+      wayland
+      killall
+      wl-clipboard
+      unzip
+      lsd
+      bat
+      socat
+      python3
+      docker_27
+      fnm
+      jdk17
+      # wineWowPackages.minimal
+      #wineWowPackages.full
+      vmware-workstation
+      linuxKernel.packages.linux_6_6.vmware
+      run
+      wineWowPackages.stable
+      winetricks
+      lutris
+      protonup-qt
+      libGL
+      file
+      mtpfs
+      simple-mtpfs
 
-    #Audio
-    alsa-lib
-    alsa-utils
-    alsa-tools
+      #Audio
+      alsa-lib
+      alsa-utils
+      alsa-tools
 
-    libnotify
-    libaio
-    pcsclite
+      libnotify
+      libaio
+      pcsclite
 
-    mpv
-    nix-prefetch-git
+      mpv
+      nix-prefetch-git
 
-    hyprland
-    # xdg-desktop-portal-hyprland
-    ripgrep
+      hyprland
+      # xdg-desktop-portal-hyprland
+      ripgrep
 
-    gst_all_1.gstreamer
-    gst_all_1.gst-plugins-base
-    gst_all_1.gst-plugins-good
-    gst_all_1.gst-plugins-bad
-    gst_all_1.gst-plugins-ugly
-    #    gst-libav
+      gst_all_1.gstreamer
+      gst_all_1.gst-plugins-base
+      gst_all_1.gst-plugins-good
+      gst_all_1.gst-plugins-bad
+      gst_all_1.gst-plugins-ugly
+      #    gst-libav
 
-    openssl
-    (pkgs.callPackage ../../pkgs/tdf/tdf.nix {})
-    libGL
-    libGLU
-  ] ++ unstablePkgs;
+      openssl
+      (pkgs.callPackage ../../pkgs/tdf/tdf.nix {})
+      libGL
+      libGLU
+    ]
+    ++ unstablePkgs;
 
   # system.replaceDependencies.replacements = [
   #   {
@@ -337,7 +338,7 @@ in{
   services.openssh.enable = true;
 
   # Open ports in the firewall.
-  networking.firewall.allowedTCPPorts = [ 4200 8080 ];
+  networking.firewall.allowedTCPPorts = [4200 8080];
   # networking.firewall.allowedUDPPorts = [ ... ];
   # Or disable the firewall altogether.
   # networking.firewall.enable = false;

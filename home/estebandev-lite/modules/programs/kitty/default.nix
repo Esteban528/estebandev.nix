@@ -40,7 +40,7 @@
       map ctrl+shift+enter new_window_with_cwd
       map ctrl+shift+t new_tab_with_cwd
 
-      shell bash 
+      shell bash
     '';
   };
 }

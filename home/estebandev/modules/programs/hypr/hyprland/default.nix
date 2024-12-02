@@ -35,7 +35,6 @@ in {
     };
   };
 
-
   gtk = {
     enable = true;
     iconTheme = {

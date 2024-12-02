@@ -212,7 +212,7 @@
     hunspellDicts.es_ES
 
     # (pkgs.callPackage ../../pkgs/tdf/tdf.nix {})
-    
+
     ripgrep
     upower
     acpi

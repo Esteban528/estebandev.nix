@@ -122,7 +122,7 @@
   windowrule=float,^(org.gnome.Nautilus)$
   windowrulev2 = size 40% 50%,class:(org.gnome.Nautilus),
   windowrulev2 = move 50% 30%,class:(org.gnome.Nautilus),
-  windowrulev2 = move workspace 8,class:(thunderbird) 
+  windowrulev2 = move workspace 8,class:(thunderbird)
 
   #      ___      __          __   __
   #|__/ |__  \ / |__) | |\ | |  \ /__`
@@ -130,7 +130,7 @@
   #
 
   # Default applications
-  $terminal = wezterm
+  $terminal = alacritty 
   $TermFileManager = $terminal start yazi
   $fileManager = nautilus
   $menu = wofi --show drun

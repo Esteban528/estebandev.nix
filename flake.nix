@@ -24,21 +24,19 @@
     home-manager,
     stylix,
     ...
-  } @ inputs: 
-    let
+  } @ inputs: let
     system = "x86_64-linux";
 
     pkgs-staging-next =
       import nixpkgs-staging-next {
-    };
+      };
 
-    pkgs-stable =
-      import nixpkgs-stable {
-          inherit system;
-         config.allowUnfree = true;
+    pkgs-stable = import nixpkgs-stable {
+      inherit system;
+      config.allowUnfree = true;
     };
-    localSystem = { system = "x86_64-linux"; };
-  in  {
+    localSystem = {system = "x86_64-linux";};
+  in {
     formatter.x86_64-linux = nixpkgs.legacyPackages.x86_64-linux.alejandra;
 
     nixosConfigurations = {
@@ -67,7 +65,10 @@
 
             # Optionally, use home-manager.extraSpecialArgs to pass
             # arguments to home.nix
-            home-manager.extraSpecialArgs = {inherit inputs; inherit pkgs-stable;};
+            home-manager.extraSpecialArgs = {
+              inherit inputs;
+              inherit pkgs-stable;
+            };
           }
         ];
       };
@@ -96,9 +97,9 @@
             # Optionally, use home-manager.extraSpecialArgs to pass
             # arguments to home.nix
             home-manager.extraSpecialArgs = {
-                inherit inputs;
-                inherit pkgs-stable;
-              };
+              inherit inputs;
+              inherit pkgs-stable;
+            };
           }
         ];
       };
