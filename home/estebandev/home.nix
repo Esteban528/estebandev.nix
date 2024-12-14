@@ -31,7 +31,6 @@ in {
       obs-studio
       nautilus
       starship
-      neofetch
       brave
       firefox
       vlc

@@ -27,6 +27,7 @@
   # exec-once = gsettings set org.gnome.desktop.interface icon-theme "WhiteSur-dark"
   # exec-once = gsettings set org.gnome.desktop.interface gtk-theme "Gruvbox-Dark-hdpi-BL-MB"
   exec-once = thunderbird
+  env = HYPRSHOT_DIR,~/Pictures/Screenshots/
 
   # __   __        ___    __
   #/  ` /  \ |\ | |__  | / _`
@@ -186,11 +187,14 @@
   bindr = SUPER_SHIFT, 9, movetoworkspace, 9
   bindr = SUPER_SHIFT, 0, movetoworkspace, 10
 
-  # Screenshots
-  bind = $mainMod SHIFT, S, exec, CaptureArea
-  bind = $mainMod, print, exec, CaptureAll
-  bind = ,print, exec, CaptureScreen
+  # Screenshot a window
+  bind = $mainMod, PRINT, exec, hyprshot -m window
+  # Screenshot a monitor
+  bind = , PRINT, exec, hyprshot -m output
+  # Screenshot a region
+  bind = $mainMod SHIFT, S, exec, hyprshot -m region
 
+  bind = SUPER_SHIFT, PRINT, exec, hyprshot -m region
   # Brightness keys
   bind = ,XF86MonBrightnessDown, exec, brightnessctl set 5%-
   bind = ,XF86MonBrightnessUp, exec, brightnessctl set +5%

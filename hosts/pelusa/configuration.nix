@@ -41,7 +41,6 @@ in {
   boot.loader.grub.device = "nodev";
   boot.loader.grub.efiSupport = true;
   boot.loader.efi.canTouchEfiVariables = true;
-  # boot.loader.grub.catppuccin.enable = true;
   #  boot.loader.grub.useOSProber = true;
   boot.loader.efi.efiSysMountPoint = "/boot";
 
@@ -78,14 +77,17 @@ in {
     videoDrivers = ["amdgpu"];
     windowManager.i3.enable = true;
 
-    #desktopManager.gnome.enable = true;
+    # desktopManager.gnome.enable = true;
+
     displayManager.gdm.enable = true;
+    desktopManager = {
+      xterm.enable = false;
+    };
 
     # Configure keymap in X11
     xkb.layout = "latam";
   };
 
-  # services.xserver.xkb.options = "eurosign:e,caps:escape";
 
   #Wayland Support
   programs.hyprland = {
