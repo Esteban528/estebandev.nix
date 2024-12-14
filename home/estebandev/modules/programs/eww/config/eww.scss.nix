@@ -23,14 +23,14 @@
   .bar {
     background-color: $background;
     box-shadow: 1px 2px 10px $background;
-    padding: 4px 2px;
+    // padding: 4px 2px;
     // border-bottom: 1px solid $color1;
     //border-radius: $radius;
   }
 
   // Styles on classes (see eww.yuck for more information)
   .startMenu {
-    padding: 0 6px;
+    //padding: 0 6px;
     font-weight: 700;
     color: $text;
   }
@@ -40,11 +40,11 @@
   }
 
   .clockb {
-    padding: 0 14px;
+    // padding: 0 14px;
   }
 
   .music {
-    padding: 0 20px;
+    // padding: 0 20px;
 
     .musicLabel {
       padding: 0 5px;
@@ -59,17 +59,11 @@
 
   .net {
     color: $color7;
-    padding-right: 10px;
-  }
-
-  .buttonsRight {
-    margin-left: 30px;
   }
 
   .buttonStyle {
     background: $background;
     border-radius: $radius;
-    padding: 0 8px;
 
     border: 1px solid $foreground;
     &:hover {
@@ -95,15 +89,17 @@
   }
 
   .audio, {
+    font-size: 12px;
     color: $color2;
-    padding: 0 10px;
   }
 
   .rightside {
     color: $color7;
-    padding: 0 10px;
   }
 
+  .stats {
+    font-size: 12px;
+  }
 
   .metric {
     // padding-left: 18px;
@@ -168,11 +164,10 @@
   // Workspaces
 
   .workspaces-widget {
-    padding: 2px 10px;
+    padding: 4px;
   }
 
   .workspace-entry {
-    padding: 0 3px;
     margin: 0;
 
     transition: color 1s ease-in-out;

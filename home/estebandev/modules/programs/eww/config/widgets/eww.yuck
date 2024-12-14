@@ -128,7 +128,7 @@
 
 (defwindow widget
   :monitor 0
-  :geometry (geometry :x "0%"
+  :geometry (geometry :x "10px"
     :y "0%"
     :width "20%"
     :height "0%"
