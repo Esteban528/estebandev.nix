@@ -25,6 +25,7 @@ in {
 
   home.packages = with pkgs;
     [
+      bat
       alacritty
       tmux
       thunderbird
@@ -43,15 +44,11 @@ in {
       wezterm
       dig
       # spotube
-      mpc-cli
-      lazygit
       zapzap
       telegram-desktop
       # joshuto
       yazi
       evince
-      filezilla
-      image-roll
       gedit
       ktorrent
       vscode
@@ -63,9 +60,6 @@ in {
       just
       fastfetch
       protonplus
-
-      # azure-functions-core-tools
-      # (azure-cli.withExtensions [azure-cli.extensions.aks-preview])
 
       #Office
       libreoffice-qt

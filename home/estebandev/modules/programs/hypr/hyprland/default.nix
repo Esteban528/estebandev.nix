@@ -24,11 +24,16 @@ in {
 
   services.hyprpaper.enable = lib.mkForce false;
 
-  # programs.swww.enable = true;
+  # xdg.portal = {
+  #   extraPortals = [pkgs.xdg-desktop-portal-wlr];
+  #   config.hyprland = {
+  #     default = ["wlr" "gtk"];
+  #   };
+  # };
 
   wayland.windowManager.hyprland = {
     enable = true;
-    systemd.enable = true;
+    systemd.enable = false;
     xwayland.enable = true;
     extraConfig = import ./config.nix {
       inherit enable_animations color1 color2;
@@ -38,8 +43,8 @@ in {
   gtk = {
     enable = true;
     iconTheme = {
-      package = pkgs.mate.mate-icon-theme-faenza;
-      name = "faenza";
+      package = pkgs.papirus-icon-theme;
+      name = "Papirus";
     };
   };
 }

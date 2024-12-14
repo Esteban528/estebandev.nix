@@ -11,7 +11,7 @@ in {
     enable = true;
     colorSchemes = {
       custom = {
-        background = "${colors.base01}";
+        background = "${colors.base00}";
         foreground = "${colors.base07}";
         cursor_bg = "${colors.base05}";
         cursor_fg = "${colors.base05}";

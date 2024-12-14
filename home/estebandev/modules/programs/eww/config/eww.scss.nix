@@ -23,14 +23,14 @@
   .bar {
     background-color: $background;
     box-shadow: 1px 2px 10px $background;
-    padding: 4px;
-    border-bottom: 1px solid $color1;
+    padding: 4px 2px;
+    // border-bottom: 1px solid $color1;
     //border-radius: $radius;
   }
 
   // Styles on classes (see eww.yuck for more information)
   .startMenu {
-    padding: 0 10px;
+    padding: 0 6px;
     font-weight: 700;
     color: $text;
   }

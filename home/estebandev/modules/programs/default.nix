@@ -3,7 +3,6 @@
     ./stylix
     ./hypr
     ./eww
-    ./fish
     ./wofi
     ./terminal
     # ./nh

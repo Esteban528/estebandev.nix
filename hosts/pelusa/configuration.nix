@@ -88,18 +88,12 @@ in {
     xkb.layout = "latam";
   };
 
-
   #Wayland Support
   programs.hyprland = {
     enable = true;
     xwayland.enable = true;
+    # portalPackage = pkgs.xdg-desktop-portal-wlr;
   };
-
-  # services.displayManager.sddm.package = pkgs.kdePackages.sddm;
-  # services.displayManager.sddm.enable = true;
-  # services.displayManager.sddm.catppuccin.assertQt6Sddm = true;
-  # services.displayManager.sddm.wayland.enable = true;
-  # services.displayManager.sddm.catppuccin.enable = true;
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
@@ -194,8 +188,6 @@ in {
       killall
       wl-clipboard
       unzip
-      lsd
-      bat
       socat
       python3
       docker_27
@@ -228,7 +220,6 @@ in {
       nix-prefetch-git
 
       hyprland
-      # xdg-desktop-portal-hyprland
       ripgrep
 
       gst_all_1.gstreamer

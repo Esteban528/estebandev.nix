@@ -27,7 +27,7 @@
   # exec-once = gsettings set org.gnome.desktop.interface icon-theme "WhiteSur-dark"
   # exec-once = gsettings set org.gnome.desktop.interface gtk-theme "Gruvbox-Dark-hdpi-BL-MB"
   exec-once = thunderbird
-  env = HYPRSHOT_DIR,~/Pictures/Screenshots/
+  env = HYPRSHOT_DIR,Pictures/Screenshots/
 
   # __   __        ___    __
   #/  ` /  \ |\ | |__  | / _`
@@ -35,16 +35,6 @@
   #
 
   monitor=HDMI-A-2,1920x1080@75,0x0,1
-
-  # workspace=1,
-  # workspace=2,
-  # workspace=3,
-  # workspace=4,
-  # workspace=5,
-  # workspace=6,
-  # workspace=7,
-  # workspace=8,
-  # workspace=9,
 
   input {
       kb_layout = latam
@@ -57,9 +47,9 @@
   }
 
   general {
-      gaps_in = 0
-      gaps_out = 0
-      border_size = 2
+      gaps_in = 1
+      gaps_out = 1
+      border_size = 1
       col.active_border = rgb(${color1})
       col.inactive_border = rgb(${color2})
 
@@ -71,7 +61,7 @@
   }
 
   decoration {
-      rounding = 0
+      rounding = 2
 
       blur {
           enabled = false
@@ -135,7 +125,7 @@
   $TermFileManager = $terminal start yazi
   $fileManager = nautilus
   $menu = wofi --show drun
-  $webBrowser = brave
+  $webBrowser = firefox
   $lockScreen = hyprlock
   $mainMod = SUPER
   $editor = code
