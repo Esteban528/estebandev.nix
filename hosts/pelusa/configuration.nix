@@ -279,8 +279,8 @@ in {
     dina-font
     proggyfonts
     roboto
-    fira-code-nerdfont
-    (nerdfonts.override {fonts = ["FiraCode" "DroidSansMono" "Hack" "JetBrainsMono" "RobotoMono"];})
+    nerd-fonts.fira-code
+    nerd-fonts.droid-sans-mono
   ];
 
   services.udisks2.enable = true;

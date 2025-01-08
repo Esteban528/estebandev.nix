@@ -70,6 +70,8 @@ in {
       # nailgun
       spotify
       hyprshot
+
+      gparted
     ]
     ++ stablePackages;
   home.stateVersion = "23.11";
