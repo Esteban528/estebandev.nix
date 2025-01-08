@@ -71,7 +71,9 @@ in {
       spotify
       hyprshot
 
-      gparted
+      ntfs3g
+      udisks
+      gnome-disk-utility     
     ]
     ++ stablePackages;
   home.stateVersion = "23.11";
