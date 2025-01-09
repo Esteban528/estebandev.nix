@@ -122,7 +122,7 @@
 
   # Default applications
   $terminal = alacritty 
-  $TermFileManager = $terminal start yazi
+  $TermFileManager = $terminal -e yazi
   $fileManager = nautilus
   $menu = wofi --show drun
   $webBrowser = firefox

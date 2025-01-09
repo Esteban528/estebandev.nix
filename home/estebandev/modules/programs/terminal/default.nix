@@ -2,6 +2,5 @@
   imports = [
     # ./kitty
     # ./wezterm
-    ./bash
   ];
 }
