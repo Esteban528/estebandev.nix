@@ -32,7 +32,6 @@ in {
       obs-studio
       nautilus
       starship
-      brave
       firefox
       vlc
       tree
@@ -46,7 +45,7 @@ in {
       # spotube
       zapzap
       telegram-desktop
-      # joshuto
+      joshuto
       yazi
       evince
       gedit
