@@ -1,5 +1,6 @@
 {
   enable_animations,
+  base,
   color1,
   color2,
 }: ''
@@ -47,8 +48,8 @@
   }
 
   general {
-      gaps_in = 1
-      gaps_out = 1
+      gaps_in = 4
+      gaps_out = 4
       border_size = 1
       col.active_border = rgb(${color1})
       col.inactive_border = rgb(${color2})
@@ -61,7 +62,7 @@
   }
 
   decoration {
-      rounding = 2
+      rounding = 4
 
       blur {
           enabled = false
@@ -70,10 +71,12 @@
 
           vibrancy = 0.1696
       }
-
-      # shadow_range = 0
-      # shadow_render_power = 0
-      # col.shadow = rgba(00000099)
+      shadow {
+        enabled = true
+        range = 12
+        render_power = 10
+        color = rgb(${base})
+      }
   }
 
   animations {

@@ -8,6 +8,7 @@
   enable_animations = "yes";
   color1 = config.lib.stylix.colors.base0D;
   color2 = config.lib.stylix.colors.base02;
+  base = config.lib.stylix.colors.base00;
 in {
   home.packages = with pkgs; [
     wl-clipboard
@@ -36,7 +37,7 @@ in {
     systemd.enable = false;
     xwayland.enable = true;
     extraConfig = import ./config.nix {
-      inherit enable_animations color1 color2;
+      inherit enable_animations base color1 color2;
     };
   };
 
