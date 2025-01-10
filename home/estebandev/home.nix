@@ -8,7 +8,6 @@
   stablePackages = with pkgs-stable; [
     azure-cli
     azure-functions-core-tools
-    prismlauncher
     sshfs
     maven
     rustc
@@ -17,6 +16,8 @@
     dbeaver-bin
     jdk11
     libsecret
+    fzf
+    fd
   ];
 in {
   imports = [./modules];
