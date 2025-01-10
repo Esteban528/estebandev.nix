@@ -14,7 +14,6 @@
     ps_mem
     mdcat
     dbeaver-bin
-    # jdk11
     fzf
     fd
   ];
@@ -57,7 +56,6 @@ in {
       jq
       just
       fastfetch
-      protonplus
 
       #Office
       libreoffice-qt
@@ -68,10 +66,6 @@ in {
       # nailgun
       spotify
       hyprshot
-
-      ntfs3g
-      udisks
-      gnome-disk-utility     
     ]
     ++ stablePackages;
   home.stateVersion = "23.11";

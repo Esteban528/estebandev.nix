@@ -17,7 +17,6 @@
   ];
 in {
   imports = [
-    # Include the results of the hardware scan.
     ./hardware-configuration.nix
     ./hardware.nix
     ./shell
@@ -32,17 +31,12 @@ in {
     options = "--delete-older-than 30d";
   };
 
-  # Use the systemd-boot EFI boot loader.
-  #boot.loader.systemd-boot.enable = true;
-  #boot.loader.efi.canTouchEfiVariables = true;
-
   #Bootloader
   boot.loader.grub.enable = true;
   boot.loader.grub.device = "nodev";
   boot.loader.grub.efiSupport = true; 
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.grub.useOSProber = true;
-#  boot.loader.efi.efiSysMountPoint = "/boot";
 
   networking.hostName = "pelusaNixos"; # Define your hostname.
   # Pick only one of the below networking options.
@@ -122,44 +116,13 @@ in {
     XDG_DATA_HOME = "$HOME/.local/share";
     XDG_STATE_HOME = "$HOME/.local/state";
 
-    # Not officially in the specification
-    # XDG_BIN_HOME = "$HOME/.local/bin";
-    # PATH = [
-    #   "${XDG_BIN_HOME}"
-    # ];
-
-    # XDG environment variables
-    # XDG_CURRENT_DESKTOP = "Hyprland";
-    # XDG_SESSION_TYPE = "wayland";
-    # XDG_SESSION_DESKTOP = "Hyprland";
-
-    # GDK environment variables
-    # GDK_BACKEND = "wayland";
-
-    #QT environment variables
-    # QT_QPA_PLATFORM = "wayland";
-    # QT_QPA_PLATFORMTHEME = "qt5ct";
-    # QT_WAYLAND_DISABLE_WINDOWDECORATION = "1";
-    # QT_AUTO_SCREEN_SCALE_FACTOR = "1";
-
-    #SDL environment variable
-    # SDL_VIDEODRIVER = "wayland";
-
-    # Other environment variables
     _JAVA_AWT_WM_NONREPARENTING = "1";
     WLR_NO_HARDWARE_CURSORS = "1";
-    # OZONE_PLATFORM = "wayland";
+    OZONE_PLATFORM = "wayland";
     EDITOR = "nvim";
     ANKI_WAYLAND = "1";
     DISABLE_QT5_COMPAT = "1";
-    #GTK
-    # GTK_THEME = "Catppuccin-Dark-Macchiato-BL-MB:dark";
   };
-
-  #Style
-  # catppuccin.enable = true;
-  # stylix.targets.chromium.enable = false;
-  # stylix.targets.grub.enable = false;
 
   nixpkgs.config.allowUnfree = true;
 
@@ -193,15 +156,11 @@ in {
       docker_27
       fnm
       jdk17
-      # wineWowPackages.minimal
-      #wineWowPackages.full
       vmware-workstation
       linuxKernel.packages.linux_6_6.vmware
       run
       wineWowPackages.stable
       winetricks
-      lutris
-      protonup-qt
       libGL
       file
       mtpfs
@@ -297,13 +256,13 @@ in {
   '';
 
   # Steam
-  programs.steam = {
-    enable = true;
-    remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
-    dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
-    localNetworkGameTransfers.openFirewall = true; # Open ports in the firewall for Steam Local Network Game Transfers
-    gamescopeSession.enable = true;
-  };
+  # programs.steam = {
+  #   enable = true;
+  #   remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
+  #   dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
+  #   localNetworkGameTransfers.openFirewall = true; # Open ports in the firewall for Steam Local Network Game Transfers
+  #   gamescopeSession.enable = true;
+  # };
 
   # Docker
   virtualisation.docker.enable = true;
@@ -312,9 +271,9 @@ in {
 
   nixpkgs.config.allowUnfreePredicate = pkg:
     builtins.elem (lib.getName pkg) [
-      "steam"
-      "steam-original"
-      "steam-run"
+      # "steam"
+      # "steam-original"
+      # "steam-run"
     ];
 
   # Some programs need SUID wrappers, can be configured further or are
