@@ -15,7 +15,6 @@
     mdcat
     dbeaver-bin
     # jdk11
-    libsecret
     fzf
     fd
   ];
@@ -37,11 +36,10 @@ in {
       vlc
       tree
       vesktop
-      nitch
       playerctl
       btop
       htop
-      wezterm
+      # wezterm
       dig
       # spotube
       zapzap
