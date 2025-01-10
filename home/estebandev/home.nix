@@ -14,7 +14,7 @@
     ps_mem
     mdcat
     dbeaver-bin
-    jdk11
+    # jdk11
     libsecret
     fzf
     fd
