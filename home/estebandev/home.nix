@@ -66,6 +66,9 @@ in {
       # nailgun
       spotify
       hyprshot
+
+      insync
+      insync-nautilus
     ]
     ++ stablePackages;
   home.stateVersion = "23.11";
