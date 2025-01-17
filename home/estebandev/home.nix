@@ -69,6 +69,8 @@ in {
 
       insync
       insync-nautilus
+
+      parabolic
     ]
     ++ stablePackages;
   home.stateVersion = "23.11";
