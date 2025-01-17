@@ -20,7 +20,6 @@
   exec-once = hypridle
   # exec-once = discord --start-minimized
   # exec-once = vesktop --start-minimized
-  exec-once = insync start
   # exec-once = eww open bar0
   exec-once = /home/estebandev/.config/eww/scripts/start.sh
 

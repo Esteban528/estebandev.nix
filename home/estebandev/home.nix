@@ -67,9 +67,6 @@ in {
       spotify
       hyprshot
 
-      insync
-      insync-nautilus
-
       parabolic
     ]
     ++ stablePackages;
