@@ -31,7 +31,7 @@ in {
       obs-studio
       nautilus
       starship
-      firefox
+      brave 
       vlc
       tree
       vesktop
