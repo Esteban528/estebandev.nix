@@ -94,7 +94,7 @@ in {
 
   # Enable sound.
   # sound.enable = true;
-  hardware.pulseaudio.enable = false;
+  services.pulseaudio.enable = false;
   services.pipewire = {
     enable = true;
     alsa.enable = true;
@@ -240,6 +240,7 @@ in {
     roboto
     nerd-fonts.fira-code
     nerd-fonts.droid-sans-mono
+    nerd-fonts.iosevka
   ];
 
   services.udisks2.enable = true;
