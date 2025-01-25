@@ -126,7 +126,7 @@
   $TermFileManager = $terminal -e joshuto 
   $fileManager = nautilus
   $menu = wofi --show drun
-  $webBrowser = brave 
+  $webBrowser = zen 
   $lockScreen = hyprlock
   $mainMod = SUPER
   $editor = code

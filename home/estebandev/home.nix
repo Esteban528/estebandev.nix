@@ -3,6 +3,7 @@
   lib,
   config,
   pkgs-stable,
+  inputs,
   ...
 }: let
   stablePackages = with pkgs-stable; [
@@ -24,14 +25,17 @@ in {
 
   home.packages = with pkgs;
     [
+      inputs.zen-browser.packages."x86_64-linux".default
       bat
       alacritty
       tmux
       thunderbird
+      gimp
+      inkscape
       obs-studio
       nautilus
       starship
-      brave 
+      #  brave 
       vlc
       tree
       vesktop

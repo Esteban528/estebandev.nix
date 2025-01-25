@@ -7,10 +7,6 @@
 }: {
   #usar mi gpu para poder ejcutar algunos video o  juegos
   services.xserver.videoDrivers = ["amdgpu" "modesetting"];
-  systemd.tmpfiles.rules = [
-    "L+    /opt/rocm/hip   -    -    -     -    ${pkgs.rocmPackages.clr}"
-  ];
-  #para los videos y herramientas de gpu
   environment.systemPackages = with pkgs; [
     xorg.xf86videoamdgpu
     vulkan-loader
@@ -33,7 +29,6 @@
       mesa.drivers
       amdvlk
       driversi686Linux.amdvlk
-      rocmPackages.clr.icd
     ];
     extraPackages32 = with pkgs; [driversi686Linux.amdvlk];
   };
