@@ -5,7 +5,7 @@
   ...
 }: {
   programs.kitty = {
-    enable = false;
+    enable = true;
     # font.name = lib.mkForce "FiraCode Nerd Font";
     settings = {
       confirm_os_window_close = 0;
@@ -17,7 +17,7 @@
       mouse_hide_wait = "3.0";
       window_padding_width = 6;
       background_opacity = lib.mkForce "0.9599";
-      # background_color = lib.mkForce "#${config.lib.stylix.colors.base0D}";
+      background_color = lib.mkForce "#1C1C1C";
     };
 
     extraConfig = ''
@@ -40,7 +40,7 @@
       map ctrl+shift+enter new_window_with_cwd
       map ctrl+shift+t new_tab_with_cwd
 
-      shell fish
+      shell bash
     '';
   };
 }

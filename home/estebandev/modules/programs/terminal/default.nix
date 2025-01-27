@@ -1,6 +1,6 @@
 {pkgs, ...}: {
   imports = [
-    # ./kitty
+    ./kitty
     # ./wezterm
   ];
 }
