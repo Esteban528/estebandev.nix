@@ -45,7 +45,6 @@ in {
       # wezterm
       dig
       # spotube
-      zapzap
       telegram-desktop
       joshuto
       yazi
