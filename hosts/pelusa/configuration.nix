@@ -20,6 +20,7 @@ in {
     ./hardware-configuration.nix
     ./hardware.nix
     ./shell
+    ./ollama
   ];
 
   nix.optimise.automatic = true;
