@@ -17,6 +17,7 @@
     dbeaver-bin
     fzf
     fd
+    lact
   ];
 in {
   imports = [./modules];

@@ -123,7 +123,7 @@
 
   # Default applications
   $terminal = alacritty 
-  $TermFileManager = kitty --class yazi -e yazi
+  $TermFileManager = kitty --class joshuto -e joshuto
   $fileManager = nautilus
   $menu = wofi --show drun
   $webBrowser = zen 

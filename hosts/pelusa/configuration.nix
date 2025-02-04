@@ -11,9 +11,7 @@
   ...
 }: let
   unstablePkgs = with pkgs; [
-    inputs.umu.packages.${pkgs.system}.umu
     neovim
-    steam
   ];
 in {
   imports = [
@@ -77,6 +75,8 @@ in {
     displayManager.gdm.enable = true;
     desktopManager = {
       xterm.enable = false;
+      mate.enable = true;
+      mate.enableWaylandSession = true;
     };
 
     # Configure keymap in X11
