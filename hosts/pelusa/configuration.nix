@@ -68,15 +68,11 @@ in {
   services.xserver = {
     enable = true;
     videoDrivers = ["amdgpu"];
-    windowManager.i3.enable = true;
-
     # desktopManager.gnome.enable = true;
 
     displayManager.gdm.enable = true;
     desktopManager = {
       xterm.enable = false;
-      mate.enable = true;
-      mate.enableWaylandSession = true;
     };
 
     # Configure keymap in X11
