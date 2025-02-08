@@ -122,8 +122,8 @@
   #
 
   # Default applications
-  $terminal = alacritty 
-  $TermFileManager = kitty --class joshuto -e joshuto
+  $terminal = wezterm
+  $TermFileManager = $terminal start joshuto
   $fileManager = nautilus
   $menu = wofi --show drun
   $webBrowser = zen 

@@ -14,7 +14,7 @@
     autoEnable = true;
 
     polarity = "dark";
-     base16Scheme = "${pkgs.base16-schemes}/share/themes/espresso.yaml";
+   base16Scheme = "${pkgs.base16-schemes}/share/themes/espresso.yaml";
    # base16Scheme = "${pkgs.base16-schemes}/share/themes/tender.yaml";
     # base16Scheme = "${pkgs.base16-schemes}/share/themes/everforest-dark-hard.yaml";
     # base16Scheme = "${pkgs.base16-schemes}/share/themes/ayu-light.yaml";
@@ -51,7 +51,7 @@
   # stylix.targets.gtk.enable = true;
   # stylix.targets.hyprpaper.enable = false;
   stylix.targets.hyprpaper.enable = lib.mkForce false;
-  stylix.targets.wezterm.enable = false;
+  # stylix.targets.wezterm.enable = false;
 
   # home.sessionVariables.EMPHASIS_COLOR = config.lib.stylix.colors.base0E;
 }
