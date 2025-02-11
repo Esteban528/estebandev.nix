@@ -19,7 +19,7 @@ in {
         end
 
         config.window_padding = {
-          top = 0,
+          top = 8,
           bottom = 0,
           right = 8,
           left = 8,
