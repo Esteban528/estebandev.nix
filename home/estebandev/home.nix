@@ -43,9 +43,7 @@ in {
       playerctl
       btop
       htop
-      # wezterm
       dig
-      # spotube
       telegram-desktop
       joshuto
       yazi

@@ -13,9 +13,9 @@
     autoEnable = true;
 
     polarity = "dark";
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/nord.yaml";
+    # base16Scheme = "${pkgs.base16-schemes}/share/themes/nord.yaml";
    # base16Scheme = "${pkgs.base16-schemes}/share/themes/espresso.yaml";
-   # base16Scheme = "${pkgs.base16-schemes}/share/themes/tender.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/tender.yaml";
     # base16Scheme = "${pkgs.base16-schemes}/share/themes/everforest-dark-hard.yaml";
     # base16Scheme = "${pkgs.base16-schemes}/share/themes/ayu-light.yaml";
     # base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-material-dark-hard.yaml";

@@ -30,7 +30,10 @@ in {
 
         -- UI
         config.font_size = 12
-        config.font = wezterm.font("Iosevka NF")
+        config.font = wezterm.font {
+          family = 'Iosevka',
+          weight = 'Regular',
+        }
         config.hide_tab_bar_if_only_one_tab = true
         config.max_fps = 240 
         config.enable_kitty_graphics = true
