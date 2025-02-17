@@ -18,12 +18,14 @@
     fzf
     fd
     lact
+    inkscape
   ];
 in {
   imports = [./modules];
   home.username = "estebandev";
   home.homeDirectory = "/home/estebandev";
 
+  nixpkgs.config.allowUnfree = true;
   home.packages = with pkgs;
     [
       inputs.zen-browser.packages."x86_64-linux".default
@@ -32,7 +34,6 @@ in {
       tmux
       thunderbird
       gimp
-      inkscape
       obs-studio
       nautilus
       starship
@@ -50,7 +51,6 @@ in {
       evince
       gedit
       ktorrent
-      vscode
       postman
       onedrive
       obsidian

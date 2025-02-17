@@ -51,7 +51,7 @@
           ./hosts/pelusa/configuration.nix
           # inputs.stylix.nixosModules.stylix
           {
-            home-manager.useGlobalPkgs = true;
+            # home-manager.useGlobalPkgs = false;
             home-manager.useUserPackages = true;
             home-manager.backupFileExtension = "hm-backup";
             home-manager.users.estebandev = {
