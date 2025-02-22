@@ -30,6 +30,7 @@ in {
     [
       inputs.zen-browser.packages."x86_64-linux".default
       bat
+      uv
       alacritty
       tmux
       thunderbird

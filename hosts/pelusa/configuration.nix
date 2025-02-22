@@ -149,7 +149,6 @@ in {
       wl-clipboard
       unzip
       socat
-      python3
       docker_27
       fnm
       jdk17
@@ -192,18 +191,6 @@ in {
     ]
     ++ unstablePkgs;
 
-  # system.replaceDependencies.replacements = [
-  #   {
-  #     original = pkgs.azure-cli;
-  #     replacement =  pkgs-staging-next.azure-cli;
-  #   }
-  # ];
-
-  environment = {
-    pathsToLink = [
-      "/share/nautilus-python/extensions"
-    ];
-  };
   programs.nautilus-open-any-terminal = {
     enable = true;
     terminal = "kitty";
