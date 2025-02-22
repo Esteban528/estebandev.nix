@@ -1,7 +1,7 @@
 {...} : {
   services.ollama = {
     enable = true;
-    # acceleration = "rocm";
+    acceleration = "rocm";
     environmentVariables = {
       HCC_AMDGPU_TARGET = "gfx90c";
     };
