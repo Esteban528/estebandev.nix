@@ -5,6 +5,7 @@
     ./eww
     ./wofi
     ./terminal
+    ./yazi
     # ./nh
   ];
 

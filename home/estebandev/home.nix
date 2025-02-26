@@ -29,6 +29,7 @@ in {
   home.packages = with pkgs;
     [
       inputs.zen-browser.packages."x86_64-linux".default
+      exiftool
       bat
       uv
       alacritty
@@ -48,10 +49,8 @@ in {
       dig
       telegram-desktop
       joshuto
-      yazi
       evince
       gedit
-      ktorrent
       postman
       onedrive
       obsidian
