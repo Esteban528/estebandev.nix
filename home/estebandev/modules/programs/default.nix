@@ -6,6 +6,7 @@
     ./wofi
     ./terminal
     ./yazi
+    ./niri
     # ./nh
   ];
 

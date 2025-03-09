@@ -1,4 +1,3 @@
-# took reference from rxyhn's dotfiles.
 {
   pkgs,
   lib,

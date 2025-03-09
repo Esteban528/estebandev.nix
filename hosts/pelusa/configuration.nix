@@ -31,11 +31,17 @@ in {
   };
 
   #Bootloader
-  boot.loader.grub.enable = true;
-  boot.loader.grub.device = "nodev";
-  boot.loader.grub.efiSupport = true; 
-  boot.loader.efi.canTouchEfiVariables = true;
-  boot.loader.grub.useOSProber = true;
+  boot.loader = {
+    efi.canTouchEfiVariables = true;
+
+    grub = {
+    enable = true;
+      device = "nodev";
+      efiSupport = true; 
+      useOSProber = true;
+      configurationLimit = 2;
+    };
+  };
 
   networking.hostName = "pelusaNixos"; # Define your hostname.
   # Pick only one of the below networking options.
@@ -84,6 +90,10 @@ in {
     enable = true;
     xwayland.enable = true;
     # portalPackage = pkgs.xdg-desktop-portal-wlr;
+  };
+
+  programs.niri = {
+    enable = true;
   };
 
   # Enable CUPS to print documents.
