@@ -1,4 +1,4 @@
-{colors,screenshot-path, ...} : ''
+{colors,screenshot-path,radius, ...} : ''
 spawn-at-startup "xwayland-satellite"
 spawn-at-startup "hypridle"
 spawn-at-startup "swww-daemon"
@@ -161,7 +161,7 @@ window-rule {
 }
 
 window-rule {
-    geometry-corner-radius 1
+    geometry-corner-radius ${radius}
     clip-to-geometry true
 }
 
