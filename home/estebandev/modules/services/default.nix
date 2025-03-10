@@ -3,5 +3,6 @@
     ./dunst
     ./hypridle
     ./syncthing
+    # ./hyprlock
   ];
 }

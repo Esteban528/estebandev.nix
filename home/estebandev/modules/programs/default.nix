@@ -2,11 +2,11 @@
   imports = [
     ./stylix
     ./hypr
+    ./niri
     ./eww
     ./wofi
     ./terminal
     ./yazi
-    ./niri
     # ./nh
   ];
 

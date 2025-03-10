@@ -19,6 +19,7 @@ in {
     ./hardware.nix
     ./shell
     ./ollama
+    ./wayland
   ];
 
   nix.optimise.automatic = true;
@@ -85,16 +86,6 @@ in {
     xkb.layout = "latam";
   };
 
-  #Wayland Support
-  programs.hyprland = {
-    enable = true;
-    xwayland.enable = true;
-    # portalPackage = pkgs.xdg-desktop-portal-wlr;
-  };
-
-  programs.niri = {
-    enable = true;
-  };
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
