@@ -151,6 +151,12 @@ window-rule {
     default-column-width { proportion 1.0; }
 }
 
+window-rule {
+
+  match app-id="Thunderbird"
+  open-on-workspace "9"
+}
+
 
 /-window-rule {
     // This app-id regular expression will work for both:
