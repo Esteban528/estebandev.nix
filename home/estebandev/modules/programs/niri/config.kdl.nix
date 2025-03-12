@@ -178,6 +178,7 @@ binds {
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+Return { spawn "wezterm"; }
     Mod+D { spawn "wofi" "--show" "drun"; }
+    Mod+X { spawn "hyprpicker" "-f" "hex" "-a"; }
     XF86HomePage { spawn "hyprlock"; }
     Mod+N { spawn "zen"; }
     Mod+E {spawn "wezterm" "start" "yazi";}
