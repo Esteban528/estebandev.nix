@@ -93,6 +93,12 @@ layout {
         //fixed 1920
     }
 
+    preset-window-heights {
+        proportion 0.5
+        proportion 0.75
+        proportion 1.0
+    }
+
     default-column-width { proportion 0.5; }
     focus-ring {
         // Uncomment this line to disable the focus ring.

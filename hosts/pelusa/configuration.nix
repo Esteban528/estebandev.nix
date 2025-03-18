@@ -232,6 +232,8 @@ in {
 
   services.udisks2.enable = true;
 
+  # Waydroid
+  virtualisation.waydroid.enable = true;
   #VMware
   virtualisation.vmware.host.enable = true;
   security.polkit.enable = true;

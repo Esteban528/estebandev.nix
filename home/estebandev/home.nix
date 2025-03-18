@@ -9,6 +9,7 @@
   stablePackages = with pkgs-stable; [
     azure-cli
     azure-functions-core-tools
+    parabolic
     sshfs
     maven
     rustc
@@ -34,6 +35,8 @@ in {
   home.packages = with pkgs;
     [
       inputs.zen-browser.packages."x86_64-linux".default
+      inputs.astal.packages.${system}.default
+      loupe
       exiftool
       bat
       uv
@@ -72,9 +75,6 @@ in {
 
       # nailgun
       spotify
-      hyprshot
-
-      parabolic
     ]
     ++ stablePackages;
   home.stateVersion = "23.11";
