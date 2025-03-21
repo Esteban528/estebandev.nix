@@ -7,7 +7,7 @@
     dir = "niri";
     colors = config.lib.stylix.colors;
     screenshot-path = "~/Pictures/Screenshots/Screenshot_%Y-%m-%d %H-%M-%S.png";
-    radius = "2";
+    radius = "4";
   in{
 
   home.file = {

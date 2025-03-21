@@ -3,8 +3,6 @@
   lib,
   ...
 }: let
-  toLuaArr = arr: "{ " + (lib.strings.concatMapStringsSep ", " (i: "'${i}'") arr) + " }";
-  privCmdLua = toLuaArr config.shell.privSession;
   colors = config.lib.stylix.colors;
 in {
   programs.wezterm = {
@@ -38,7 +36,7 @@ in {
         config.max_fps = 240 
         config.enable_kitty_graphics = true
         config.enable_tab_bar = false
-
+        config.window_close_confirmation = 'NeverPrompt'
         config.default_prog = { "/home/estebandev/.tmux/init-session.sh" }
 
         return config
