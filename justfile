@@ -1,6 +1,6 @@
 default:
   git add . && git commit -m "feat: update" && git push origin main
 update:
-  nix flake update && just pelusa
+  sudo nix flake update && just pelusa
 pelusa:
   sudo nixos-rebuild switch --flake .#pelusa
