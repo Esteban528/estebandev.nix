@@ -2,6 +2,7 @@
 spawn-at-startup "xwayland-satellite"
 spawn-at-startup "hypridle"
 spawn-at-startup "swww-daemon"
+spawn-at-startup "DesktopBar"
 
 hotkey-overlay {
     skip-at-startup

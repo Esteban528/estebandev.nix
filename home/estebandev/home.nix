@@ -35,7 +35,7 @@ in {
   home.packages = with pkgs;
     [
       inputs.zen-browser.packages."x86_64-linux".default
-      inputs.astal.packages.${system}.default
+      inputs.desktopbar.packages.${system}.default
       loupe
       exiftool
       bat

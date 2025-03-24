@@ -14,14 +14,7 @@
 
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
 
-    astal = {
-      url = "github:aylur/astal";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-    ags = {
-      url = "github:aylur/ags";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    desktopbar.url = "github:Esteban528/desktopBar";
   };
 
   outputs = {
