@@ -22,8 +22,7 @@ environment {
 input {
     keyboard {
         xkb {
-
-              layout "latam"
+          layout "latam"
         }
     }
 
@@ -74,7 +73,7 @@ output "HDMI-A-2" {
 }
 
 layout {
-    gaps 16
+    gaps 5
 
     // When to center a column when changing focus, options are:
     // - "never", default behavior, focusing an off-screen column will keep at the left
@@ -101,6 +100,7 @@ layout {
     }
 
     default-column-width { proportion 0.5; }
+    default-window-height { proportion 1; }
     focus-ring {
         // Uncomment this line to disable the focus ring.
         off
@@ -156,6 +156,7 @@ window-rule {
     match app-id="^(zen|firefox|chromium-browser|edge|chrome-.*|zen-.*)$"
 
     default-column-width { proportion 1.0; }
+    default-window-height { proportion 1.0; }
 }
 
 window-rule {
@@ -169,7 +170,7 @@ window-rule {
     // This app-id regular expression will work for both:
     // - host Firefox (app-id is "firefox")
     // - Flatpak Firefox (app-id is "org.mozilla.firefox")
-    //match app-id=r#"Nautilus$"# 
+    match app-id=r#"Nautilus$"# 
     open-floating true
 }
 
