@@ -36,6 +36,7 @@ in {
     [
       inputs.zen-browser.packages."x86_64-linux".default
       inputs.desktopbar.packages.${system}.default
+      foliate
       loupe
       exiftool
       bat

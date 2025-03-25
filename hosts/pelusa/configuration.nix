@@ -228,6 +228,7 @@ in {
     nerd-fonts.droid-sans-mono
     nerd-fonts.iosevka
     nerd-fonts.hack
+    nerd-fonts.jetbrains-mono
   ];
 
   services.udisks2.enable = true;

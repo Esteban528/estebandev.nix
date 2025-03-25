@@ -3,7 +3,7 @@
     ./stylix
     ./hypr
     ./niri
-    ./eww
+    # ./eww
     ./wofi
     ./terminal
     ./yazi

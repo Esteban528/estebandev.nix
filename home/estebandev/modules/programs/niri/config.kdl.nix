@@ -100,7 +100,6 @@ layout {
     }
 
     default-column-width { proportion 0.5; }
-    default-window-height { proportion 1; }
     focus-ring {
         // Uncomment this line to disable the focus ring.
         off
@@ -156,7 +155,6 @@ window-rule {
     match app-id="^(zen|firefox|chromium-browser|edge|chrome-.*|zen-.*)$"
 
     default-column-width { proportion 1.0; }
-    default-window-height { proportion 1.0; }
 }
 
 window-rule {

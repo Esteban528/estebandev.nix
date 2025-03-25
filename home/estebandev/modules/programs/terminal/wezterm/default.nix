@@ -27,10 +27,11 @@ in {
         config.window_background_opacity = 0.98 
 
         -- UI
-        config.font_size = 12
+        config.font_size = 10
         config.font = wezterm.font {
-          family = 'Iosevka',
-          weight = 'Regular',
+          family = 'JetBrains Mono Nerd Font',
+          --family = 'Fira Code Nerd Font',
+          -- weight = 'Regular',
         }
         config.hide_tab_bar_if_only_one_tab = true
         config.max_fps = 240 
