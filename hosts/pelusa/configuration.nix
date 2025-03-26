@@ -236,15 +236,15 @@ in {
   # Waydroid
   virtualisation.waydroid.enable = true;
   #VMware
-  virtualisation.vmware.host.enable = true;
-  security.polkit.enable = true;
-  security.polkit.extraConfig = ''
-    polkit.addRule(function(action, subject) {
-        if (action.id == "org.freedesktop.policykit.exec" && subject.user == "estebandev") {
-            return polkit.Result.YES;
-        }
-    });
-  '';
+  # virtualisation.vmware.host.enable = true;
+  # security.polkit.enable = true;
+  # security.polkit.extraConfig = ''
+  #   polkit.addRule(function(action, subject) {
+  #       if (action.id == "org.freedesktop.policykit.exec" && subject.user == "estebandev") {
+  #           return polkit.Result.YES;
+  #       }
+  #   });
+  # '';
 
   # Steam
   # programs.steam = {
