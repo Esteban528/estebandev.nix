@@ -38,7 +38,7 @@
       fi
       bar=$(seq -s "─" $(($volume / 5)) | sed 's/[0-9]//g')
       # Send the notification
-      notify-send -i "$icon_name" -r 5556 -u normal "$bar  $volume"
+      notify-send i "$icon_name" -r 5556 -u normal "$bar  $volume"
     }
 
     case $1 in
