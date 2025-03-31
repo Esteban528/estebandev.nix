@@ -20,6 +20,7 @@
     fd
     lact
     inkscape
+    prismlauncher
   ];
 in {
   imports = [./modules];
@@ -36,6 +37,7 @@ in {
     [
       inputs.zen-browser.packages."x86_64-linux".default
       inputs.desktopbar.packages.${system}.default
+      anydesk
       foliate
       loupe
       exiftool

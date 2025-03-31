@@ -38,7 +38,7 @@ in {
         config.enable_kitty_graphics = true
         config.enable_tab_bar = false
         config.window_close_confirmation = 'NeverPrompt'
-        config.default_prog = { "/home/estebandev/.tmux/init-session.sh" }
+        config.default_prog = { "bash" }
 
         return config
     '';
