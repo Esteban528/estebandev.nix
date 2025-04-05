@@ -152,7 +152,8 @@ in {
       socat
       docker_27
       fnm
-      jdk17
+      #jdk17
+      jdk21
       vmware-workstation
       linuxKernel.packages.linux_6_6.vmware
       run
