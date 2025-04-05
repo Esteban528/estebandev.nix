@@ -186,7 +186,7 @@ binds {
     Mod+D { spawn "wofi" "--show" "drun"; }
     Mod+X { spawn "hyprpicker" "-f" "hex" "-a"; }
     XF86HomePage { spawn "hyprlock"; }
-    Mod+N { spawn "zen-beta"; }
+    Mod+N { spawn "chromium"; }
     Mod+E {spawn "wezterm" "start" "yazi";}
     Mod+Shift+E {spawn "nautilus";}
 
