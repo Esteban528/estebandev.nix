@@ -183,7 +183,8 @@ binds {
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+Return { spawn "wezterm" "start" "/home/estebandev/.tmux/init-session.sh"; }
-    Mod+D { spawn "wofi" "--show" "drun"; }
+    //Mod+D { spawn "wofi" "--show" "drun"; }
+    Mod+D { spawn "fuzzel" ; }
     Mod+X { spawn "hyprpicker" "-f" "hex" "-a"; }
     XF86HomePage { spawn "hyprlock"; }
     Mod+N { spawn "chromium"; }
