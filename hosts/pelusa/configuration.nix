@@ -128,7 +128,7 @@ in {
   users.users.estebandev = {
     isNormalUser = true;
     description = "Esteban Gonzalez Florez";
-    extraGroups = ["wheel" "docker"]; # Enable ‘sudo’ for the user.
+    extraGroups = ["wheel" "docker" "libvirtd"]; # Enable ‘sudo’ for the user.
   };
 
   # List packages installed in system profile. To search, run:
@@ -152,10 +152,9 @@ in {
       socat
       docker_27
       fnm
-      #jdk17
+      qemu 
       jdk21
-      vmware-workstation
-      linuxKernel.packages.linux_6_6.vmware
+      jdk17
       run
       wineWowPackages.stable
       winetricks
@@ -195,8 +194,30 @@ in {
 
   programs.nautilus-open-any-terminal = {
     enable = true;
-    terminal = "kitty";
+    terminal = "wezterm";
   };
+
+  # qemu
+  systemd.tmpfiles.rules = [ "L+ /var/lib/qemu/firmware - - - - ${pkgs.qemu}/share/qemu/firmware" ];
+  virtualisation.libvirtd = {
+    enable = true;
+    qemu = {
+      package = pkgs.qemu_kvm;
+      runAsRoot = true;
+      swtpm.enable = true;
+      ovmf = {
+        enable = true;
+        packages = [(pkgs.OVMF.override {
+          secureBoot = true;
+          tpmSupport = true;
+        }).fd];
+      };
+    };
+  };
+  programs.virt-manager.enable = true;
+
+  users.groups.libvirtd.members = ["estebandev"];
+  virtualisation.spiceUSBRedirection.enable = true;
 
   programs.nix-ld.enable = true;
   programs.nix-ld.package = pkgs.nix-ld-rs;
@@ -236,16 +257,6 @@ in {
 
   # Waydroid
   virtualisation.waydroid.enable = true;
-  #VMware
-  # virtualisation.vmware.host.enable = true;
-  # security.polkit.enable = true;
-  # security.polkit.extraConfig = ''
-  #   polkit.addRule(function(action, subject) {
-  #       if (action.id == "org.freedesktop.policykit.exec" && subject.user == "estebandev") {
-  #           return polkit.Result.YES;
-  #       }
-  #   });
-  # '';
 
   # Steam
   # programs.steam = {

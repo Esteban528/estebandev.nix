@@ -35,6 +35,7 @@ in {
   nixpkgs.config.allowUnfree = true;
   home.packages = with pkgs;
     [
+      bun
       # inputs.zen-browser.packages."x86_64-linux".default
       inputs.desktopbar.packages.${system}.default
       fuzzel
