@@ -117,11 +117,11 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1743206918,
-        "narHash": "sha256-m37R7vSpTibfuRV/yJqj3WAq3YLEPjuVHcBD6vRyIJo=",
+        "lastModified": 1744903786,
+        "narHash": "sha256-gwTFzsh1xegoEyz0XEbi9/cJlRZZhG1HKVM+PYIk2iw=",
         "owner": "Esteban528",
         "repo": "desktopBar",
-        "rev": "d526e929b2944d29e3e4a92553498d66aa23479f",
+        "rev": "76734f345dcf48d6c7b846498545114fb3a6fb46",
         "type": "github"
       },
       "original": {
