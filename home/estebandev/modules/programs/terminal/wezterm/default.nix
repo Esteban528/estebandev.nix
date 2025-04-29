@@ -29,7 +29,7 @@ in {
         -- UI
         config.font_size = 10
         config.font = wezterm.font {
-          family = 'JetBrains Mono Nerd Font',
+          family = 'Hack Nerd Font',
           --family = 'Fira Code Nerd Font',
           -- weight = 'Regular',
         }

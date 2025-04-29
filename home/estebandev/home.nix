@@ -40,6 +40,7 @@ in {
       inputs.desktopbar.packages.${system}.default
       fuzzel
       ungoogled-chromium
+      file-roller
       python311
       anydesk
       foliate
