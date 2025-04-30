@@ -16,12 +16,12 @@ in {
           config = wezterm.config_builder()
         end
 
-        config.window_padding = {
-          top = 8,
-          bottom = 0,
-          right = 8,
-          left = 8,
-        }
+        -- config.window_padding = {
+        --   top = 8,
+        --   bottom = 0,
+        --   right = 8,
+        --   left = 8,
+        -- }
 
         -- Background
         config.window_background_opacity = 0.98 
