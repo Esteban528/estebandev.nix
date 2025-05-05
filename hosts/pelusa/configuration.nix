@@ -131,8 +131,13 @@ in {
     extraGroups = ["wheel" "docker" "libvirtd"]; # Enable ‘sudo’ for the user.
   };
 
+  services.cloudflare-warp = { 
+    enable = true;
+  };
+
   # List packages installed in system profile. To search, run:
   # $ nix search wget
+
 
   environment.systemPackages = with pkgs-stable;
     [

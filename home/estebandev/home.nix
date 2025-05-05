@@ -38,6 +38,7 @@ in {
       bun
       # inputs.zen-browser.packages."x86_64-linux".default
       inputs.desktopbar.packages.${system}.default
+      kdePackages.kdenlive
       fuzzel
       ungoogled-chromium
       file-roller
@@ -85,5 +86,6 @@ in {
       spotify
     ]
     ++ stablePackages;
+
   home.stateVersion = "23.11";
 }
