@@ -110,8 +110,8 @@
 
   # Window rules
 
-  windowrule=float,^(galculator)$
-  windowrule=float,^(org.gnome.Nautilus)$
+  #windowrule=float,^(galculator)$
+  #windowrule=float,^(org.gnome.Nautilus)$
   windowrulev2 = size 40% 50%,class:(org.gnome.Nautilus),
   windowrulev2 = move 50% 30%,class:(org.gnome.Nautilus),
   windowrulev2 = move workspace 8,class:(thunderbird)

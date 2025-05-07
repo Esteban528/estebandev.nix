@@ -158,8 +158,6 @@ in {
       docker_27
       fnm
       qemu 
-      jdk21
-      jdk17
       run
       wineWowPackages.stable
       winetricks
