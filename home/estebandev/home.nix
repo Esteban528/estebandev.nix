@@ -11,7 +11,6 @@
     azure-functions-core-tools
     parabolic
     sshfs
-    maven
     rustc
     ps_mem
     mdcat

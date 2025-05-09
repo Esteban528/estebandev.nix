@@ -156,7 +156,6 @@ in {
       unzip
       socat
       docker_27
-      fnm
       qemu 
       run
       wineWowPackages.stable
