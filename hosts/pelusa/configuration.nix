@@ -20,6 +20,7 @@ in {
     ./shell
     ./ollama
     ./wayland
+    ./podman
   ];
 
   nix.optimise.automatic = true;
@@ -155,7 +156,6 @@ in {
       wl-clipboard
       unzip
       socat
-      docker_27
       qemu 
       run
       wineWowPackages.stable
@@ -269,8 +269,6 @@ in {
   #   gamescopeSession.enable = true;
   # };
 
-  # Docker
-  virtualisation.docker.enable = true;
 
   services.gvfs.enable = true;
 
