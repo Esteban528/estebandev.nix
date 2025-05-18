@@ -1,4 +1,4 @@
-{} : {
+{...} : {
 
   networking.hostName = "pelusaNixos"; # Define your hostname.
   # Pick only one of the below networking options.
