@@ -73,6 +73,38 @@
         ];
       };
 
+      laptop = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        specialArgs = {
+          inherit nixpkgs-staging-next;
+          inherit inputs;
+          inherit pkgs-stable;
+        };
+
+        modules = [
+          home-manager.nixosModules.home-manager
+          ./hosts/laptop/configuration.nix
+          # inputs.stylix.nixosModules.stylix
+          {
+            # home-manager.useGlobalPkgs = false;
+            home-manager.useUserPackages = true;
+            home-manager.backupFileExtension = "hm-backup";
+            home-manager.users.estebandev = {
+              imports = [
+                ./home/estebandev/home.nix
+                stylix.homeManagerModules.stylix
+              ];
+            };
+
+            # Optionally, use home-manager.extraSpecialArgs to pass
+            # arguments to home.nix
+            home-manager.extraSpecialArgs = {
+              inherit inputs;
+              inherit pkgs-stable;
+            };
+          }
+        ];
+      };
     };
   };
 }

@@ -48,7 +48,6 @@ in {
       exiftool
       bat
       uv
-      alacritty
       tmux
       thunderbird
       gimp
