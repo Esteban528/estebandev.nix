@@ -91,7 +91,7 @@
             home-manager.backupFileExtension = "hm-backup";
             home-manager.users.estebandev = {
               imports = [
-                ./home/estebandev/home.nix
+                ./home/estebandev_laptop/home.nix
                 stylix.homeManagerModules.stylix
               ];
             };

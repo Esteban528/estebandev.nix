@@ -47,6 +47,7 @@
       configurationLimit = 2;
     };
   };
+  boot.kernelPackages = pkgs.linuxPackages_latest;
 
   time.timeZone = "America/Bogota";
 
