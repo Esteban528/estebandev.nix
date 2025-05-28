@@ -2,7 +2,7 @@
 spawn-at-startup "xwayland-satellite"
 spawn-at-startup "hypridle"
 spawn-at-startup "swww-daemon"
-//spawn-at-startup "onedrive --monitor"
+// spawn-at-startup "onedrive --monitor"
 // spawn-at-startup "DesktopBar"
 
 hotkey-overlay {
@@ -34,7 +34,7 @@ input {
         // dwtp
         // drag-lock
         natural-scroll
-        accel-speed 0.2
+        accel-speed 0.7
         // accel-profile "flat"
         scroll-method "two-finger"
         // disabled-on-external-mouse

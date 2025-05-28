@@ -57,6 +57,8 @@ in{
 
       libGL
       libGLU
+      brightnessctl
+      python311
     ]
     ++ unstablePkgs;
 

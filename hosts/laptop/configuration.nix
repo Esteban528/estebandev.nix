@@ -15,7 +15,7 @@
     ./hardware.nix
     ./audio.nix
     ./networking.nix
-    ./shell
+    #./shell
     ./environment.nix
     ./wayland
     ./podman

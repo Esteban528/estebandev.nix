@@ -10,8 +10,6 @@
     azure-cli
     azure-functions-core-tools
     parabolic
-    sshfs
-    rustc
     ps_mem
     mdcat
     dbeaver-bin
