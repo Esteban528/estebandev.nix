@@ -34,7 +34,7 @@ input {
         // dwtp
         // drag-lock
         natural-scroll
-        accel-speed 0.7
+        accel-speed 0.5
         // accel-profile "flat"
         scroll-method "two-finger"
         // disabled-on-external-mouse
@@ -62,7 +62,7 @@ input {
 
 
 output "HDMI-A-2" {
-    // off
+    off
 
     mode "1920x1080@75"
 
@@ -202,6 +202,9 @@ binds {
     XF86AudioLowerVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.01-"; }
     XF86AudioMute        allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle"; }
     XF86AudioMicMute     allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SOURCE@" "toggle"; }
+
+    XF86MonBrightnessUp { spawn "brightnessctl" "set" "+10"; }
+    XF86MonBrightnessDown { spawn "brightnessctl" "set" "10-"; }
 
     Mod+Q { close-window; }
 
