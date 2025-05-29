@@ -20,7 +20,7 @@
     ./wayland
     ./podman
     ./x11.nix
-    ./qemu
+    #./qemu
     ./fonts.nix
     ./misc.nix
     ./waydroid
@@ -43,11 +43,11 @@
     enable = true;
       device = "nodev";
       efiSupport = true; 
-      useOSProber = true;
-      configurationLimit = 2;
     };
   };
   boot.kernelPackages = pkgs.linuxPackages_latest;
+
+  systemd.tpm2.enable = false;
 
   time.timeZone = "America/Bogota";
 
@@ -110,5 +110,5 @@
   # and migrated your data accordingly.
   #
   # For more information, see `man configuration.nix` or https://nixos.org/manual/nixos/stable/options#opt-system.stateVersion .
-  system.stateVersion = "24.05"; # Did you read the comment?
+  system.stateVersion = "25.05"; # Did you read the comment?
 }
