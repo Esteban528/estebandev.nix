@@ -1,7 +1,7 @@
 {pkgs, ...}: {
   imports = [
     ./stylix
-    ./hypr
+    #./hypr
     ./niri
     # ./eww
     # ./wofi

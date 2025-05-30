@@ -10,8 +10,6 @@
     azure-cli
     azure-functions-core-tools
     parabolic
-    sshfs
-    rustc
     ps_mem
     mdcat
     dbeaver-bin
@@ -35,14 +33,9 @@ in {
   home.packages = with pkgs;
     [
       bun
-      # inputs.zen-browser.packages."x86_64-linux".default
-      inputs.desktopbar.packages.${system}.default
       kdePackages.kdenlive
       fuzzel
       ungoogled-chromium
-      file-roller
-      python311
-      anydesk
       foliate
       loupe
       exiftool
@@ -59,11 +52,8 @@ in {
       tree
       vesktop
       playerctl
-      btop
-      htop
       dig
       telegram-desktop
-      joshuto
       evince
       gedit
       postman
