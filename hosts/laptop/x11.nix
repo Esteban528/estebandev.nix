@@ -1,12 +1,13 @@
 {...} : {
   services.libinput.enable = true;
   # Enable the X11 windowing system.
+  services.displayManager.sddm.wayland.enable = true;
+
   services.xserver = {
     enable = true;
     videoDrivers = ["amdgpu"];
     # desktopManager.gnome.enable = true;
 
-    displayManager.gdm.enable = true;
     desktopManager = {
       xterm.enable = false;
     };
