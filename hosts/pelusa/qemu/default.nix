@@ -1,5 +1,8 @@
 {pkgs, ...} : {
-  systemd.tmpfiles.rules = [ "L+ /var/lib/qemu/firmware - - - - ${pkgs.qemu}/share/qemu/firmware" ];
+  systemd.tmpfiles.rules = [
+    "L+ /var/lib/qemu/firmware - - - - ${pkgs.qemu}/share/qemu/firmware"
+    "L+ /usr/libexec/virtiofsd - - - - ${pkgs.virtiofsd}/bin/virtiofsd"
+  ];
   virtualisation.libvirtd = {
     enable = true;
     qemu = {
@@ -22,5 +25,6 @@
 
   environment.systemPackages = with pkgs; [
     qemu
+    virtiofsd
   ];
 }

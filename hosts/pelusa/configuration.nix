@@ -66,8 +66,10 @@
   users.users.estebandev = {
     isNormalUser = true;
     description = "Esteban Gonzalez Florez";
-    extraGroups = ["wheel" "docker" "libvirtd"]; # Enable ‘sudo’ for the user.
+    extraGroups = ["wheel" "docker" "libvirtd" "libvirtd"]; # Enable ‘sudo’ for the user.
+
   };
+  users.groups.libvirt = {};
 
   programs.nix-ld.enable = true;
   programs.nix-ld.package = pkgs.nix-ld-rs;

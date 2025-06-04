@@ -7,6 +7,10 @@
   unstablePkgs = with pkgs; [
     neovim
     openssl
+
+    freerdp
+    iproute2
+    dialog
   ];
 in{
   environment.sessionVariables = rec {
@@ -65,8 +69,11 @@ in{
       #    gst-libav
 
       (pkgs.callPackage ../../pkgs/tdf/tdf.nix {})
+
       libGL
       libGLU
+      iproute2
+
     ]
     ++ unstablePkgs;
 
