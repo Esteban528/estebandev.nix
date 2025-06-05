@@ -7,6 +7,8 @@
   unstablePkgs = with pkgs; [
     neovim
     openssl
+    linuxKernel.packages.linux_xanmod_latest.cpupower
+    lm_sensors
   ];
 in{
   environment.sessionVariables = rec {
