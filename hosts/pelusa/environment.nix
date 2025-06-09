@@ -11,6 +11,7 @@
     freerdp
     iproute2
     dialog
+    bottles
   ];
 in{
   environment.sessionVariables = rec {
