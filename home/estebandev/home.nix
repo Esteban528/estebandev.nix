@@ -35,6 +35,7 @@ in {
   home.packages = with pkgs;
     [
       bun
+      ferdium
       # inputs.zen-browser.packages."x86_64-linux".default
       inputs.desktopbar.packages.${system}.default
       kdePackages.kdenlive
@@ -57,7 +58,7 @@ in {
       #  brave 
       vlc
       tree
-      vesktop
+      # vesktop
       playerctl
       btop
       htop

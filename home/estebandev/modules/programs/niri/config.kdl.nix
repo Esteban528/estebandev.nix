@@ -5,6 +5,8 @@ spawn-at-startup "swww-daemon"
 spawn-at-startup "onedrive --monitor"
 spawn-at-startup "DesktopBar"
 
+prefer-no-csd
+
 hotkey-overlay {
     skip-at-startup
 }
