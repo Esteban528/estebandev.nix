@@ -20,6 +20,7 @@
     lact
     inkscape
     prismlauncher
+    fuseiso
   ];
 in {
   imports = [./modules];
@@ -34,6 +35,7 @@ in {
   nixpkgs.config.allowUnfree = true;
   home.packages = with pkgs;
     [
+      lutris
       bun
       ferdium
       # inputs.zen-browser.packages."x86_64-linux".default
