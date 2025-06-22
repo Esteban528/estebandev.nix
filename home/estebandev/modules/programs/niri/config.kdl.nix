@@ -2,7 +2,6 @@
 spawn-at-startup "xwayland-satellite"
 spawn-at-startup "hypridle"
 spawn-at-startup "swww-daemon"
-spawn-at-startup "onedrive --monitor"
 spawn-at-startup "DesktopBar"
 
 prefer-no-csd
@@ -66,13 +65,15 @@ input {
 output "HDMI-A-2" {
     // off
 
-    mode "1920x1080@75"
+    mode "1920x1080@74.986"
 
     scale 1
 
     transform "normal"
 
     position x=0 y=0
+
+    focus-at-startup 
 }
 
 layout {

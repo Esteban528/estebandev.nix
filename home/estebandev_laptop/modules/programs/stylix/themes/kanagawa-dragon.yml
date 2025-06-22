@@ -3,7 +3,7 @@ name: "Kanagawa Dragon"
 author: "Adapted by Esteban"
 variant: "dark"
 palette:
-  base00: "#1D1C19"  # dragon_black_2
+  base00: "#201E1E"  # dragon_black_2
   base01: "#12120F"  # dragon_black_1
   base02: "#282727"  # dragon_black_4
   base03: "#625E5A"  # dragon_black_6
