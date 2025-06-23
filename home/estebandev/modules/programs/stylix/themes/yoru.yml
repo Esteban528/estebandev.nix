@@ -1,0 +1,21 @@
+system: "base16"
+name: "Yoru"
+author: "Adapted by Esteban"
+variant: "dark"
+palette:
+  base00: "#0c0e0f"  # background
+  base01: "#090909"  # split / inactive tab bg
+  base02: "#151515"  # new tab bg
+  base03: "#232526"  # darkest ANSI
+  base04: "#2c2e2f"  # bright black
+  base05: "#edeff0"  # foreground
+  base06: "#e4e6e7"  # scrollbar thumb
+  base07: "#f2f4f5"  # bright white
+  base08: "#df5b61"  # red
+  base09: "#de8f78"  # orange
+  base0A: "#e79881"  # yellow
+  base0B: "#78b892"  # green
+  base0C: "#67afc1"  # cyan
+  base0D: "#6791c9"  # blue
+  base0E: "#bc83e3"  # magenta
+  base0F: "#c58cec"  # extra (pink/purple)

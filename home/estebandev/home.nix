@@ -35,6 +35,7 @@ in {
   nixpkgs.config.allowUnfree = true;
   home.packages = with pkgs;
     [
+      helvum
       lutris
       bun
       ferdium
