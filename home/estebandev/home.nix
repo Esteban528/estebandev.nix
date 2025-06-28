@@ -49,7 +49,6 @@ in {
       anydesk
       foliate
       loupe
-      exiftool
       bat
       uv
       tmux
@@ -77,12 +76,6 @@ in {
       jq
       just
       fastfetch
-
-      #Office
-      libreoffice-qt
-      hunspell
-      hunspellDicts.es_CO
-      hunspellDicts.es_ES
 
       # nailgun
       spotify
