@@ -16,4 +16,9 @@
       inherit colors; inherit screenshot-path; inherit radius;
     };
   };
+
+  xdg.configFile."xdg-desktop-portal/portals.conf".text = ''
+    [preferred]
+    org.freedesktop.impl.portal.FileChooser=gtk
+  '';
 }

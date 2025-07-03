@@ -12,6 +12,10 @@
     iproute2
     dialog
     bottles
+    wineWowPackages.stable
+    xdg-desktop-portal
+    xdg-desktop-portal-gtk  
+    xdg-utils
   ];
 in{
   environment.sessionVariables = rec {
@@ -26,6 +30,9 @@ in{
     EDITOR = "nvim";
     ANKI_WAYLAND = "1";
     DISABLE_QT5_COMPAT = "1";
+    GTK_USE_PORTAL = "1";  
+    XDG_CURRENT_DESKTOP = "sway";  
+    NIXOS_XDG_OPEN_USE_PORTAL = "1";
   };
 
   # List packages installed in system profile. To search, run:
@@ -46,7 +53,6 @@ in{
       unzip
       socat
       run
-      wineWowPackages.stable
       winetricks
       libGL
       file

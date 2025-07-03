@@ -8,7 +8,7 @@
   environment.systemPackages = with pkgs; [
     wayland
     wl-clipboard
-    xdg-desktop-portal
+    # xdg-desktop-portal
     # xdg-desktop-portal-gtk
 
     # hyprpaper
@@ -25,9 +25,14 @@
   };
 
   programs.hyprland = {
-    enable = true;
+    enable = false;
     # xwayland.enable = true;
   };
-
+  xdg.portal = {
+    enable = true;
+    wlr.enable = true;
+    # gtk portal needed to make gtk apps happy
+    extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+  };
   programs.xwayland.enable = lib.mkForce false;
 }

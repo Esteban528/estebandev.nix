@@ -35,6 +35,8 @@ in {
   nixpkgs.config.allowUnfree = true;
   home.packages = with pkgs;
     [
+      imv 
+      libsForQt5.okular
       helvum
       lutris
       bun
@@ -42,20 +44,19 @@ in {
       # inputs.zen-browser.packages."x86_64-linux".default
       inputs.desktopbar.packages.${system}.default
       kdePackages.kdenlive
+      xfce.mousepad
       fuzzel
-      ungoogled-chromium
-      file-roller
+      # ungoogled-chromium
+      librewolf
       python311
       anydesk
       foliate
-      loupe
       bat
       uv
       tmux
-      thunderbird
+      #thunderbird
       gimp
       obs-studio
-      nautilus
       starship
       #  brave 
       vlc
@@ -67,8 +68,6 @@ in {
       dig
       telegram-desktop
       joshuto
-      evince
-      gedit
       postman
       onedrive
       obsidian
