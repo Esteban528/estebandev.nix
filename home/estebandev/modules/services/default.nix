@@ -2,7 +2,7 @@
   imports = [
     #./dunst
     ./hypridle
-    ./syncthing
     ./hyprlock
+    ../../../shared/services
   ];
 }

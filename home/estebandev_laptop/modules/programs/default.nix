@@ -5,7 +5,7 @@
     ./niri
     # ./eww
     # ./wofi
-    ./terminal
+    ../../../shared/progams
     ./yazi
     # ./nh
   ];

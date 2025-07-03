@@ -1,11 +1,11 @@
 {pkgs, ...}: {
   imports = [
     ./stylix
-    ./hypr
+    # ../../../shared/dotfiles/hypr
     ./niri
     # ./eww
     # ./wofi
-    ./terminal
+    ../../../shared/progams
     ./yazi
     # ./nh
   ];
