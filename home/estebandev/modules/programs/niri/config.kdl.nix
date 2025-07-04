@@ -89,10 +89,10 @@ layout {
 
     // You can customize the widths that "switch-preset-column-width" (Mod+R) toggles between.
     preset-column-widths {
-        proportion 0.25
-        proportion 0.5
-        proportion 0.75
-        proportion 1.0
+        proportion 0.24
+        proportion 0.48
+        proportion 0.74
+        proportion 0.98
 
         //fixed 1920
     }
@@ -158,13 +158,7 @@ animations {
 window-rule {
     match app-id="^(zen|firefox|librewolf|edge|chrome-.*|zen-.*)$"
 
-    default-column-width { proportion 1.0; }
-}
-
-window-rule {
-
-  match app-id="Thunderbird"
-  open-on-workspace "9"
+    default-column-width { proportion 0.98; }
 }
 
 
