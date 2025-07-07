@@ -32,6 +32,7 @@ in {
   nixpkgs.config.allowUnfree = true;
   home.packages = with pkgs;
     [
+      ferdium
       bun
       kdePackages.kdenlive
       fuzzel
@@ -45,7 +46,6 @@ in {
       thunderbird
       gimp
       obs-studio
-      nautilus
       starship
       #  brave 
       vlc

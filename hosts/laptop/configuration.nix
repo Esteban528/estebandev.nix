@@ -24,6 +24,7 @@
     ./fonts.nix
     ./misc.nix
     ./waydroid
+    ./thunar
   ];
 
   nix.optimise.automatic = true;

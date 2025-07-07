@@ -190,7 +190,7 @@ binds {
     XF86HomePage { spawn "hyprlock"; }
     Mod+N { spawn "chromium"; }
     Mod+E {spawn "wezterm" "start" "yazi";}
-    Mod+Shift+E {spawn "nautilus";}
+    Mod+Shift+E {spawn "thunar";}
 
     // You can also use a shell. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument in the end.
