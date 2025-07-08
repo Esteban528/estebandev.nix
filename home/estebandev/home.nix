@@ -43,6 +43,7 @@ in {
       ferdium
       # inputs.zen-browser.packages."x86_64-linux".default
       inputs.desktopbar.packages.${system}.default
+      inputs.wiremix.packages.${system}.default
       kdePackages.kdenlive
       xfce.mousepad
       fuzzel

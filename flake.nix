@@ -15,6 +15,7 @@
     # zen-browser.url = "github:0xc000022070/zen-browser-flake";
 
     desktopbar.url = "github:Esteban528/desktopBar";
+    wiremix.url = "github:tsowell/wiremix";
   };
 
   outputs = {
