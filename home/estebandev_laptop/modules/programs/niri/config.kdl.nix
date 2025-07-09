@@ -153,7 +153,7 @@ animations {
 }
 
 window-rule {
-    match app-id="^(zen|firefox|chromium-browser|edge|chrome-.*|zen-.*)$"
+    match app-id="^(zen|firefox|librewolf|chromium-browser|edge|chrome-.*|zen-.*)$"
 
     default-column-width { proportion 1.0; }
 }
@@ -188,7 +188,7 @@ binds {
     Mod+D { spawn "fuzzel" ; }
     Mod+X { spawn "hyprpicker" "-f" "hex" "-a"; }
     XF86HomePage { spawn "hyprlock"; }
-    Mod+N { spawn "chromium"; }
+    Mod+N { spawn "librewolf"; }
     Mod+E {spawn "wezterm" "start" "yazi";}
     Mod+Shift+E {spawn "thunar";}
 

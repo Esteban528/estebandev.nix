@@ -36,7 +36,7 @@ in {
       bun
       kdePackages.kdenlive
       fuzzel
-      ungoogled-chromium
+      librewolf
       foliate
       loupe
       exiftool
@@ -54,8 +54,7 @@ in {
       playerctl
       dig
       telegram-desktop
-      evince
-      gedit
+      okular
       postman
       onedrive
       obsidian
