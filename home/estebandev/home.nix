@@ -9,7 +9,6 @@
   stablePackages = with pkgs-stable; [
     azure-cli
     azure-functions-core-tools
-    parabolic
     sshfs
     rustc
     ps_mem
@@ -35,6 +34,7 @@ in {
   nixpkgs.config.allowUnfree = true;
   home.packages = with pkgs;
     [
+      parabolic
       strawberry
       imv 
       libsForQt5.okular
