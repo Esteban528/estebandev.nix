@@ -32,6 +32,7 @@ in {
   nixpkgs.config.allowUnfree = true;
   home.packages = with pkgs;
     [
+      strawberry
       ferdium
       bun
       kdePackages.kdenlive
