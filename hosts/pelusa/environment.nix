@@ -13,8 +13,6 @@
     dialog
     bottles
     wineWowPackages.stable
-    xdg-desktop-portal
-    xdg-desktop-portal-gtk  
     xdg-utils
   ];
 in{
