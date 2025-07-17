@@ -25,11 +25,6 @@ in {
   imports = [./modules];
   home.username = "estebandev";
   home.homeDirectory = "/home/estebandev";
-  home.sessionVariables = {
-    QT_QPA_PLATFORM = "wayland";
-    SDL_VIDEODRIVER = "wayland";
-    XDG_SESSION_TYPE = "wayland";
-  };
 
   nixpkgs.config.allowUnfree = true;
   home.packages = with pkgs;

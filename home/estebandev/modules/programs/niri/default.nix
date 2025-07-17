@@ -17,8 +17,8 @@
     };
   };
 
-  xdg.configFile."xdg-desktop-portal/portals.conf".text = ''
-    [preferred]
-    org.freedesktop.impl.portal.FileChooser=gtk
-  '';
+  # xdg.configFile."xdg-desktop-portal/portals.conf".text = ''
+  #   [preferred]
+  #   org.freedesktop.impl.portal.FileChooser=gtk
+  # '';
 }

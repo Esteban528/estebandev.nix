@@ -14,6 +14,10 @@
     bottles
     wineWowPackages.stable
     xdg-utils
+
+    xdg-desktop-portal
+    xdg-desktop-portal-wlr
+    xdg-desktop-portal-gtk
   ];
 in{
   environment.sessionVariables = rec {
@@ -21,6 +25,9 @@ in{
     XDG_CONFIG_HOME = "$HOME/.config";
     XDG_DATA_HOME = "$HOME/.local/share";
     XDG_STATE_HOME = "$HOME/.local/state";
+    XDG_CURRENT_DESKTOP = "wlroots";  
+    XDG_SESSION_TYPE = "wayland";
+    GTK_USE_PORTAL = "1";  
 
     _JAVA_AWT_WM_NONREPARENTING = "1";
     WLR_NO_HARDWARE_CURSORS = "1";
@@ -28,9 +35,9 @@ in{
     EDITOR = "nvim";
     ANKI_WAYLAND = "1";
     DISABLE_QT5_COMPAT = "1";
-    GTK_USE_PORTAL = "1";  
-    XDG_CURRENT_DESKTOP = "sway";  
     NIXOS_XDG_OPEN_USE_PORTAL = "1";
+    QT_QPA_PLATFORM = "wayland";
+    SDL_VIDEODRIVER = "wayland";
   };
 
   # List packages installed in system profile. To search, run:
