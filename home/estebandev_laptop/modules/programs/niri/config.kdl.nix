@@ -1,7 +1,7 @@
 {colors,screenshot-path,radius, ...} : ''
 spawn-at-startup "xwayland-satellite"
 spawn-at-startup "hypridle"
-spawn-at-startup "swww-daemon"
+//spawn-at-startup "swww-daemon"
 // spawn-at-startup "onedrive --monitor"
 // spawn-at-startup "DesktopBar"
 
@@ -76,7 +76,7 @@ output "HDMI-A-2" {
 }
 
 layout {
-    gaps 8
+    gaps 4
 
     // When to center a column when changing focus, options are:
     // - "never", default behavior, focusing an off-screen column will keep at the left
@@ -97,8 +97,8 @@ layout {
     }
 
     preset-window-heights {
-        proportion 0.5
-        proportion 0.75
+        //proportion 0.5
+        //proportion 0.75
         proportion 1.0
     }
 
@@ -185,13 +185,13 @@ binds {
     Mod+F1 { show-hotkey-overlay; }
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
-    Mod+Return { spawn "wezterm" "start" "/home/estebandev/.tmux/init-session.sh"; }
+    Mod+Return { spawn "alacritty" "-e" "/home/estebandev/.tmux/init-session.sh"; }
     //Mod+D { spawn "wofi" "--show" "drun"; }
     Mod+D { spawn "fuzzel" ; }
     Mod+X { spawn "hyprpicker" "-f" "hex" "-a"; }
     XF86HomePage { spawn "hyprlock"; }
     Mod+N { spawn "librewolf"; }
-    Mod+E {spawn "wezterm" "start" "yazi";}
+    Mod+E {spawn "alacritty" "-e" "yazi";}
     Mod+Shift+E {spawn "thunar";}
 
     // You can also use a shell. Do this if you need pipes, multiple commands, etc.
