@@ -12,7 +12,7 @@
     # xdg-desktop-portal-gtk
 
     # hyprpaper
-    # hyprpicker
+    hyprpicker
     # hyprcursor
     # slurp
     # grim
