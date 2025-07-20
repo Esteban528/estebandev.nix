@@ -1,6 +1,7 @@
 {colors,screenshot-path,radius, ...} : ''
 spawn-at-startup "xwayland-satellite"
 spawn-at-startup "hypridle"
+spawn-at-startup "~/.local/bin/battery_daemon"
 //spawn-at-startup "swww-daemon"
 // spawn-at-startup "onedrive --monitor"
 // spawn-at-startup "DesktopBar"
