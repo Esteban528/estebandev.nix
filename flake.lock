@@ -207,11 +207,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1752402455,
-        "narHash": "sha256-mCHfZhQKdTj2JhCFcqfOfa3uKZbwUkPQbd0/zPnhOE8=",
+        "lastModified": 1753294394,
+        "narHash": "sha256-1Dfgq09lHZ8AdYB2Deu/mYP1pMNpob8CgqT5Mzo44eI=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "bf893ad4cbf46610dd1b620c974f824e266cd1df",
+        "rev": "1fde6fb1be6cd5dc513dc1c287d69e4eb2de973e",
         "type": "github"
       },
       "original": {
@@ -254,11 +254,11 @@
     },
     "nixpkgs-staging-next": {
       "locked": {
-        "lastModified": 1752408384,
-        "narHash": "sha256-pQmpHZ+YY0DnR9AhK3EIjJY3yvQzBY9DLzFtmx+ah30=",
+        "lastModified": 1753316290,
+        "narHash": "sha256-UWHyfBD+2zNszp65Y1TZQxRAjra3u+QmvmMYJLdLhtY=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "a82a7e5045b562323b2a17af106146d5d8cfbb92",
+        "rev": "0247c2081871d587b5ba53c3ce14ef5027d274ca",
         "type": "github"
       },
       "original": {
@@ -270,11 +270,11 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1751984180,
-        "narHash": "sha256-LwWRsENAZJKUdD3SpLluwDmdXY9F45ZEgCb0X+xgOL0=",
+        "lastModified": 1752950548,
+        "narHash": "sha256-NS6BLD0lxOrnCiEOcvQCDVPXafX1/ek1dfJHX1nUIzc=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "9807714d6944a957c2e036f84b0ff8caf9930bc0",
+        "rev": "c87b95e25065c028d31a94f06a62927d18763fdf",
         "type": "github"
       },
       "original": {
@@ -371,11 +371,11 @@
         "tinted-zed": "tinted-zed"
       },
       "locked": {
-        "lastModified": 1752419080,
-        "narHash": "sha256-XzdeXeHc99OPMAm6IAU95UYdSfI1xImrmVCxSc3/fcU=",
+        "lastModified": 1753296482,
+        "narHash": "sha256-VPLaHVhU6/CwnMHTjhf6945qyrXEcpjxKfpWqQXtnxI=",
         "owner": "danth",
         "repo": "stylix",
-        "rev": "a950a3f529e1952a7ddf2af138b90a99edf41fe5",
+        "rev": "fbe1dab7783a3d579dc57be8ceee148104e0930b",
         "type": "github"
       },
       "original": {
@@ -501,11 +501,11 @@
         "systems": "systems_2"
       },
       "locked": {
-        "lastModified": 1752202660,
-        "narHash": "sha256-eA+6U1xV+SvbNMmIPD2trZ4dMzeBzPuGGoaqL9WBF9k=",
+        "lastModified": 1753243473,
+        "narHash": "sha256-ub/wB8drrm3JxHX8p4cEYxceXPPEl6pmnBD/RWSt4ds=",
         "owner": "tsowell",
         "repo": "wiremix",
-        "rev": "509573a02848755946863fd0c95b3a5432f6700d",
+        "rev": "7804b7f6ffd167efe71b8d23d0b25439b2dabb85",
         "type": "github"
       },
       "original": {
