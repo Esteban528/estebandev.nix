@@ -32,7 +32,7 @@ in {
       parabolic
       strawberry
       imv 
-      libsForQt5.okular
+      evince
       helvum
       lutris
       bun

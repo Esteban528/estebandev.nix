@@ -55,7 +55,7 @@ in {
       playerctl
       dig
       telegram-desktop
-      libsForQt5.okular 
+      kdePackages.okular
       postman
       onedrive
       obsidian
