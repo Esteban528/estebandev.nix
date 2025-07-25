@@ -32,7 +32,7 @@ in {
       parabolic
       strawberry
       imv 
-      evince
+      kdePackages.okular
       helvum
       lutris
       bun
