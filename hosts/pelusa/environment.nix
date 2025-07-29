@@ -85,7 +85,7 @@ in{
       libGL
       libGLU
       iproute2
-
+      gnumake
     ]
     ++ unstablePkgs;
 
