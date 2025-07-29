@@ -62,6 +62,7 @@ in{
       libGLU
       brightnessctl
       python311
+      vulnix
     ]
     ++ unstablePkgs;
 
