@@ -29,6 +29,7 @@ in {
   nixpkgs.config.allowUnfree = true;
   home.packages = with pkgs;
     [
+      valgrind
       parabolic
       strawberry
       imv 
