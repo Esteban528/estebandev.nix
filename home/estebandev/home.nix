@@ -30,6 +30,7 @@ in {
   home.packages = with pkgs;
     [
       valgrind
+      qbittorrent
       parabolic
       strawberry
       imv 
