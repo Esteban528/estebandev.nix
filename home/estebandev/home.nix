@@ -29,6 +29,7 @@ in {
   nixpkgs.config.allowUnfree = true;
   home.packages = with pkgs;
     [
+      cloudflared
       valgrind
       qbittorrent
       parabolic
