@@ -49,8 +49,8 @@
         name = "Noto Color Emoji";
       };
       monospace = {
-        package = pkgs.nerd-fonts.iosevka;
-        name = "Iosevka NF";
+        package = pkgs.nerd-fonts.hack;
+        name = "Hack Nerd Font";
       };
     };
   };
