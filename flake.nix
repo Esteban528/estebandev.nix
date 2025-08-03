@@ -13,6 +13,7 @@
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
     # zen-browser.url = "github:0xc000022070/zen-browser-flake";
+    schemes-nix.url = "github:krovuxdev/schemes.nix";
 
     desktopbar.url = "github:Esteban528/desktopBar";
     wiremix.url = "github:tsowell/wiremix";
@@ -30,11 +31,13 @@
 
     pkgs-staging-next =
       import nixpkgs-staging-next {
+        config.allowUnfree = true;
       };
 
     pkgs-stable = import nixpkgs-stable {
       inherit system;
       config.allowUnfree = true;
+      overlays = [ inputs.schemes-nix.overlays.default ];
     };
     localSystem = {system = "x86_64-linux";};
   in {
