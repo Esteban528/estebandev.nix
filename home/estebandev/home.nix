@@ -7,8 +7,8 @@
   ...
 }: let
   stablePackages = with pkgs-stable; [
-    azure-cli
-    azure-functions-core-tools
+    # azure-cli
+    # azure-functions-core-tools
     sshfs
     rustc
     ps_mem
@@ -16,7 +16,7 @@
     dbeaver-bin
     fzf
     fd
-    lact
+    # lact
     inkscape
     prismlauncher
     fuseiso
@@ -38,15 +38,12 @@ in {
       kdePackages.okular
       helvum
       lutris
-      bun
       ferdium
-      # inputs.zen-browser.packages."x86_64-linux".default
       inputs.desktopbar.packages.${system}.default
       inputs.wiremix.packages.${system}.default
       kdePackages.kdenlive
       xfce.mousepad
       fuzzel
-      # ungoogled-chromium
       librewolf
       python311
       anydesk
@@ -54,20 +51,15 @@ in {
       bat
       uv
       tmux
-      #thunderbird
       gimp
       obs-studio
-      starship
-      #  brave 
       vlc
       tree
-      # vesktop
       playerctl
       btop
       htop
       dig
       telegram-desktop
-      joshuto
       postman
       onedrive
       obsidian
@@ -76,8 +68,6 @@ in {
       just
       fastfetch
 
-      # nailgun
-      spotify
     ]
     ++ stablePackages;
 
