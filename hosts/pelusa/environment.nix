@@ -45,7 +45,7 @@ in{
 
   environment.systemPackages = with pkgs-stable;
     [
-      vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+      vim
       zip
       unzip
       unar
@@ -55,10 +55,8 @@ in{
       wget
       git
       killall
-      unzip
       socat
       run
-      winetricks
       libGL
       file
       mtpfs
@@ -68,7 +66,6 @@ in{
       libaio
       pcsclite
 
-      mpv
       nix-prefetch-git
 
       ripgrep
@@ -79,8 +76,6 @@ in{
       gst_all_1.gst-plugins-bad
       gst_all_1.gst-plugins-ugly
       #    gst-libav
-
-      (pkgs.callPackage ../../pkgs/tdf/tdf.nix {})
 
       libGL
       libGLU
