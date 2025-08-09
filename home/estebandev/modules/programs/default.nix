@@ -2,7 +2,7 @@
   imports = [
     ./stylix
     # ../../../shared/dotfiles/hypr
-    ./niri
+    #./niri
     # ./eww
     # ./wofi
     ../../../shared/progams

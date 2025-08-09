@@ -15,10 +15,10 @@
 
       open = {
         edit = "nvim";
-        image = "feh";
+        image = "imv";
         wallpaper = "swww img";
         pdf = "evince";
-        tpdf = "tdf";
+        tpdf = "okular";
         video = "vlc";
         browser = "zen";
         default = "xdg-open";

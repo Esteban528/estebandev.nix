@@ -4,6 +4,9 @@
   config,
   ...
 }:{
+  imports = [
+    ./sway.nix
+  ];
 
   environment.systemPackages = with pkgs; [
     wayland
@@ -14,8 +17,8 @@
     # hyprpaper
     hyprpicker
     # hyprcursor
-    # slurp
-    # grim
+    slurp
+    grim
     swww
     xwayland-satellite
   ];
@@ -28,6 +31,7 @@
     enable = false;
     # xwayland.enable = true;
   };
+
   xdg.portal = {
     enable = true;
     wlr.enable = true;
@@ -43,6 +47,7 @@
         "org.freedesktop.impl.portal.Screenshot" = "wlr";
         "org.freedesktop.impl.portal.RemoteDesktop" = "wlr";
         "org.freedesktop.impl.portal.FileChooser" = "gtk";
+        "org.freedesktop.impl.portal.OpenURI" = "gtk";
       };
     };
   };

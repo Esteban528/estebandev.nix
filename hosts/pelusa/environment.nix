@@ -7,12 +7,11 @@
   unstablePkgs = with pkgs; [
     neovim
     openssl
+    imv 
 
     freerdp
     iproute2
     dialog
-    bottles
-    wineWowPackages.stable
     xdg-utils
 
     xdg-desktop-portal
@@ -21,14 +20,6 @@
   ];
 in{
   environment.sessionVariables = rec {
-    XDG_CACHE_HOME = "$HOME/.cache";
-    XDG_CONFIG_HOME = "$HOME/.config";
-    XDG_DATA_HOME = "$HOME/.local/share";
-    XDG_STATE_HOME = "$HOME/.local/state";
-    XDG_CURRENT_DESKTOP = "wlroots";  
-    XDG_SESSION_TYPE = "wayland";
-    GTK_USE_PORTAL = "1";  
-
     _JAVA_AWT_WM_NONREPARENTING = "1";
     WLR_NO_HARDWARE_CURSORS = "1";
     OZONE_PLATFORM = "wayland";
@@ -36,7 +27,7 @@ in{
     ANKI_WAYLAND = "1";
     DISABLE_QT5_COMPAT = "1";
     NIXOS_XDG_OPEN_USE_PORTAL = "1";
-    QT_QPA_PLATFORM = "wayland";
+    QT_QPA_PLATFORM = "wayland;xcb";
     SDL_VIDEODRIVER = "wayland";
   };
 
@@ -61,10 +52,11 @@ in{
       file
       mtpfs
       simple-mtpfs
-
+      python311
       libnotify
       libaio
       pcsclite
+      playerctl
 
       nix-prefetch-git
 

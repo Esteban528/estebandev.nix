@@ -9,9 +9,6 @@
   stablePackages = with pkgs-stable; [
     # azure-cli
     # azure-functions-core-tools
-    sshfs
-    rustc
-    ps_mem
     mdcat
     dbeaver-bin
     fzf
@@ -29,45 +26,40 @@ in {
   nixpkgs.config.allowUnfree = true;
   home.packages = with pkgs;
     [
-      cloudflared
       valgrind
+      wineWowPackages.stable
+      bottles
+      cloudflared
       qbittorrent
       parabolic
       strawberry
-      imv 
       kdePackages.okular
       helvum
-      lutris
       ferdium
-      inputs.desktopbar.packages.${system}.default
+      # inputs.desktopbar.packages.${system}.default
       inputs.wiremix.packages.${system}.default
       kdePackages.kdenlive
       xfce.mousepad
-      fuzzel
       librewolf
-      python311
-      anydesk
+      #anydesk
       foliate
-      bat
       uv
       tmux
       gimp
       obs-studio
       vlc
       tree
-      playerctl
       btop
       htop
       dig
       telegram-desktop
-      postman
+      #postman
       onedrive
       obsidian
       anki-bin
       jq
       just
       fastfetch
-
     ]
     ++ stablePackages;
 

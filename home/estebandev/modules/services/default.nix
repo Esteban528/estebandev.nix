@@ -1,8 +1,8 @@
 {pkgs, ...}: {
   imports = [
     #./dunst
-    ./hypridle
-    ./hyprlock
+    #./hypridle
+    #./hyprlock
     ../../../shared/services
   ];
 }
