@@ -1,7 +1,7 @@
 {pkgs, ...}: {
   imports = [
     ./stylix
-    # ../../../shared/dotfiles/hypr
+    ../../../shared/dotfiles/sway
     #./niri
     # ./eww
     # ./wofi
