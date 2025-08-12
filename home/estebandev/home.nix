@@ -35,7 +35,7 @@ in {
       strawberry
       kdePackages.okular
       helvum
-      ferdium
+      vesktop
       # inputs.desktopbar.packages.${system}.default
       inputs.wiremix.packages.${system}.default
       kdePackages.kdenlive
