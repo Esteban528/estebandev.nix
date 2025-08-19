@@ -37,7 +37,7 @@ in {
       helvum
       vesktop
       # inputs.desktopbar.packages.${system}.default
-      inputs.wiremix.packages.${system}.default
+      wiremix
       kdePackages.kdenlive
       xfce.mousepad
       librewolf

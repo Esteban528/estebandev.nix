@@ -314,22 +314,6 @@
         "type": "github"
       }
     },
-    "nixpkgs_5": {
-      "locked": {
-        "lastModified": 1743315132,
-        "narHash": "sha256-6hl6L/tRnwubHcA4pfUUtk542wn2Om+D4UnDhlDW9BE=",
-        "owner": "NixOS",
-        "repo": "nixpkgs",
-        "rev": "52faf482a3889b7619003c0daec593a1912fddc1",
-        "type": "github"
-      },
-      "original": {
-        "owner": "NixOS",
-        "ref": "nixos-unstable",
-        "repo": "nixpkgs",
-        "type": "github"
-      }
-    },
     "nur": {
       "inputs": {
         "flake-parts": [
@@ -363,8 +347,7 @@
         "nixpkgs-stable": "nixpkgs-stable",
         "nixpkgs-staging-next": "nixpkgs-staging-next",
         "schemes-nix": "schemes-nix",
-        "stylix": "stylix",
-        "wiremix": "wiremix"
+        "stylix": "stylix"
       }
     },
     "schemes-nix": {
@@ -429,21 +412,6 @@
       "original": {
         "owner": "nix-systems",
         "repo": "default",
-        "type": "github"
-      }
-    },
-    "systems_2": {
-      "locked": {
-        "lastModified": 1689347949,
-        "narHash": "sha256-12tWmuL2zgBgZkdoB6qXZsgJEH9LR3oUgpaQq2RbI80=",
-        "owner": "nix-systems",
-        "repo": "default-linux",
-        "rev": "31732fcf5e8fea42e59c2488ad31a0e651500f68",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nix-systems",
-        "repo": "default-linux",
         "type": "github"
       }
     },
@@ -525,25 +493,6 @@
       "original": {
         "owner": "tinted-theming",
         "repo": "base16-zed",
-        "type": "github"
-      }
-    },
-    "wiremix": {
-      "inputs": {
-        "nixpkgs": "nixpkgs_5",
-        "systems": "systems_2"
-      },
-      "locked": {
-        "lastModified": 1755221126,
-        "narHash": "sha256-ppYYOonT/JN0w9U4Oh7lLIpoTovcTExZcnw1PeppP5U=",
-        "owner": "tsowell",
-        "repo": "wiremix",
-        "rev": "c527292d1fbd6150769206a2629e6a79bdabebac",
-        "type": "github"
-      },
-      "original": {
-        "owner": "tsowell",
-        "repo": "wiremix",
         "type": "github"
       }
     }

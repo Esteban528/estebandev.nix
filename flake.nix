@@ -16,7 +16,6 @@
     schemes-nix.url = "github:krovuxdev/schemes.nix";
 
     desktopbar.url = "github:Esteban528/desktopBar";
-    wiremix.url = "github:tsowell/wiremix";
   };
 
   outputs = {
