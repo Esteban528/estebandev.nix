@@ -26,6 +26,7 @@
     ./misc.nix
     ./waydroid
     ./thunar
+    ./steam
   ];
 
   nix.optimise.automatic = true;
