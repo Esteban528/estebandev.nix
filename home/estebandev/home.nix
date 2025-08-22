@@ -60,6 +60,7 @@ in {
       jq
       just
       fastfetch
+      gdb
     ]
     ++ stablePackages;
 
