@@ -61,6 +61,7 @@ in {
       just
       fastfetch
       gdb
+      kiwix-tools
     ]
     ++ stablePackages;
 

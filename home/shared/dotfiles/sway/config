@@ -222,8 +222,8 @@ bar {
     }
 }
 
-# default_border none
-# hide_edge_borders --i3 smart
-# smart_borders smart
+#border pixel
+default_border pixel 
+default_floating_border pixel
 
 include /etc/sway/config.d/*
