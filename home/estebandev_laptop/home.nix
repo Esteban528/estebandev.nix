@@ -72,6 +72,8 @@ in {
 
       # nailgun
       spotify
+      R
+      inputs.pomodoro.packages.${system}.default
     ]
     ++ stablePackages;
 

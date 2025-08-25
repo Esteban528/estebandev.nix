@@ -63,7 +63,6 @@ in {
       gdb
       kiwix-tools
       R
-      rstudio
     ]
     ++ stablePackages;
 
