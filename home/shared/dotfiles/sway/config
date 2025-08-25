@@ -202,6 +202,8 @@ bindsym $mod+r mode "resize"
     # Special key to take a screenshot with grim
     bindsym Shift+Print exec CaptureAll
     bindsym $mod+Shift+s exec CaptureArea
+    bindsym XF86HomePage exec systemctl suspend
+
 
     # hyprpicker
     bindsym $mod+x exec hyprpicker -f hex -a

@@ -62,6 +62,8 @@ in {
       fastfetch
       gdb
       kiwix-tools
+      R
+      rstudio
     ]
     ++ stablePackages;
 
