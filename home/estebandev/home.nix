@@ -36,7 +36,7 @@ in {
       kdePackages.okular
       helvum
       vesktop
-      # inputs.desktopbar.packages.${system}.default
+      inputs.pomodoro.packages.${system}.default
       wiremix
       kdePackages.kdenlive
       xfce.mousepad

@@ -15,7 +15,7 @@
     # zen-browser.url = "github:0xc000022070/zen-browser-flake";
     schemes-nix.url = "github:krovuxdev/schemes.nix";
 
-    desktopbar.url = "github:Esteban528/desktopBar";
+    pomodoro.url = "github:Esteban528/pomodoro";
   };
 
   outputs = {
