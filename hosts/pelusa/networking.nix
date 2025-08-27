@@ -1,4 +1,4 @@
-{...} : {
+{pkgs,...} : {
 
   networking.hostName = "pelusaNixos"; # Define your hostname.
   # Pick only one of the below networking options.
@@ -21,4 +21,7 @@
 
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
+
+  services.netbird.enable = true; # for netbird service & CLI
+  environment.systemPackages = [ pkgs.netbird-ui ]; # for GUI
 }
