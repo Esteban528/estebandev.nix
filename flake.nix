@@ -62,7 +62,7 @@
             home-manager.users.estebandev = {
               imports = [
                 ./home/estebandev/home.nix
-                stylix.homeManagerModules.stylix
+                stylix.homeModules.stylix
               ];
             };
 

@@ -5,12 +5,15 @@
     enable = true;
     videoDrivers = ["amdgpu"];
     # desktopManager.gnome.enable = true;
+    displayManager = {
+      autoLogin.enable = true;
+      autoLogin.user = "estebandev";
+      defaultSession = "sway";
+    };
 
-    displayManager.gdm.enable = true;
     desktopManager = {
       xterm.enable = false;
     };
-
     # Configure keymap in X11
     xkb.layout = "latam";
   };
