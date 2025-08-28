@@ -17,7 +17,7 @@
     ./networking.nix
     ./shell
     ./environment.nix
-    ./ollama
+    # ./ollama
     ./wayland
     ./podman
     ./x11.nix

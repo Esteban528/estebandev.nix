@@ -26,6 +26,7 @@ in {
   nixpkgs.config.allowUnfree = true;
   home.packages = with pkgs;
     [
+      tray-tui
       valgrind
       wineWowPackages.stable
       bottles
