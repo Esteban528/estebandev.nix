@@ -49,8 +49,8 @@
         name = "Noto Color Emoji";
       };
       monospace = {
-        package = pkgs.nerd-fonts.hack;
-        name = "Hack Nerd Font";
+        package = pkgs.maple-mono.NF;
+        name = "Maple Mono NF";
       };
     };
   };

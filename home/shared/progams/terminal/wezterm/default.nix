@@ -30,7 +30,7 @@ in {
         config.font_size = 12
         config.font = wezterm.font {
           -- family = 'Iosevka NF',
-          family = 'Fira Code Nerd Font',
+          family = 'Maple Mono NF',
           -- weight = 'Regular',
         }
         config.hide_tab_bar_if_only_one_tab = true

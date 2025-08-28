@@ -16,6 +16,7 @@
     nerd-fonts.iosevka
     nerd-fonts.hack
     nerd-fonts.jetbrains-mono
+    maple-mono.NF
     pixel-code
   ];
 }
