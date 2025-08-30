@@ -64,6 +64,7 @@ in {
       gdb
       kiwix-tools
       R
+      cmake
     ]
     ++ stablePackages;
 
