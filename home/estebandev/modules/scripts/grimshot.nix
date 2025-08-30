@@ -9,7 +9,7 @@
     grim -g "$(slurp)" "$FILE"
     wl-copy < "$FILE"
 
-    notify-send "Screenshot taken" "Saved to $FILE"
+    notify-send "Screenshot taken" "$FILENAME" -t 2000 -i "$FILE"
   '';
 
   CaptureAll = pkgs.writeShellScriptBin "CaptureAll" ''
@@ -20,7 +20,7 @@
     grim "$FILE"
     wl-copy < "$FILE"
 
-    notify-send "Screenshot taken" "Saved to $FILE"
+    notify-send "Screenshot taken" "$FILENAME" -t 2000 -i "$FILE"
   '';
 
   CaptureScreen = pkgs.writeShellScriptBin "CaptureScreen" ''
@@ -31,7 +31,7 @@
     grim -g "$(slurp -o)" "$FILE"
     wl-copy < "$FILE"
 
-    notify-send "Screenshot taken" "Saved to $FILE"
+    notify-send "Screenshot taken" "$FILENAME" -t 2000 -i "$FILE"
   '';
 in {
   home.packages = [CaptureArea CaptureAll CaptureScreen];
