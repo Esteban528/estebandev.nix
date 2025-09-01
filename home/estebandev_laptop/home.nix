@@ -18,6 +18,7 @@
     lact
     inkscape
     prismlauncher
+    librewolf
   ];
 in {
   imports = [./modules];
@@ -38,7 +39,6 @@ in {
       bun
       kdePackages.kdenlive
       fuzzel
-      librewolf
       foliate
       loupe
       exiftool
