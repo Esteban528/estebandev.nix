@@ -227,5 +227,7 @@ bindsym $mod+r mode "resize"
 #border pixel
 default_border pixel 
 default_floating_border pixel
+gaps inner 5
+gaps outer 5
 
 include /etc/sway/config.d/*
