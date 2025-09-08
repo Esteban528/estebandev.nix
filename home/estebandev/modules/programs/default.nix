@@ -5,7 +5,7 @@
     #./niri
     # ./eww
     # ./wofi
-    ../../../shared/progams
+     ../../../shared/progams/terminal/alacritty
     ./yazi
     # ./nh
   ];

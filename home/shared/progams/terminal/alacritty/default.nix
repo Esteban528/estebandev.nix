@@ -4,20 +4,19 @@
     settings = {
       window = {
         padding = {
-          x = 6;
+          x = 0;
+          y = 0;
         };
-        dimensions = {
-          lines = 3;
-          columns = 200;
-        };
+        dynamic_padding = true;
       };
       env = {
+        WINIT_X11_SCALE_FACTOR = "1.0";
         TERM = "xterm-256color";
       };
       font = {
-        size = lib.mkForce 10;
+        size = lib.mkForce 12;
         normal = {
-           family = lib.mkForce "Hack Nerd Font";
+           family = lib.mkForce "Maple Mono NF";
            style = "Regular";
         };
       };

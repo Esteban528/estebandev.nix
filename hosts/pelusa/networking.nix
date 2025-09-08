@@ -21,7 +21,8 @@
 
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
+  networking.nameservers = [ "1.1.1.1" ];
 
-  services.netbird.enable = true; # for netbird service & CLI
-  environment.systemPackages = [ pkgs.netbird-ui ]; # for GUI
+  # services.netbird.enable = false; # for netbird service & CLI
+  # environment.systemPackages = [ pkgs.netbird-ui ]; # for GUI
 }

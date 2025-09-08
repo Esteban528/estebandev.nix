@@ -9,7 +9,7 @@ set $left h
 set $down j
 set $up k
 set $right l
-set $term wezterm start /home/estebandev/.tmux/init-session.sh
+set $term alacritty -e /home/estebandev/.tmux/init-session.sh
 set $menu wmenu-run
 
 ### Output configuration
