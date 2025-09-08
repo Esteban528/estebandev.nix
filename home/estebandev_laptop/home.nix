@@ -18,7 +18,6 @@
     lact
     inkscape
     prismlauncher
-    librewolf
   ];
 in {
   imports = [./modules];
@@ -33,6 +32,7 @@ in {
   nixpkgs.config.allowUnfree = true;
   home.packages = with pkgs;
     [
+      librewolf
       cmake
       cloudflared
       strawberry
