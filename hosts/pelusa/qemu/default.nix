@@ -26,6 +26,7 @@
   environment.systemPackages = with pkgs; [
     qemu
     virt-viewer
+    virtiofsd
   ];
 
   # boot.binfmt.emulatedSystems = [

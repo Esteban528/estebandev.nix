@@ -26,7 +26,6 @@ in {
   nixpkgs.config.allowUnfree = true;
   home.packages = with pkgs;
     [
-      logisim
       valgrind
       wineWowPackages.stable
       bottles
