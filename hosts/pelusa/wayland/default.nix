@@ -9,7 +9,7 @@
   ];
 
   environment.systemPackages = with pkgs; [
-    wayland
+    #wayland
     wl-clipboard
     # xdg-desktop-portal
     # xdg-desktop-portal-gtk
@@ -17,10 +17,8 @@
     # hyprpaper
     hyprpicker
     # hyprcursor
-    slurp
-    grim
     swww
-    xwayland-satellite
+    #xwayland-satellite
   ];
 
   programs.niri =  {

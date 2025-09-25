@@ -1,13 +1,20 @@
 { config, pkgs, lib, ... }:
 
 {
+  home.packages = with pkgs; [
+    grim # screenshot functionality
+    slurp # screenshot functionality
+    mako # notification system developed by swaywm maintainer
+  ];
+
+  programs.fuzzel.enable = true;
   wayland.windowManager.sway = {
     enable = true;
 
     config = rec {
       modifier = "Mod4";
       terminal = "alacritty -e /home/estebandev/.tmux/init-session.sh";
-      menu = "wmenu-run";
+      menu = "fuzzel";
 
       input = {
         "type:keyboard" = {
