@@ -7,7 +7,6 @@
     # ./wofi
     ../../../shared/progams/terminal/alacritty
     ./yazi
-    ./alacritty
     # ./nh
   ];
 

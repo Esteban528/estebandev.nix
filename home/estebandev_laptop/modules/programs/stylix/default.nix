@@ -43,8 +43,8 @@
         name = "Noto Color Emoji";
       };
       monospace = {
-        package = pkgs.jetbrains-mono;
-        name = "Jetbrains Mono";
+        package = pkgs.maple-mono.NF;
+        name = "Maple Mono NF";
       };
     };
   };
