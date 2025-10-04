@@ -26,9 +26,9 @@
 
     extraPackages = with pkgs; [
       mesa
-      amdvlk
-      driversi686Linux.amdvlk
+      # amdvlk
+      #driversi686Linux.amdvlk
     ];
-    extraPackages32 = with pkgs; [driversi686Linux.amdvlk];
+    # extraPackages32 = with pkgs; [driversi686Linux.amdvlk];
   };
 }
