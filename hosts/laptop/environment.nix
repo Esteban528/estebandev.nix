@@ -63,6 +63,8 @@ in{
       brightnessctl
       python311
       vulnix
+
+      protonvpn-cli
     ]
     ++ unstablePkgs;
 
