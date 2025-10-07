@@ -36,7 +36,7 @@ in {
       strawberry
       kdePackages.okular
       helvum
-      vesktop
+      #vesktop
       inputs.pomodoro.packages.${system}.default
       wiremix
       kdePackages.kdenlive
