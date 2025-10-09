@@ -7,17 +7,12 @@
   ...
 }: let
   stablePackages = with pkgs-stable; [
-    azure-cli
-    azure-functions-core-tools
     parabolic
     ps_mem
     mdcat
     dbeaver-bin
     fzf
     fd
-    lact
-    inkscape
-    prismlauncher
   ];
 in {
   imports = [./modules];
@@ -36,29 +31,17 @@ in {
       cmake
       cloudflared
       strawberry
-      bun
       kdePackages.kdenlive
-      fuzzel
       foliate
       loupe
-      exiftool
-      bat
       uv
       tmux
-      thunderbird
-      gimp
       obs-studio
-      starship
-      #  brave 
       vlc
       tree
-      vesktop
       playerctl
       dig
-      telegram-desktop
       kdePackages.okular
-      postman
-      onedrive
       obsidian
       anki-bin
       jq

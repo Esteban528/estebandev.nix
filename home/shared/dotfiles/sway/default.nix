@@ -20,6 +20,11 @@
         "type:keyboard" = {
           xkb_layout = "latam";
         };
+
+        "type:touchpad" = {
+          dwt = "enabled";
+          tap = "enabled";
+        };
       };
 
       output = {

@@ -37,7 +37,6 @@ in{
       unar
       bash
       gcc
-      cargo
       wget
       git
       killall
@@ -62,7 +61,6 @@ in{
       libGLU
       brightnessctl
       python311
-      vulnix
 
       protonvpn-cli
     ]
