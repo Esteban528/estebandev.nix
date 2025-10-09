@@ -26,8 +26,6 @@ in {
   nixpkgs.config.allowUnfree = true;
   home.packages = with pkgs;
     [
-      go
-      valgrind
       wineWowPackages.stable
       bottles
       cloudflared
@@ -36,15 +34,11 @@ in {
       strawberry
       kdePackages.okular
       helvum
-      #vesktop
       inputs.pomodoro.packages.${system}.default
       wiremix
-      kdePackages.kdenlive
       xfce.mousepad
       librewolf
-      #anydesk
       foliate
-      uv
       tmux
       gimp
       obs-studio
@@ -54,8 +48,6 @@ in {
       htop
       dig
       telegram-desktop
-      #postman
-      onedrive
       obsidian
       anki-bin
       jq
@@ -64,7 +56,6 @@ in {
       gdb
       kiwix-tools
       R
-      cmake
     ]
     ++ stablePackages;
 

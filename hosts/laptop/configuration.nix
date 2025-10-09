@@ -68,7 +68,7 @@
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.estebandev = {
     isNormalUser = true;
-    description = "Esteban Gonzalez Florez";
+    description = "Esteban Gonzalez";
     extraGroups = ["wheel" "docker" "libvirtd"]; # Enable ‘sudo’ for the user.
   };
 

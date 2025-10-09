@@ -11,12 +11,6 @@
 
     freerdp
     iproute2
-    dialog
-    xdg-utils
-
-    xdg-desktop-portal
-    xdg-desktop-portal-wlr
-    xdg-desktop-portal-gtk
   ];
 in{
   environment.sessionVariables = rec {
@@ -45,33 +39,13 @@ in{
       cargo
       wget
       git
-      killall
-      socat
       run
-      libGL
       file
-      mtpfs
       simple-mtpfs
       python311
       libnotify
-      libaio
-      pcsclite
-      playerctl
-
-      nix-prefetch-git
 
       ripgrep
-
-      gst_all_1.gstreamer
-      gst_all_1.gst-plugins-base
-      gst_all_1.gst-plugins-good
-      gst_all_1.gst-plugins-bad
-      gst_all_1.gst-plugins-ugly
-      #    gst-libav
-
-      libGL
-      libGLU
-      iproute2
       gnumake
     ]
     ++ unstablePkgs;

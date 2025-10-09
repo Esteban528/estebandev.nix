@@ -9,7 +9,7 @@
   ];
 
   environment.systemPackages = with pkgs; [
-    #wayland
+    # wayland
     wl-clipboard
     # xdg-desktop-portal
     # xdg-desktop-portal-gtk
@@ -21,9 +21,9 @@
     #xwayland-satellite
   ];
 
-  programs.niri =  {
-    enable = true;
-  };
+  # programs.niri =  {
+  #   enable = false;
+  # };
 
   programs.hyprland = {
     enable = false;
@@ -57,7 +57,7 @@
   #   ];
   # };
   # }
-  programs.xwayland.enable = lib.mkForce false;
+  # programs.xwayland.enable = lib.mkForce false;
   security.polkit.enable = true;
   services.dbus.enable = true;
 }
