@@ -54,7 +54,7 @@ in {
       just
       fastfetch
       gdb
-      kiwix-tools
+      #kiwix-tools
       R
     ]
     ++ stablePackages;
