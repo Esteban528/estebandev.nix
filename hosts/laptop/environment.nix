@@ -7,8 +7,6 @@
   unstablePkgs = with pkgs; [
     neovim
     openssl
-    linuxKernel.packages.linux_xanmod_latest.cpupower
-    lm_sensors
   ];
 in{
   environment.sessionVariables = rec {
@@ -37,31 +35,16 @@ in{
       unar
       bash
       gcc
-      wget
       git
-      killall
-      unzip
-      socat
       run
-      libGL
-      file
-      mtpfs
       simple-mtpfs
 
       libnotify
-      libaio
-      pcsclite
-
-      mpv
-      nix-prefetch-git
 
       ripgrep
 
-      libGL
-      libGLU
       brightnessctl
       python311
-
       protonvpn-cli
     ]
     ++ unstablePkgs;

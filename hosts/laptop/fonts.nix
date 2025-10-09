@@ -1,6 +1,5 @@
 {pkgs, ...} : {
   fonts.packages = with pkgs; [
-    inter
     noto-fonts
     noto-fonts-cjk-sans
     noto-fonts-emoji
