@@ -105,8 +105,6 @@
         "${modifier}+Shift+s" = "exec CaptureArea";
         "XF86HomePage" = "exec systemctl suspend";
         "${modifier}+x" = "exec hyprpicker -f hex -a";
-        "Mod1+Right" = "nop";
-        "Mod1+Left" = "nop";
       };
 
       # gaps
