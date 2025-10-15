@@ -34,7 +34,6 @@ in{
       unzip
       unar
       bash
-      gcc
       git
       run
       simple-mtpfs
