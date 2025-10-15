@@ -42,6 +42,7 @@ in {
       tmux
       gimp
       obs-studio
+      vesktop
       vlc
       tree
       btop

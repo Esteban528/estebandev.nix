@@ -37,7 +37,6 @@
     dates = "weekly";
     options = "--delete-older-than 30d";
   };
-
   #Bootloader
   boot.loader = {
     efi.canTouchEfiVariables = true;
@@ -50,6 +49,8 @@
       configurationLimit = 2;
     };
   };
+
+  boot.kernelPackages = pkgs.linuxPackages_zen;
 
   time.timeZone = "America/Bogota";
 
