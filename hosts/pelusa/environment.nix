@@ -35,7 +35,6 @@ in{
       unzip
       unar
       bash
-      gcc
       cargo
       wget
       git

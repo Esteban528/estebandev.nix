@@ -24,7 +24,7 @@
     ./qemu
     ./fonts.nix
     ./misc.nix
-    ./waydroid
+    #./waydroid
     ./thunar
     ./steam
   ];
@@ -45,7 +45,7 @@
     enable = true;
       device = "nodev";
       efiSupport = true; 
-      useOSProber = false;
+      useOSProber = true;
       configurationLimit = 2;
     };
   };
