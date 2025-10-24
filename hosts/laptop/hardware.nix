@@ -7,14 +7,6 @@
 }: 
 {
   services.xserver.videoDrivers = ["amdgpu" "modesetting"];
-  environment.systemPackages = with pkgs; [
-    xorg.xf86videoamdgpu
-    vulkan-loader
-    vulkan-tools
-    clinfo
-    radeontop
-    ocl-icd
-  ];
 
   environment.variables = {
     LD_LIBRARY_PATH = "${pkgs.vulkan-loader}/lib";

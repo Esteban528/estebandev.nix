@@ -1,14 +1,7 @@
 {
   pkgs,
-  pkgs-staging-next,
-  pkgs-stable,
 ...}: 
- let
-  unstablePkgs = with pkgs; [
-    neovim
-    openssl
-  ];
-in{
+{
   environment.sessionVariables = rec {
     XDG_CACHE_HOME = "$HOME/.cache";
     XDG_CONFIG_HOME = "$HOME/.config";
@@ -26,26 +19,20 @@ in{
   # List packages installed in system profile. To search, run:
   # $ nix search wget
 
-  environment.systemPackages = with pkgs-stable;
+  environment.systemPackages = with pkgs;
     [
+      neovim
       vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-      gnumake
       zip
       unzip
       unar
       bash
       git
-      run
       simple-mtpfs
-
       libnotify
-
       ripgrep
-
       brightnessctl
       python311
-      protonvpn-cli
-    ]
-    ++ unstablePkgs;
+    ];
 
 }

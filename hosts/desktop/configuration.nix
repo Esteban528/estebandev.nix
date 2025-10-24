@@ -6,8 +6,6 @@
   inputs,
   lib,
   pkgs,
-  pkgs-staging-next,
-  pkgs-stable,
   ...
 }: {
   imports = [
@@ -15,7 +13,7 @@
     ./hardware.nix
     ./audio.nix
     ./networking.nix
-    ./shell
+    # ./shell
     ./environment.nix
     # ./ollama
     ./wayland
@@ -68,18 +66,17 @@
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.estebandev = {
     isNormalUser = true;
-    description = "Esteban Gonzalez";
+    description = "Esteban";
     extraGroups = ["wheel" "docker" "libvirtd" "libvirtd"];
   };
-  users.groups.libvirt = {};
 
   programs.nix-ld.enable = true;
   programs.nix-ld.package = pkgs.nix-ld-rs;
   programs.nix-ld.libraries = with pkgs; [
     stdenv.cc.cc.lib
-    xorg.libXcomposite
-    xorg.libXtst
-    xorg.libXrandr
+    # xorg.libXcomposite
+    # xorg.libXtst
+    # xorg.libXrandr
     # ... (other libraries)
   ];
 

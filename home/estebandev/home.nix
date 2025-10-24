@@ -2,63 +2,48 @@
   pkgs,
   lib,
   config,
-  pkgs-stable,
-  inputs,
   ...
-}: let
-  stablePackages = with pkgs-stable; [
-    # azure-cli
-    # azure-functions-core-tools
-    mdcat
-    dbeaver-bin
-    fzf
-    fd
-    # lact
-    inkscape
-    prismlauncher
-    fuseiso
-  ];
-in {
+}:{
   imports = [./modules];
   home.username = "estebandev";
   home.homeDirectory = "/home/estebandev";
 
-  nixpkgs.config.allowUnfree = true;
   home.packages = with pkgs;
     [
+      imv 
       wineWowPackages.stable
       bottles
-      cloudflared
+      # cloudflared
       qbittorrent
-      parabolic
+      # parabolic
       strawberry
       kdePackages.okular
-      helvum
-      inputs.pomodoro.packages.${system}.default
+      # helvum
+      # inputs.pomodoro.packages.${system}.default
       wiremix
-      xfce.mousepad
+      # xfce.mousepad
       librewolf
       foliate
       tmux
-      gimp
+      # gimp
       obs-studio
-      vesktop
+      # vesktop
       vlc
-      tree
+      # tree
       btop
       htop
-      dig
-      telegram-desktop
+      # telegram-desktop
       obsidian
-      anki-bin
-      jq
+      # anki-bin
+      # jq
       just
       fastfetch
-      gdb
+      fd
+      fzf
+      # gdb
       #kiwix-tools
-      R
-    ]
-    ++ stablePackages;
+      # R
+    ];
 
   home.stateVersion = "23.11";
 }

@@ -1,16 +1,8 @@
 {
   pkgs,
-  pkgs-staging-next,
-  pkgs-stable,
 ...}: 
  let
   unstablePkgs = with pkgs; [
-    neovim
-    openssl
-    imv 
-
-    freerdp
-    iproute2
   ];
 in{
   environment.sessionVariables = rec {
@@ -28,24 +20,20 @@ in{
   # List packages installed in system profile. To search, run:
   # $ nix search wget
 
-  environment.systemPackages = with pkgs-stable;
+  environment.systemPackages = with pkgs;
     [
+      neovim
       vim
       zip
       unzip
       unar
       bash
-      cargo
-      wget
       git
-      run
-      file
-      simple-mtpfs
-      python311
+      #simple-mtpfs
+      #python311
       libnotify
 
       ripgrep
-      gnumake
     ]
     ++ unstablePkgs;
 

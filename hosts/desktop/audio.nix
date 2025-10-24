@@ -4,8 +4,8 @@
   services.pulseaudio.enable = false;
   services.pipewire = {
     enable = true;
-    alsa.enable = true;
-    alsa.support32Bit = true;
+    # alsa.enable = false;
+    # alsa.support32Bit = false;
     pulse.enable = true;
     wireplumber.enable = true;
   };

@@ -1,6 +1,5 @@
 {
   pkgs,
-  pkgs-stable,
   lib,
   config,
   ...
@@ -24,9 +23,9 @@
     # image = ./assets/wallpaper.png;
     # image = ./assets/wp1933981.png;
 
-    cursor.package = pkgs.bibata-cursors;
-    cursor.name = "Bibata-Modern-Ice";
-    cursor.size = 20;
+    # cursor.package = pkgs.bibata-cursors;
+    # cursor.name = "Bibata-Modern-Ice";
+    # cursor.size = 20;
 
     iconTheme = {
       enable = true;
@@ -34,32 +33,12 @@
       dark = "Papirus-Dark";
       light = "Papirus-Light";
     };
-
-    fonts = {
-      serif = {
-        package = pkgs.dejavu_fonts;
-        name = "DejaVu Serif";
-      };
-
-      sansSerif = {
-        package = pkgs.dejavu_fonts;
-        name = "DejaVu Sans";
-      };
-      emoji = {
-        package = pkgs.noto-fonts-emoji;
-        name = "Noto Color Emoji";
-      };
-      monospace = {
-        package = pkgs.maple-mono.NF;
-        name = "Maple Mono NF";
-      };
-    };
   };
 
   # stylix.targets.gtk.enable = true;
   # stylix.targets.hyprpaper.enable = false;
-  stylix.targets.yazi.enable = true; 
-  stylix.targets.hyprpaper.enable = lib.mkForce false;
+  # stylix.targets.yazi.enable = true; 
+  # stylix.targets.hyprpaper.enable = lib.mkForce false;
 
   stylix.targets.sway.enable = true;
   # stylix.targets.wezterm.enable = false;

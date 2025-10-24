@@ -27,6 +27,7 @@
     qemu
     virt-viewer
     virtiofsd
+    freerdp
   ];
 
   # boot.binfmt.emulatedSystems = [

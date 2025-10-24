@@ -6,8 +6,6 @@
   inputs,
   lib,
   pkgs,
-  pkgs-staging-next,
-  pkgs-stable,
   ...
 }: {
   imports = [
@@ -18,7 +16,7 @@
     #./shell
     ./environment.nix
     ./wayland
-    ./podman
+    # ./podman
     ./x11.nix
     #./qemu
     ./fonts.nix
@@ -68,7 +66,7 @@
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.estebandev = {
     isNormalUser = true;
-    description = "Esteban Gonzalez";
+    description = "estebandev";
     extraGroups = ["wheel" "docker" "libvirtd"]; # Enable ‘sudo’ for the user.
   };
 
