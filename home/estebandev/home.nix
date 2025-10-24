@@ -41,7 +41,7 @@
       fd
       fzf
       # gdb
-      #kiwix-tools
+      # kiwix-tools
       # R
     ];
 

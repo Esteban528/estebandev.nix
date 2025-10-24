@@ -1,8 +1,5 @@
 {pkgs, ...}: {
   imports = [
-    #./dunst
-    #./hypridle
-    #./hyprlock
-    ../../../shared/services
+    ./syncthing.nix
   ];
 }
