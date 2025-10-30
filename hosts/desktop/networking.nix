@@ -11,8 +11,8 @@
   #Firewall
   networking.firewall = {
    enable = true;
-   allowedTCPPorts = [3000 4200 8080 25575 25565];
-   allowedUDPPorts = [34197];
+   allowedTCPPorts = [3000 4200 8080 2121 25575 25565 2121 22005];
+   allowedUDPPorts = [34197 2205 2203 2121 22126 22003];
   };
 
   # services.cloudflare-warp = { 
