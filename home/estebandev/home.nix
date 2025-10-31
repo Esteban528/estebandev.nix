@@ -43,6 +43,7 @@
       # gdb
       # kiwix-tools
       # R
+      signal-desktop-bin
     ];
 
   home.stateVersion = "23.11";

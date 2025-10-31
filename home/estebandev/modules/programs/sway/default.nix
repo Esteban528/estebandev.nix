@@ -4,8 +4,10 @@
   home.packages = with pkgs; [
     grim # screenshot functionality
     slurp # screenshot functionality
-    mako # notification system developed by swaywm maintainer
+    # mako # notification system developed by swaywm maintainer
+    # swaync
   ];
+  services.mako.enable = true;
 
   programs.fuzzel.enable = true;
   wayland.windowManager.sway = {
