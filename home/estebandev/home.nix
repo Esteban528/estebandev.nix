@@ -36,7 +36,7 @@
       obsidian
       # anki-bin
       # jq
-      just
+      gnumake
       fastfetch
       fd
       fzf
