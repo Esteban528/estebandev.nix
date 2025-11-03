@@ -1,20 +1,21 @@
 {pkgs, ...} : {
-  fonts.packages = with pkgs; [
-    noto-fonts
-    noto-fonts-cjk-sans
-    noto-fonts-emoji
-    liberation_ttf
-    fira-code-symbols
-    mplus-outline-fonts.githubRelease
-    dina-font
-    proggyfonts
-    roboto
-    iosevka
-    nerd-fonts.fira-code
-    nerd-fonts.droid-sans-mono
-    nerd-fonts.iosevka
-    nerd-fonts.hack
-    nerd-fonts.jetbrains-mono
-    pixel-code
-  ];
+  fonts = {
+    packages = with pkgs; [
+        nerd-fonts.fira-code
+        nerd-fonts.noto
+        # nerd-fonts.droid-sans-mono
+        # nerd-fonts.iosevka
+        # nerd-fonts.hack
+        # nerd-fonts.jetbrains-mono
+        maple-mono.NF
+        # pixel-code
+        # scientifica
+        dejavu_fonts
+      ];
+      fontconfig.defaultFonts = {
+        serif = [ "DejaVu Serif" ];
+        sansSerif = [ "DejaVu Sans" ];
+        monospace = [ "Maple Mono NF" ];
+      };
+  };
 }
