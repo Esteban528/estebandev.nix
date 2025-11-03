@@ -123,6 +123,7 @@
 
       exec systemctl --user import-environment PATH
       exec systemctl --user restart xdg-desktop-portal.service
+      exec tmux start-server
       exec swww-daemon &
       exec swayidle -w \
         timeout 300 'swaylock -f -c 000000' \
