@@ -15,7 +15,7 @@
 
     config = rec {
       modifier = "Mod4";
-      terminal = "alacritty -e /home/estebandev/.tmux/init-session.sh";
+      terminal = "foot -e /home/estebandev/.tmux/init-session.sh";
       menu = "fuzzel";
 
       input = {

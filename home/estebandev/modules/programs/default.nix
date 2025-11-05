@@ -3,8 +3,9 @@
     ./stylix
     ./sway
     #./niri
-     ./alacritty
+    #./alacritty
     # ./nh
+    ./foot.nix
   ];
 
   programs.btop.enable = true;
