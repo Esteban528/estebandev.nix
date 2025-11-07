@@ -10,6 +10,9 @@
 
   home.packages = with pkgs;
     [
+      unzip
+      unar
+      neovim
       telegram-desktop
       imv 
       wineWowPackages.stable

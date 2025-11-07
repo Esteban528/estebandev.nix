@@ -22,17 +22,13 @@ in{
 
   environment.systemPackages = with pkgs;
     [
-      neovim
       vim
       zip
-      unzip
-      unar
       bash
       git
       #simple-mtpfs
       #python311
       libnotify
-
       ripgrep
     ]
     ++ unstablePkgs;
