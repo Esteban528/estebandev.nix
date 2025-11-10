@@ -23,7 +23,7 @@
     ./fonts.nix
     ./misc.nix
     #./waydroid
-    ./thunar
+    #./thunar
     ./steam
   ];
 
@@ -71,7 +71,7 @@
   };
 
   programs.nix-ld.enable = true;
-  programs.nix-ld.package = pkgs.nix-ld-rs;
+  programs.nix-ld.package = pkgs.nix-ld;
   programs.nix-ld.libraries = with pkgs; [
     stdenv.cc.cc.lib
     # xorg.libXcomposite

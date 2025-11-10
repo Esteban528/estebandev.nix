@@ -8,10 +8,6 @@
         dpi-aware = lib.mkForce "yes"; 
       };
 
-      window = {
-        pad = "0x0";
-      };
-
       # environment = {
       #   WINIT_X11_SCALE_FACTOR = "1.0";
       # };

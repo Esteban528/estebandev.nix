@@ -10,6 +10,8 @@
 
   home.packages = with pkgs;
     [
+      nemo-with-extensions
+      lf
       unzip
       unar
       neovim
@@ -30,9 +32,9 @@
       foliate
       tmux
       # gimp
-      obs-studio
+      # obs-studio
       # vesktop
-      vlc
+      # vlc
       # tree
       btop
       htop
@@ -41,7 +43,7 @@
       # anki-bin
       # jq
       gnumake
-      fastfetch
+      # fastfetch
       fd
       fzf
       # gdb
