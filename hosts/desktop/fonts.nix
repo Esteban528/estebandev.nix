@@ -1,4 +1,5 @@
 {pkgs, ...} : {
+  nixpkgs.config.input-fonts.acceptLicense = true;
   fonts = {
     packages = with pkgs; [
         nerd-fonts.fira-code
@@ -11,6 +12,7 @@
         # pixel-code
         # scientifica
         dejavu_fonts
+        input-fonts
       ];
       fontconfig.defaultFonts = {
         serif = [ "DejaVu Serif" ];

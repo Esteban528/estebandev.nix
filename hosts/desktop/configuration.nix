@@ -23,7 +23,7 @@
     ./fonts.nix
     ./misc.nix
     #./waydroid
-    #./thunar
+    ./thunar
     ./steam
   ];
 

@@ -10,7 +10,6 @@
 
   home.packages = with pkgs;
     [
-      nemo-with-extensions
       lf
       unzip
       unar

@@ -42,7 +42,7 @@
         "${modifier}+q" = "kill";
         "${modifier}+d" = "exec ${menu}";
         "${modifier}+n" = "exec librewolf";
-        "${modifier}+Shift+e" = "exec nemo";
+        "${modifier}+Shift+e" = "exec thunar";
         "${modifier}+Shift+c" = "reload";
         "${modifier}+Shift+q" = ''
           exec swaynag -t warning -m "You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session." \

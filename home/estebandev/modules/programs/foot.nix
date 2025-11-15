@@ -4,7 +4,7 @@
     settings = {
       main = {
         term = lib.mkForce "xterm-256color";
-        font = lib.mkForce "Maple Mono NF:size=12";
+        font = lib.mkForce "Input Mono:size=12";
         dpi-aware = lib.mkForce "yes"; 
       };
 
