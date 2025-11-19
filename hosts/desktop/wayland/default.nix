@@ -11,10 +11,8 @@
     # xdg-desktop-portal-gtk
 
     # hyprpaper
-    hyprpicker
     # hyprcursor
-    swww
-    #xwayland-satellite
+    # xwayland-satellite
   ];
 
   # programs.niri =  {

@@ -20,7 +20,7 @@
   # };
 
   services.openssh.enable = true;
-  networking.nameservers = [  "8.8.8.8" "1.1.1.1" ];
+  networking.nameservers = [  "1.1.1.1" ];
 
   # services.netbird.enable = false; # for netbird service & CLI
   # environment.systemPackages = [ pkgs.netbird-ui ]; # for GUI

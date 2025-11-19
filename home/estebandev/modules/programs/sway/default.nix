@@ -4,6 +4,9 @@
   home.packages = with pkgs; [
     grim # screenshot functionality
     slurp # screenshot functionality
+    grimblast
+    hyprpicker
+    swaybg
     # mako # notification system developed by swaywm maintainer
     # swaync
   ];
@@ -124,7 +127,7 @@
       exec systemctl --user import-environment PATH
       exec systemctl --user restart xdg-desktop-portal.service
       exec tmux start-server
-      exec swww-daemon &
+      exec swaybg --image /home/estebandev/Pictures/wallpaper/wallhaven-lmpg3y.png
       exec swayidle -w \
         timeout 300 'swaylock -f -c 000000' \
         timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
