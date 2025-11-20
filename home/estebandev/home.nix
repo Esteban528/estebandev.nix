@@ -12,6 +12,7 @@
     [
       lf
       unzip
+      vlc
       unar
       neovim
       telegram-desktop
