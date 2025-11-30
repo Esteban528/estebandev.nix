@@ -10,6 +10,7 @@
 
   home.packages = with pkgs;
     [
+      onlyoffice-desktopeditors
       lf
       unzip
       vlc
@@ -49,7 +50,6 @@
       # gdb
       # kiwix-tools
       # R
-      signal-desktop-bin
     ];
 
   home.stateVersion = "23.11";
