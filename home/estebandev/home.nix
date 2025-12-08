@@ -10,6 +10,7 @@
 
   home.packages = with pkgs;
     [
+      helvum
       onlyoffice-desktopeditors
       lf
       unzip
