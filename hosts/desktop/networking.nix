@@ -10,19 +10,27 @@
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
   #Firewall
   networking.firewall = {
-   enable = true;
-   allowedTCPPorts = [3000 4200 8080 2121 25575 25565 2121 22005];
-   allowedUDPPorts = [34197 2205 2203 2121 22126 22003];
+    enable = true;
+    allowedTCPPorts = [3000 4200 8080 2121 25575 25565 2121 22005];
+    allowedUDPPorts = [34197 2205 2203 2121 22126 22003];
   };
 
-  # services.cloudflare-warp = { 
-  #   enable = false;
-  # };
+  services.cloudflare-warp = { 
+    enable = true;
+  };
 
 
-  services.resolved.enable = true;
+  services.resolved.enable = false;
+
+  networking.nameservers = [
+    "1.1.1.1"
+    "1.0.0.1"
+    "8.8.8.8"
+  ];
+
   services.openssh.enable = true;
-  networking.nameservers = [  "1.1.1.1" "1.0.0.1" "8.8.8.8" ];
+
+  # networking.nameservers = [  "1.1.1.1" "1.0.0.1" "8.8.8.8" "4.4.4.4" ];
 
   # services.netbird.enable = false; # for netbird service & CLI
   # environment.systemPackages = [ pkgs.netbird-ui ]; # for GUI

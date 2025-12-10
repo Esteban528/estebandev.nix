@@ -18,7 +18,9 @@ in{
   };
 
   # List packages installed in system profile. To search, run:
-  # $ nix search wget
+
+  programs.direnv.enable = true;
+  programs.direnv.nix-direnv.enable = true;
 
   environment.systemPackages = with pkgs;
     [
