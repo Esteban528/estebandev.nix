@@ -48,6 +48,7 @@
       # fastfetch
       fd
       fzf
+      uv
       # gdb
       # kiwix-tools
       # R
