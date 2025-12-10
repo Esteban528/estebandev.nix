@@ -8,6 +8,7 @@
     ./foot.nix
   ];
 
+  programs.direnv.enable = true;
   programs.btop.enable = true;
   programs.htop.enable = true;
 }
