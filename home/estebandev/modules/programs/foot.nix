@@ -4,7 +4,7 @@
     settings = {
       main = {
         term = lib.mkForce "xterm-256color";
-        font = lib.mkForce "Inconsolata Nerd Font Mono:size=14";
+        font = lib.mkForce "Maple Mono NF:size=14";
         dpi-aware = lib.mkForce "yes"; 
       };
 
