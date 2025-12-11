@@ -4,14 +4,14 @@
     packages = with pkgs; [
         nerd-fonts.noto
         # nerd-fonts.droid-sans-mono
-        nerd-fonts.iosevka
+        #nerd-fonts.iosevka
         # nerd-fonts.hack
         # nerd-fonts.jetbrains-mono
-        maple-mono.NF
+        # maple-mono.NF
         # pixel-code
         # scientifica
         dejavu_fonts
-        nerd-fonts.inconsolata
+        nerd-fonts.fira-code
       ];
       fontconfig.defaultFonts = {
         serif = [ "DejaVu Serif" ];
