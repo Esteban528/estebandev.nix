@@ -11,6 +11,7 @@
         # pixel-code
         # scientifica
         dejavu_fonts
+        nerd-fonts.hack
         nerd-fonts.inconsolata
       ];
       fontconfig.defaultFonts = {

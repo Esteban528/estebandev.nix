@@ -4,7 +4,7 @@
     settings = {
       main = {
         term = lib.mkForce "xterm-256color";
-        font = lib.mkForce "FiraCode Nerd Font Mono:size=14";
+        font = lib.mkForce " Hack Nerd Font Mono:size=14";
         dpi-aware = lib.mkForce "yes"; 
       };
 

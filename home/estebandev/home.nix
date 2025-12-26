@@ -7,6 +7,7 @@
   imports = [./modules];
   home.username = "estebandev";
   home.homeDirectory = "/home/estebandev";
+  programs.librewolf.enable = true;
 
   home.packages = with pkgs;
     [
@@ -30,7 +31,6 @@
       # inputs.pomodoro.packages.${system}.default
       wiremix
       # xfce.mousepad
-      librewolf
       foliate
       tmux
       # gimp
