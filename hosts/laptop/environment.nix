@@ -33,6 +33,7 @@
       ripgrep
       brightnessctl
       python311
+      usbutils
     ];
 
 }

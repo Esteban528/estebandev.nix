@@ -6,6 +6,9 @@
   ...
 }: 
 {
+
+  hardware.bluetooth.enable = true;
+  services.blueman.enable = true; # opcional GUI
   services.xserver.videoDrivers = ["amdgpu" "modesetting"];
 
   environment.variables = {
