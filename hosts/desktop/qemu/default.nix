@@ -30,6 +30,13 @@
     freerdp
   ];
 
+  security.wrappers.virtiofsd = {
+    owner = "root";
+    group = "root";
+    capabilities = "cap_dac_read_search+ep";
+    source = "${pkgs.virtiofsd}/bin/virtiofsd";
+  };
+
   # boot.binfmt.emulatedSystems = [
   #   "aarch64-linux"
   #   "riscv64-linux"
