@@ -48,7 +48,7 @@
     };
   };
 
-  boot.kernelPackages = pkgs.linuxPackages_zen;
+  boot.kernelPackages = pkgs.linuxPackages_latest;
 
   time.timeZone = "America/Bogota";
 
