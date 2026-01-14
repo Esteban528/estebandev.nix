@@ -13,6 +13,7 @@
         dejavu_fonts
         nerd-fonts.fira-code
         nerd-fonts.hack
+        input-fonts
       ];
       fontconfig.defaultFonts = {
         serif = [ "DejaVu Serif" ];

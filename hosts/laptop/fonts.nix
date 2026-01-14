@@ -1,18 +1,19 @@
 {pkgs, ...} : {
+  nixpkgs.config.input-fonts.acceptLicense = true;
   fonts = {
     packages = with pkgs; [
-        nerd-fonts.fira-code
         nerd-fonts.noto
         # nerd-fonts.droid-sans-mono
         # nerd-fonts.iosevka
         # nerd-fonts.hack
         # nerd-fonts.jetbrains-mono
-        maple-mono.NF
+        # maple-mono.NF
         # pixel-code
-        # scientifica
+        scientifica
         dejavu_fonts
+        nerd-fonts.fira-code
         nerd-fonts.hack
-        nerd-fonts.inconsolata
+        input-fonts
       ];
       fontconfig.defaultFonts = {
         serif = [ "DejaVu Serif" ];
