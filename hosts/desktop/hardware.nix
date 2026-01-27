@@ -11,6 +11,9 @@
     LD_LIBRARY_PATH = "${pkgs.vulkan-loader}/lib";
   };
 
+  hardware.bluetooth.enable = true;
+  services.blueman.enable = true; # opcional GUI
+
   hardware.graphics = {
     enable=true;
     enable32Bit = true;

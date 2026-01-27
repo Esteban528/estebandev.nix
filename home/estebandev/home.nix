@@ -11,6 +11,7 @@
 
   home.packages = with pkgs;
     [
+      insomnia
       helvum
       onlyoffice-desktopeditors
       lf
@@ -45,6 +46,7 @@
       # anki-bin
       # jq
       gnumake
+      dbeaver-bin
       # fastfetch
       fd
       fzf
