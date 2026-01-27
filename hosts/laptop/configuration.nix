@@ -16,7 +16,7 @@
     #./shell
     ./environment.nix
     ./wayland
-    # ./podman
+    ./podman
     ./x11.nix
     #./qemu
     ./fonts.nix
