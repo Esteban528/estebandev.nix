@@ -9,6 +9,7 @@
         # nerd-fonts.jetbrains-mono
         # maple-mono.NF
         # pixel-code
+        maple-mono.NF
         scientifica
         dejavu_fonts
         nerd-fonts.fira-code
