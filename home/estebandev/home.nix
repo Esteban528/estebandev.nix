@@ -2,12 +2,24 @@
   pkgs,
   lib,
   config,
+  inputs,
   ...
-}:{
+}: let 
+ spicePkgs = inputs.spicetify-nix.legacyPackages.${pkgs.stdenv.system};
+in{
   imports = [./modules];
   home.username = "estebandev";
   home.homeDirectory = "/home/estebandev";
   programs.librewolf.enable = true;
+  programs.spicetify = {
+   enable = true;
+   enabledExtensions = with spicePkgs.extensions; [
+     adblockify
+     hidePodcasts
+     shuffle # shuffle+ (special characters are sanitized out of extension names)
+   ];
+   # colorScheme = "sleek";
+  };
 
   home.packages = with pkgs;
     [

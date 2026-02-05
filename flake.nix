@@ -7,10 +7,11 @@
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     # Stylix
     stylix.url = "github:danth/stylix";
+    spicetify-nix.url = "github:Gerg-L/spicetify-nix";
   };
 
   outputs =
-    inputs@{ nixpkgs, home-manager, stylix, ... }:
+    inputs@{ nixpkgs, home-manager, stylix, spicetify-nix,... }:
     {
       nixosConfigurations = {
         desktop = nixpkgs.lib.nixosSystem {
@@ -26,6 +27,7 @@
                 imports = [
                   ./home/estebandev/home.nix
                   stylix.homeModules.stylix
+                  spicetify-nix.homeManagerModules.spicetify 
                 ];
               };
               home-manager.backupFileExtension = "hm-backup";
