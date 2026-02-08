@@ -9,13 +9,13 @@
     autoEnable = true;
     polarity = "dark";
     # base16Scheme = "${pkgs.base16-schemes}/share/themes/nord.yaml";
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/da-one-gray.yaml";
+    # base16Scheme = "${pkgs.base16-schemes}/share/themes/da-one-gray.yaml";
     # base16Scheme = "${pkgs.base16-schemes}/share/themes/atelier-estuary.yaml";
     # base16Scheme = ./themes/yoru.yml;
     # base16Scheme = "${pkgs-stable.schemes-nix}/share/themes/sober.yaml";
     # base16Scheme = "${pkgs-stable.schemes-nix}/share/themes/flexoki.yaml";
 
-    # base16Scheme = "${pkgs.base16-schemes}/share/themes/everforest-dark-hard.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/everforest-dark-hard.yaml";
     # base16Scheme = "${pkgs.base16-schemes}/share/themes/precious-dark-eleven.yaml";
     # base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-material-dark-hard.yaml";
     # base16Scheme = "${pkgs.base16-schemes}/share/themes/rose-pine.yaml";

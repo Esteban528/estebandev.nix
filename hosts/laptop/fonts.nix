@@ -4,10 +4,9 @@
     packages = with pkgs; [
         nerd-fonts.noto
         # nerd-fonts.droid-sans-mono
-        # nerd-fonts.iosevka
+        nerd-fonts.iosevka
         # nerd-fonts.hack
         # nerd-fonts.jetbrains-mono
-        # maple-mono.NF
         # pixel-code
         maple-mono.NF
         scientifica
