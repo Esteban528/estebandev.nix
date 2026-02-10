@@ -49,6 +49,7 @@
                 imports = [
                   ./home/estebandev/home.nix
                   stylix.homeModules.stylix
+                  spicetify-nix.homeManagerModules.spicetify 
                 ];
               };
               home-manager.backupFileExtension = "hm-backup";
