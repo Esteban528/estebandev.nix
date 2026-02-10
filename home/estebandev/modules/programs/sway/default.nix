@@ -126,6 +126,7 @@
       set $opacity 0.97
       for_window [class=".*"] opacity $opacity
       for_window [app_id=".*"] opacity $opacity
+      for_window [app_id="obsidian"] move scratchpad
 
       exec systemctl --user import-environment PATH
       exec systemctl --user restart xdg-desktop-portal.service
@@ -136,6 +137,7 @@
         timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
         before-sleep 'swaylock -f -c 000000'
       include /etc/sway/config.d/*
+      exec obsidian
     '';
   };
 }
