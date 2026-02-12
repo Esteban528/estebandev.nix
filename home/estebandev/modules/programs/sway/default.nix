@@ -41,6 +41,7 @@
       };
 
       keybindings = lib.mkOptionDefault {
+        "XF86TouchpadToggle" = "exec swaymsg input type:touchpad events toggle";
         "${modifier}+Return" = "exec ${terminal}";
         "${modifier}+q" = "kill";
         "${modifier}+d" = "exec ${menu}";
