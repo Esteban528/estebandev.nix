@@ -23,6 +23,7 @@ in{
 
   home.packages = with pkgs;
     [
+      signal-desktop
       insomnia
       helvum
       onlyoffice-desktopeditors
