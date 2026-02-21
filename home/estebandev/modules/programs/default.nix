@@ -6,6 +6,7 @@
     #./alacritty
     # ./nh
     ./foot.nix
+    ./librewolf.nix
   ];
 
  # programs.direnv.enable = true;

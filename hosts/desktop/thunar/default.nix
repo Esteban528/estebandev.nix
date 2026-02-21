@@ -2,14 +2,14 @@
 
   programs.thunar = {
     enable = true;
-    plugins = with pkgs.xfce; [
+    plugins = with pkgs; [
       thunar-archive-plugin
       thunar-volman
     ];
   };
 
   environment.systemPackages = [
-    pkgs.mate.engrampa
+    pkgs.engrampa
   ];
 
   services.gvfs.enable = true;

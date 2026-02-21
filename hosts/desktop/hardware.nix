@@ -21,7 +21,7 @@
     extraPackages = with pkgs; [
       mesa
 
-      xorg.xf86videoamdgpu
+      xf86-video-amdgpu
       vulkan-loader
       vulkan-tools
       # amdvlk

@@ -15,7 +15,7 @@
     # base16Scheme = "${pkgs-stable.schemes-nix}/share/themes/sober.yaml";
     # base16Scheme = "${pkgs-stable.schemes-nix}/share/themes/flexoki.yaml";
 
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/everforest-dark-hard.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/edge-dark.yaml";
     # base16Scheme = "${pkgs.base16-schemes}/share/themes/precious-dark-eleven.yaml";
     # base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-material-dark-hard.yaml";
     # base16Scheme = "${pkgs.base16-schemes}/share/themes/rose-pine.yaml";
@@ -27,7 +27,7 @@
     # cursor.name = "Bibata-Modern-Ice";
     # cursor.size = 20;
 
-    iconTheme = {
+    icons = {
       enable = true;
       package = pkgs.papirus-icon-theme;
       dark = "Papirus-Dark";

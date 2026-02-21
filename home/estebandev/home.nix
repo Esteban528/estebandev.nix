@@ -34,7 +34,7 @@ in{
       neovim
       telegram-desktop
       imv 
-      wineWowPackages.stable
+      wineWow64Packages.stable
       bottles
       # cloudflared
       qbittorrent

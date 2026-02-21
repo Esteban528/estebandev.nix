@@ -1,15 +1,16 @@
 {pkgs, config, lib, ...} : {
   services.libinput.enable = true;
   # Enable the X11 windowing system.
+
+  services.displayManager = {
+    autoLogin.enable = true;
+    autoLogin.user = "estebandev";
+    defaultSession = "sway";
+  };
   services.xserver = {
     enable = true;
     videoDrivers = ["amdgpu"];
     # desktopManager.gnome.enable = true;
-    displayManager = {
-      autoLogin.enable = true;
-      autoLogin.user = "estebandev";
-      defaultSession = "sway";
-    };
 
     desktopManager = {
       xterm.enable = false;

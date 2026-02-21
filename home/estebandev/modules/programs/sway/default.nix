@@ -125,14 +125,13 @@
       default_border pixel 
       default_floating_border pixel
       set $opacity 0.97
-      for_window [class=".*"] opacity $opacity
-      for_window [app_id=".*"] opacity $opacity
+      for_window [app_id=".*foot"] opacity $opacity
       for_window [app_id="obsidian"] move scratchpad
 
       exec systemctl --user import-environment PATH
       exec systemctl --user restart xdg-desktop-portal.service
       exec tmux start-server
-      exec swaybg --image /home/estebandev/Pictures/wallpaper/wallhaven-5gql97.jpg
+      exec swaybg --image /home/estebandev/Pictures/wallpaper/wallhaven-vpz3lm.jpg
       exec swayidle -w \
         timeout 300 'swaylock -f -c 000000' \
         timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
