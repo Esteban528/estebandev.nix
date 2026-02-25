@@ -23,6 +23,9 @@ in{
 
   home.packages = with pkgs;
     [
+      jq
+      vscode
+      codex
       signal-desktop
       insomnia
       helvum

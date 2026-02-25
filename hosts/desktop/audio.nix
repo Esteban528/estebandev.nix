@@ -9,4 +9,7 @@
     pulse.enable = true;
     wireplumber.enable = true;
   };
+
+  hardware.bluetooth.enable = true;
+  services.blueman.enable = true; # opcional GUI
 }
