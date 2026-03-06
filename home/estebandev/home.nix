@@ -23,6 +23,7 @@ in{
 
   home.packages = with pkgs;
     [
+      prismlauncher
       jq
       vscode
       codex
