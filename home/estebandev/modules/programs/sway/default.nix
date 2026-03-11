@@ -29,6 +29,8 @@
         "type:touchpad" = {
           dwt = "enabled";
           tap = "enabled";
+          drag = "enabled";
+          drag_lock = "disabled";
         };
       };
 
