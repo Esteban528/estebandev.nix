@@ -33,7 +33,6 @@ in{
       onlyoffice-desktopeditors
       lf
       unzip
-      vlc
       unar
       neovim
       telegram-desktop
@@ -48,17 +47,10 @@ in{
       # helvum
       # inputs.pomodoro.packages.${system}.default
       wiremix
-      # xfce.mousepad
       foliate
       tmux
-      # gimp
-      # obs-studio
-      # vesktop
-      # vlc
-      # tree
       btop
       htop
-      # telegram-desktop
       obsidian
       # anki-bin
       # jq

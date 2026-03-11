@@ -7,6 +7,7 @@
     # ./nh
     ./foot.nix
     ./librewolf.nix
+    ./mpv.nix
   ];
 
  # programs.direnv.enable = true;
