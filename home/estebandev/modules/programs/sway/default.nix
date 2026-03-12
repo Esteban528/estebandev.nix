@@ -133,7 +133,7 @@
       exec systemctl --user import-environment PATH
       exec systemctl --user restart xdg-desktop-portal.service
       exec tmux start-server
-      exec swaybg --image /home/estebandev/Pictures/wallpaper/wallhaven-5y57x8.png
+      exec swaybg --image /home/estebandev/Pictures/wallpaper/wallhaven-vpo9k3.png
       exec swayidle -w \
         timeout 300 'swaylock -f -c 000000' \
         timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
