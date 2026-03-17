@@ -29,7 +29,6 @@ in{
       codex
       signal-desktop
       insomnia
-      helvum
       onlyoffice-desktopeditors
       lf
       unzip
