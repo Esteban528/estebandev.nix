@@ -23,6 +23,8 @@ in{
 
   home.packages = with pkgs;
     [
+      awscli2
+      shipwright
       tcpdump
       jq
       vscode
