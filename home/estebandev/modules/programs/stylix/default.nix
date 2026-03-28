@@ -16,7 +16,8 @@
     # base16Scheme = "${pkgs-stable.schemes-nix}/share/themes/flexoki.yaml";
 
     # base16Scheme = "${pkgs.base16-schemes}/share/themes/gigavolt.yaml";
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/kanagawa.yaml";
+    base16Scheme = ./tokyo-night.yaml;
+    # base16Scheme = "${pkgs.base16-schemes}/share/themes/tokyo-night-dark.yaml";
     # base16Scheme = "${pkgs.base16-schemes}/share/themes/edge-dark.yaml";
     # base16Scheme = "${pkgs.base16-schemes}/share/themes/precious-dark-eleven.yaml";
     # base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-material-dark-hard.yaml";
