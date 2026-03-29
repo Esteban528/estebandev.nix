@@ -24,10 +24,8 @@ in{
   home.packages = with pkgs;
     [
       awscli2
-      shipwright
       tcpdump
       jq
-      vscode
       codex
       signal-desktop
       insomnia
@@ -66,5 +64,5 @@ in{
       # R
     ];
 
-  home.stateVersion = "23.11";
+  home.stateVersion = "26.05";
 }
